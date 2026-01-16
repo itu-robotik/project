@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="poster_board_4">
+    <static>true</static>
+    <link name="link">
+      <!-- Frame (Large: 1.1 width x 1.6 height) -->
+      <visual name="frame">
+        <geometry><box><size>0.1 1.1 1.6</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+
+      <!-- Poster Content (1.0 x 1.5) -->
+      <visual name="poster">
+        <pose>0.06 0 -0.05 0 0 0</pose>
+        <geometry><box><size>0.01 1.0 1.5</size></box></geometry>
+        <material>
+          <ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse>
+          <pbr><metal><albedo_map>materials/textures/poster4.jpeg</albedo_map></metal></pbr>
+        </material>
+      </visual>
+
+      <!-- ArUco Marker (Top Edge) -->
+      <visual name="aruco_marker">
+        <pose>0.065 0 0.7 0 0 0</pose>
+        <geometry><box><size>0.01 0.15 0.15</size></box></geometry>
+        <material>
+          <ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse>
+          <pbr><metal><albedo_map>materials/textures/aruco_marker.png</albedo_map></metal></pbr>
+        </material>
+      </visual>
+      
+       <collision name="collision">
+         <geometry><box><size>0.1 1.1 1.6</size></box></geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

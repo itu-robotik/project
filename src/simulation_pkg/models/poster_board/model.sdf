@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="poster_board">
+    <static>true</static>
+    <link name="link">
+      <!-- Çerçeve (Gri Renk) -->
+      <visual name="frame">
+        <geometry>
+          <box>
+            <size>0.1 1.6 1.3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+
+      <!-- Poster İçeriği -->
+      <visual name="poster">
+        <pose>0.06 0 -0.1 0 0 0</pose> <!-- Biraz aşağı kaydırdık -->
+        <geometry>
+          <box>
+            <size>0.01 1.4 0.9</size> <!-- Yüksekliği azalttık -->
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/poster.jpeg</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <!-- ArUco Marker (Tepeye) -->
+      <visual name="aruco_marker">
+        <pose>0.065 0 0.5 0 0 0</pose> <!-- Çerçevenin üst kısmına yakın -->
+        <geometry>
+          <box>
+            <size>0.01 0.2 0.2</size> <!-- 20cm x 20cm Marker -->
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>materials/textures/aruco_marker.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      
+      <!-- Collision -->
+       <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.1 1.6 1.3</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

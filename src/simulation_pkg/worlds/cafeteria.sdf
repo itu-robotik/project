@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="cafeteria_world">
+    <!-- Plugins -->
+    <physics name="1ms" type="ignored"><max_step_size>0.001</max_step_size><real_time_factor>1.0</real_time_factor></physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"><render_engine>ogre</render_engine></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
+
+    <!-- Sun (Copied from corridor.sdf) -->
+    <light type="directional" name="sun">
+        <cast_shadows>true</cast_shadows>
+        <pose>0 0 10 0 0 0</pose>
+        <diffuse>0.8 0.8 0.8 1</diffuse>
+        <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    
+    <!-- Ambient Light -->
+    <light type="point" name="ambient_light">
+      <pose>5 0 5 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+    <!-- Ground (Copied from corridor.sdf) -->
+    <model name="ground">
+        <static>true</static>
+        <link name="link">
+            <visual name="v"><geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
+            <collision name="c"><geometry><plane><normal>0 0 1</normal></plane></geometry></collision>
+        </link>
+    </model>
+
+    <!-- Kamera Açısı -->
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>-5 0 2 0 0.2 0</pose>
+      </camera>
+    </gui>
+
+    <!-- === YAPI KISMI === -->
+    
+    <!-- Sol Duvar (Ahsap - Renk: Kahverengi) -->
+    <model name="wood_wall_left">
+      <static>true</static>
+      <pose>0 6 2.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>30 0.5 5</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>30 0.5 5</size></box></geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient> <!-- Kahverengi -->
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Cajun Corner Store (Replaces Pillars) -->
+    <model name="cajun_corner_store">
+      <static>true</static>
+      <pose>0 -6 0 0 0 0</pose>
+      
+      <!-- Back Wall (Generic Grey) -->
+      <link name="back_wall">
+        <pose>0 -1 2 0 0 0</pose>
+        <collision name="col_bw"><geometry><box><size>10 0.5 4</size></box></geometry></collision>
+        <visual name="vis_bw"><geometry><box><size>10 0.5 4</size></box></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+      </link>
+
+      <!-- Counter (Yellowish/Orange) -->
+      <link name="counter">
+        <pose>0 1 0.5 0 0 0</pose>
+        <collision name="col_cnt"><geometry><box><size>8 0.8 1.0</size></box></geometry></collision>
+        <visual name="vis_cnt">
+            <geometry><box><size>8 0.8 1.0</size></box></geometry>
+            <material><ambient>1.0 0.8 0.2 1</ambient><diffuse>1.0 0.8 0.2 1</diffuse></material>
+        </visual>
+      </link>
+
+      <!-- Sign Board (Black with Text simulation) -->
+      <link name="sign_board">
+        <pose>0 1 3.5 0 0 0</pose>
+        <collision name="col_sgn"><geometry><box><size>8 0.2 0.8</size></box></geometry></collision>
+        <visual name="vis_sgn">
+            <geometry><box><size>8 0.2 0.8</size></box></geometry>
+            <material><ambient>0.1 0.1 0.1 1</ambient></material>
+        </visual>
+      </link>
+      
+      <!-- Side Pillars (To frame the store) -->
+      <link name="side_pillar_l">
+        <pose>-5 0 2 0 0 0</pose>
+        <visual name="v"><geometry><box><size>0.5 2.5 4</size></box></geometry><material><ambient>0.3 0.3 0.3 1</ambient></material></visual>
+      </link>
+      <link name="side_pillar_r">
+        <pose>5 0 2 0 0 0</pose>
+        <visual name="v"><geometry><box><size>0.5 2.5 4</size></box></geometry><material><ambient>0.3 0.3 0.3 1</ambient></material></visual>
+      </link>
+
+    </model>
+
+    <!-- === MASALAR (Simple Shapes) === -->
+    
+    <!-- Table Definition (Reusable logic not ideal in basic SDF, so we copy paste boxes) -->
+    <!-- Table: Cylinder leg + Box top -->
+    
+    <model name="table_1">
+      <static>true</static>
+      <pose>5 -2 0.4 0 0 0</pose>
+      <link name="link">
+        <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
+        <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
+        <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+        <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
+      </link>
+    </model>
+    
+    <model name="chair_1_a">
+        <static>true</static>
+        <pose>5 -2.8 0.25 0 0 0</pose>
+        <link name="link">
+            <collision name="collision"><geometry><box><size>0.4 0.4 0.5</size></box></geometry></collision>
+            <visual name="visual"><geometry><box><size>0.4 0.4 0.5</size></box></geometry><material><ambient>0.8 0.1 0.1 1</ambient></material></visual>
+        </link>
+    </model>
+
+    <model name="table_2">
+      <static>true</static>
+      <pose>5 2 0.4 0 0 0</pose>
+      <link name="link">
+        <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
+        <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
+        <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+        <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
+      </link>
+    </model>
+
+    <model name="table_3">
+      <static>true</static>
+      <pose>10 -1 0.4 0 0 0</pose>
+      <link name="link">
+         <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
+         <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
+         <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+         <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
+      </link>
+    </model>
+
+    <model name="table_4">
+      <static>true</static>
+      <pose>-5 3 0.4 0 0 0</pose>
+      <link name="link">
+         <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
+         <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
+         <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+         <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
+      </link>
+    </model>
+
+     <model name="table_5">
+      <static>true</static>
+      <pose>-5 -3 0.4 0 0 0</pose>
+      <link name="link">
+         <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
+         <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
+         <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+         <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
+      </link>
+    </model>
+    
+    <!-- === POSTERS (Integrated) === -->
+    <include>
+      <uri>model://poster_board_1</uri>
+      <name>noticeboard_1</name>
+      <pose>-2 5.74 1.25 0 0 -1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://poster_board_2</uri>
+      <name>noticeboard_2</name>
+      <pose>2 5.74 1.25 0 0 -1.57</pose>
+    </include>
+    
+    <include>
+      <uri>model://poster_board_3</uri>
+      <name>noticeboard_3</name>
+      <pose>6 5.74 1.25 0 0 -1.57</pose>
+    </include>
+
+  </world>
+</sdf>
