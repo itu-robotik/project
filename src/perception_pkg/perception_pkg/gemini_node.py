@@ -149,8 +149,8 @@ class PerceptionNode(Node):
             
             for cnt in contours:
                 area = cv2.contourArea(cnt)
-                if area > 1000: # Reduced threshold
-                    epsilon = 0.02 * cv2.arcLength(cnt, True)
+                if area > 200: # Reduced threshold even more for distant objects
+                    epsilon = 0.04 * cv2.arcLength(cnt, True)
                     approx = cv2.approxPolyDP(cnt, epsilon, True)
                     
                     if len(approx) == 4:

@@ -62,7 +62,7 @@ class PosterLogger(Node):
         dist = msg.data[2]
         yaw_err = msg.data[3]
         
-        if found and dist < 3.5: # Only log if reasonably close and confident
+        if found and dist < 6.0: # Log even if further away
             self.register_poster(dist, yaw_err)
 
     def register_poster(self, dist, yaw_err):

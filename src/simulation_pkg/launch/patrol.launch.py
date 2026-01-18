@@ -52,7 +52,8 @@ def generate_launch_description():
             '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
             '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
             '/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry',
-            '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock'
+            '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock',
+            '/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V'
         ], 
         output='screen'
     )
@@ -61,12 +62,15 @@ def generate_launch_description():
     tf_base = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        arguments=['0','0','0','0','0','0', 'base_footprint', 'base_link']
+        arguments=['0','0','0','0','0','0', 'base_footprint', 'base_link'],
+        parameters=[{'use_sim_time': True}]
     )
+    # Lidar TF - Gazebo uses 'itu_bot/chassis/lidar' as frame name
     tf_scan = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        arguments=['0','0','0.17','0','0','0', 'base_link', 'base_scan']
+        arguments=['0.1','0','0.25','0','0','0', 'base_link', 'itu_bot/chassis/lidar'],
+        parameters=[{'use_sim_time': True}]
     )
 
     # 5. Nav2 Bringup
@@ -95,6 +99,22 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}]
     )
 
+    # 8. Initial Pose Publisher (for AMCL localization)
+    initial_pose = Node(
+        package='simulation_pkg',
+        executable='initial_pose_pub.py',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
+    )
+
+    # 9. Planner Node (sends goals to patrol_node)
+    planner = Node(
+        package='simulation_pkg',
+        executable='planner_node.py',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
+    )
+
     return LaunchDescription([
         declare_map_yaml_cmd,
         gz_resource_path, 
@@ -105,5 +125,8 @@ def generate_launch_description():
         tf_scan, 
         nav2,
         perception,
-        patrol
+        patrol,
+        initial_pose,
+        planner
     ])
+

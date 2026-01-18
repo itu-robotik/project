@@ -17,15 +17,16 @@ class PlannerNode(Node):
         self.memory = self.load_memory()
         
         # 2. Pano Koordinatlari (Gazebo'daki Konumlar)
-        # Posters are at y = -9.6, facing +Y (1.57).
-        # Robot should be at y = -8.0, facing -Y (-1.57) to see them.
+        # Posters are at y = -4.8, facing +Y (1.57).
+        # Robot should be at y = -4.0, facing -Y (-1.57) to see them.
+        # World size: 15x10m
         self.board_locations = {
-            "1": {"x": -10.0, "y": -8.0, "theta": -1.57},
-            "2": {"x":  -7.0, "y": -8.0, "theta": -1.57},
-            "3": {"x":  -1.0, "y": -8.0, "theta": -1.57},
-            "4": {"x":   2.0, "y": -8.0, "theta": -1.57},
-            "5": {"x":   9.0, "y": -8.0, "theta": -1.57},
-            "6": {"x":  12.0, "y": -8.0, "theta": -1.57}
+            "1": {"x": -5.0, "y": -4.0, "theta": -1.57},
+            "2": {"x": -3.5, "y": -4.0, "theta": -1.57},
+            "3": {"x": -0.5, "y": -4.0, "theta": -1.57},
+            "4": {"x":  1.0, "y": -4.0, "theta": -1.57},
+            "5": {"x":  4.5, "y": -4.0, "theta": -1.57},
+            "6": {"x":  6.0, "y": -4.0, "theta": -1.57}
         }
         
         # 3. Yayin ve Abonelikler
@@ -46,12 +47,12 @@ class PlannerNode(Node):
         # Default Template
         default_memory = {
             "boards": {
-                "1": {"id": 1, "x": -10.0, "y": -8.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
-                "2": {"id": 2, "x":  -7.0, "y": -8.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
-                "3": {"id": 3, "x":  -1.0, "y": -8.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
-                "4": {"id": 4, "x":   2.0, "y": -8.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
-                "5": {"id": 5, "x":   9.0, "y": -8.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
-                "6": {"id": 6, "x":  12.0, "y": -8.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0}
+                "1": {"id": 1, "x": -5.0, "y": -4.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
+                "2": {"id": 2, "x": -3.5, "y": -4.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
+                "3": {"id": 3, "x": -0.5, "y": -4.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
+                "4": {"id": 4, "x":  1.0, "y": -4.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
+                "5": {"id": 5, "x":  4.5, "y": -4.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0},
+                "6": {"id": 6, "x":  6.0, "y": -4.0, "theta": -1.57, "status": "unknown", "visit_count": 0, "last_visit": 0}
             },
             "history": []
         }

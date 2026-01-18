@@ -39,6 +39,8 @@ install(PROGRAMS
   scripts/camera_monitor.py
   scripts/poster_logger.py
   scripts/simple_explorer.py
+  scripts/auto_explorer.py
+  scripts/initial_pose_pub.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

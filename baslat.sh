@@ -31,6 +31,9 @@ if [ -f ~/itu_robotics_ws/itu_project_ws/secrets.env ]; then
     source ~/itu_robotics_ws/itu_project_ws/secrets.env
 fi
 
+# Set Gazebo Resource Path for models (poster boards, etc.)
+export GZ_SIM_RESOURCE_PATH="$WS_DIR/install/simulation_pkg/share/simulation_pkg/models:${GZ_SIM_RESOURCE_PATH:-}"
+
 # Log Management
 LOG_DIR="$WS_DIR/log"
 mkdir -p "$LOG_DIR"
