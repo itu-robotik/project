@@ -50,6 +50,7 @@ class PatrolNode(Node):
         self.get_logger().info("🤖 Patrol Node (Nav2 Integrated) Ready!")
 
     def publish_status(self):
+        self.get_logger().info(f"📤 Publishing Status: {self.state}") # Debug
         self.status_pub.publish(String(data=self.state))
 
     def analysis_done_callback(self, msg):
@@ -72,7 +73,11 @@ class PatrolNode(Node):
         goal_msg.pose = pose_msg
         
         self.get_logger().info("🚀 Sending goal to Nav2...")
-        self.nav_to_pose_client.wait_for_server()
+        
+        if not self.nav_to_pose_client.wait_for_server(timeout_sec=1.0):
+            self.get_logger().error("❌ Nav2 Action Server not active! Goal ignored.")
+            self.state = "IDLE"
+            return
         
         self._send_goal_future = self.nav_to_pose_client.send_goal_async(goal_msg)
         self._send_goal_future.add_done_callback(self.goal_response_callback)

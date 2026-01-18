@@ -41,6 +41,7 @@ install(PROGRAMS
   scripts/simple_explorer.py
   scripts/auto_explorer.py
   scripts/initial_pose_pub.py
+  scripts/sequential_planner.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
