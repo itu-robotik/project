@@ -1,0 +1,38 @@
+{
+    "1": {
+        "x": 0.0,
+        "y": 0.0,
+        "theta": 0.0,
+        "description": "Başlangıç noktası - Ana koridor girişi"
+    },
+    "2": {
+        "x": 2.0,
+        "y": 0.0,
+        "theta": 0.0,
+        "description": "Ana koridor - Pano 1 ile 3 arasında yol üzerinde"
+    },
+    "3": {
+        "x": 4.0,
+        "y": 0.0,
+        "theta": 0.0,
+        "description": "Ana koridor sonu - Hedef pano"
+    },
+    "4": {
+        "x": 2.0,
+        "y": 1.5,
+        "theta": 1.57,
+        "description": "Yan koridor - Pano 2'ye yakın ama yol üzerinde değil"
+    },
+    "5": {
+        "x": 1.0,
+        "y": 0.3,
+        "theta": 0.0,
+        "description": "Ana koridor - Pano 1 ile 2 arasında yol üzerinde (test için)"
+    },
+    "6": {
+        "x": 3.0,
+        "y": -0.2,
+        "theta": 0.0,
+        "description": "Ana koridor - Pano 2 ile 3 arasında yol üzerinde (test için)"
+    }
+}
