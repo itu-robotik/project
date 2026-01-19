@@ -41,7 +41,7 @@ def generate_launch_description():
         package='ros_gz_sim', 
         executable='create', 
         arguments=['-name', 'itu_bot', '-file', robot_file, '-z', '0.1', '-x', '0.0', '-y', '0.0'], 
-        output='screen'
+        output='log'
     )
 
     # 3. Bridge (FIXED: Unidirectional TF to prevent loop)
@@ -56,23 +56,26 @@ def generate_launch_description():
             '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
             '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V'
         ], 
-        output='screen',
+        output='log',
         parameters=[{'use_sim_time': use_sim_time}]
     )
     
     # 4. TF Publishers
+    # FIXED: Parent=base_footprint, Child=base_link (Matches standard Odom->Footprint->Base)
     tf_base = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        arguments=['0','0','0','0','0','0', 'base_link', 'base_footprint'],
-        parameters=[{'use_sim_time': True}]
+        arguments=['0','0','0','0','0','0', 'base_footprint', 'base_link'],
+        parameters=[{'use_sim_time': True}],
+        output='log'
     )
     # Lidar TF
     tf_scan = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         arguments=['0.1','0','0.25','0','0','0', 'base_link', 'itu_bot/chassis/lidar'],
-        parameters=[{'use_sim_time': True}]
+        parameters=[{'use_sim_time': True}],
+        output='log'
     )
 
     # 5. Nav2 Bringup (Event-Driven: Starts after Spawn)
@@ -105,7 +108,7 @@ def generate_launch_description():
     initial_pose_node = Node(
         package='simulation_pkg',
         executable='initial_pose_pub.py',
-        output='screen',
+        output='log',
         parameters=[{'use_sim_time': use_sim_time}]
     )
 
@@ -124,9 +127,9 @@ def generate_launch_description():
             target_action=spawn,
             on_exit=[
                 nav2_launch,
-                TimerAction(period=5.0, actions=[initial_pose_node]),
-                TimerAction(period=8.0, actions=[patrol_node]),
-                TimerAction(period=10.0, actions=[planner_node])
+                TimerAction(period=15.0, actions=[initial_pose_node]),
+                TimerAction(period=20.0, actions=[patrol_node]),
+                TimerAction(period=25.0, actions=[planner_node])
             ]
         )
     )

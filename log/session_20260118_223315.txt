@@ -1,0 +1,1195 @@
+[INFO] [launch]: All log files can be found below /home/metin/.ros/log/2026-01-18-22-33-20-730947-metin-MSI-94241
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo-1]: process started with pid [94248]
+[INFO] [parameter_bridge-2]: process started with pid [94251]
+[INFO] [static_transform_publisher-3]: process started with pid [94253]
+[INFO] [static_transform_publisher-4]: process started with pid [94255]
+[INFO] [create-5]: process started with pid [94257]
+[INFO] [gemini_node-6]: process started with pid [94259]
+[static_transform_publisher-3] [WARN] [1768764801.044520608] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-4] [WARN] [1768764801.044521913] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-3] [INFO] [1768764801.059353848] [static_transform_publisher_YL4LCCOnjvJ3zxnS]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'base_link' to 'base_footprint'
+[static_transform_publisher-4] [INFO] [1768764801.060244254] [static_transform_publisher_rdwde2gEDLXQojWT]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.100000', '0.000000', '0.250000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_link' to 'itu_bot/chassis/lidar'
+[create-5] [INFO] [1768764801.078649492] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-2] [INFO] [1768764801.100131726] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera (gz.msgs.Image) -> /camera (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768764801.101918767] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768764801.102586264] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768764801.103339068] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768764801.104441353] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768764801.104933451] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[ign gazebo-1] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ""
+[gemini_node-6] /home/metin/.local/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.12) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+[gemini_node-6]   warnings.warn(message, FutureWarning)
+[gemini_node-6] [INFO] [1768764801.845589622] [perception_node]: 🔑 API Key Yüklendi: AIzaS...Q4Q
+[gemini_node-6] [INFO] [1768764801.845909963] [perception_node]: 🔍 Uygun Modeller Listeleniyor...
+[create-5] [INFO] [1768764801.880631398] [ros_gz_sim]: Requested creation of entity.
+[create-5] [INFO] [1768764801.880666553] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-5]: process has finished cleanly [pid 94257]
+[gemini_node-6] [INFO] [1768764802.219275359] [perception_node]: 📋 Bulunan Modeller: ['models/gemini-2.5-flash', 'models/gemini-2.5-pro', 'models/gemini-2.0-flash-exp', 'models/gemini-2.0-flash', 'models/gemini-2.0-flash-001', 'models/gemini-2.0-flash-exp-image-generation', 'models/gemini-2.0-flash-lite-001', 'models/gemini-2.0-flash-lite', 'models/gemini-2.0-flash-lite-preview-02-05', 'models/gemini-2.0-flash-lite-preview', 'models/gemini-exp-1206', 'models/gemini-2.5-flash-preview-tts', 'models/gemini-2.5-pro-preview-tts', 'models/gemma-3-1b-it', 'models/gemma-3-4b-it', 'models/gemma-3-12b-it', 'models/gemma-3-27b-it', 'models/gemma-3n-e4b-it', 'models/gemma-3n-e2b-it', 'models/gemini-flash-latest', 'models/gemini-flash-lite-latest', 'models/gemini-pro-latest', 'models/gemini-2.5-flash-lite', 'models/gemini-2.5-flash-image', 'models/gemini-2.5-flash-preview-09-2025', 'models/gemini-2.5-flash-lite-preview-09-2025', 'models/gemini-3-pro-preview', 'models/gemini-3-flash-preview', 'models/gemini-3-pro-image-preview', 'models/nano-banana-pro-preview', 'models/gemini-robotics-er-1.5-preview', 'models/gemini-2.5-computer-use-preview-10-2025', 'models/deep-research-pro-preview-12-2025']
+[gemini_node-6] [INFO] [1768764802.219589556] [perception_node]: ✅ OTOMATIK SEÇİLEN MODEL: models/gemini-2.5-flash
+[gemini_node-6] [WARN] [1768764802.650053670] [perception_node]: ⚠️ Bağlantı testi başarısız, ancak devam ediliyor.
+[gemini_node-6] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in "/home/metin/.local/lib/python3.10/site-packages/cv2/qt/plugins"
+[INFO] [component_container_isolated-7]: process started with pid [94528]
+[component_container_isolated-7] [INFO] [1768764804.813495195] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[component_container_isolated-7] [INFO] [1768764804.834353933] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-7] [INFO] [1768764804.834432027] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-7] [INFO] [1768764804.834441055] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-7] [INFO] [1768764804.834446831] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-7] [INFO] [1768764804.859249127] [map_server]: 
+[component_container_isolated-7] 	map_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1768764804.859341166] [map_server]: Creating
+[component_container_isolated-7] [INFO] [1768764804.859774908] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764804.865846465] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-7] [INFO] [1768764804.865942797] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-7] [INFO] [1768764804.885633204] [controller_server]: 
+[component_container_isolated-7] 	controller_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1768764804.890190939] [controller_server]: Creating controller server
+[component_container_isolated-7] [INFO] [1768764804.909933524] [local_costmap.local_costmap]: 
+[component_container_isolated-7] 	local_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1768764804.910778177] [local_costmap.local_costmap]: Creating Costmap
+[component_container_isolated-7] [INFO] [1768764804.913183241] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764804.916048779] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-7] [INFO] [1768764804.916088701] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-7] [INFO] [1768764804.934638819] [amcl]: 
+[component_container_isolated-7] 	amcl lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1768764804.935295218] [amcl]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764804.938569061] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[component_container_isolated-7] [INFO] [1768764804.941410905] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-7] [INFO] [1768764804.941484933] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-7] [INFO] [1768764804.961789594] [smoother_server]: 
+[component_container_isolated-7] 	smoother_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1768764804.963710782] [smoother_server]: Creating smoother server
+[component_container_isolated-7] [INFO] [1768764804.965262833] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764804.966453152] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1768764804.966546165] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1768764804.983673359] [lifecycle_manager_localization]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764804.991284476] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-7] [INFO] [1768764804.991336589] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-7] [INFO] [1768764804.992346140] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-7] [INFO] [1768764804.992376777] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-7] [INFO] [1768764805.006088110] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.006214592] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.006807241] [map_server]: Configuring
+[component_container_isolated-7] [INFO] [1768764805.007048448] [map_io]: Loading yaml file: /home/metin/itu_robotics_ws/itu_robotics_combined_ws/maps/cafeteria_map.yaml
+[component_container_isolated-7] [INFO] [1768764805.007713471] [map_io]: resolution: 0.05
+[component_container_isolated-7] [INFO] [1768764805.007772370] [map_io]: origin[0]: -7.41
+[component_container_isolated-7] [INFO] [1768764805.007781886] [map_io]: origin[1]: -5.01
+[component_container_isolated-7] [INFO] [1768764805.007788717] [map_io]: origin[2]: 0
+[component_container_isolated-7] [INFO] [1768764805.007795005] [map_io]: free_thresh: 0.25
+[component_container_isolated-7] [INFO] [1768764805.007799646] [map_io]: occupied_thresh: 0.65
+[component_container_isolated-7] [INFO] [1768764805.007817238] [map_io]: mode: trinary
+[component_container_isolated-7] [INFO] [1768764805.007825904] [map_io]: negate: 0
+[component_container_isolated-7] [INFO] [1768764805.008145588] [map_io]: Loading image_file: /home/metin/itu_robotics_ws/itu_robotics_combined_ws/maps/cafeteria_map.pgm
+[component_container_isolated-7] [INFO] [1768764805.017209980] [map_io]: Read map /home/metin/itu_robotics_ws/itu_robotics_combined_ws/maps/cafeteria_map.pgm: 296 X 199 map @ 0.05 m/cell
+[component_container_isolated-7] [INFO] [1768764805.036705733] [planner_server]: 
+[component_container_isolated-7] 	planner_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1768764805.038570372] [planner_server]: Creating
+[component_container_isolated-7] [INFO] [1768764805.040097293] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.041183803] [amcl]: Configuring
+[component_container_isolated-7] [INFO] [1768764805.041364335] [amcl]: initTransforms
+[component_container_isolated-7] [INFO] [1768764805.070477548] [amcl]: initPubSub
+[component_container_isolated-7] [INFO] [1768764805.082881015] [global_costmap.global_costmap]: 
+[component_container_isolated-7] 	global_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1768764805.083545613] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764805.089329107] [amcl]: Subscribed to map topic.
+[component_container_isolated-7] [INFO] [1768764805.092223981] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[component_container_isolated-7] [INFO] [1768764805.097445224] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-7] [INFO] [1768764805.097528557] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-7] [INFO] [1768764805.101707777] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.104062399] [map_server]: Activating
+[component_container_isolated-7] [INFO] [1768764805.104328071] [map_server]: Creating bond (map_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768764805.104512354] [amcl]: Received a 296 X 199 map @ 0.050 m/pix
+[component_container_isolated-7] [INFO] [1768764805.142710362] [behavior_server]: 
+[component_container_isolated-7] 	behavior_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764805.148390322] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[component_container_isolated-7] [INFO] [1768764805.151917582] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-7] [INFO] [1768764805.152002630] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-7] [INFO] [1768764805.192145454] [bt_navigator]: 
+[component_container_isolated-7] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1768764805.192357873] [bt_navigator]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764805.196338133] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-7] [INFO] [1768764805.197347169] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-7] [INFO] [1768764805.197388418] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-7] [INFO] [1768764805.215329951] [waypoint_follower]: 
+[component_container_isolated-7] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1768764805.215779169] [waypoint_follower]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764805.218600758] [nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[component_container_isolated-7] [INFO] [1768764805.219389288] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-7] [INFO] [1768764805.219412465] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-7] [INFO] [1768764805.227191465] [lifecycle_manager_localization]: Server map_server connected with bond.
+[component_container_isolated-7] [INFO] [1768764805.227262977] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.227524680] [amcl]: Activating
+[component_container_isolated-7] [INFO] [1768764805.227607537] [amcl]: Creating bond (amcl) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768764805.256608701] [velocity_smoother]: 
+[component_container_isolated-7] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764805.260684053] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1768764805.260753939] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1768764805.288756631] [lifecycle_manager_navigation]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1768764805.293246334] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.323910884] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.324031260] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.324400995] [controller_server]: Configuring controller interface
+[component_container_isolated-7] [INFO] [1768764805.324797770] [controller_server]: getting goal checker plugins..
+[component_container_isolated-7] [INFO] [1768764805.324945504] [controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-7] [INFO] [1768764805.324993697] [local_costmap.local_costmap]: Configuring
+[component_container_isolated-7] [INFO] [1768764805.338411308] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-7] [INFO] [1768764805.340646835] [lifecycle_manager_localization]: Server amcl connected with bond.
+[component_container_isolated-7] [INFO] [1768764805.340684121] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.340693747] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.343790794] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-7] [INFO] [1768764805.359607777] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-7] [INFO] [1768764805.359648403] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1768764805.360575641] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1768764805.377783968] [amcl]: createLaserObject
+[component_container_isolated-7] [INFO] [1768764805.391621616] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-7] [INFO] [1768764805.393647799] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-7] [INFO] [1768764805.395334822] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[component_container_isolated-7] [INFO] [1768764805.397414473] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[component_container_isolated-7] [INFO] [1768764805.398864290] [controller_server]: Setting transform_tolerance to 0.200000
+[component_container_isolated-7] [INFO] [1768764805.424369459] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[component_container_isolated-7] [INFO] [1768764805.427482905] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1768764805.427783346] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[component_container_isolated-7] [INFO] [1768764805.429814020] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1768764805.430272106] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[component_container_isolated-7] [INFO] [1768764805.430630818] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1768764805.430806595] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[component_container_isolated-7] [INFO] [1768764805.431799502] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1768764805.432032838] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[component_container_isolated-7] [INFO] [1768764805.432616442] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1768764805.432851438] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[component_container_isolated-7] [INFO] [1768764805.433264294] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1768764805.433449387] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[component_container_isolated-7] [INFO] [1768764805.433813682] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1768764805.433847690] [controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-7] [INFO] [1768764805.454068902] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.454404426] [smoother_server]: Configuring smoother server
+[component_container_isolated-7] [INFO] [1768764805.473261608] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-7] [INFO] [1768764805.475639869] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-7] [INFO] [1768764805.492376036] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.492735919] [planner_server]: Configuring
+[component_container_isolated-7] [INFO] [1768764805.492873440] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-7] [INFO] [1768764805.500051603] [global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-7] [INFO] [1768764805.501326621] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[component_container_isolated-7] [INFO] [1768764805.504234600] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-7] [INFO] [1768764805.504335982] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-7] [INFO] [1768764805.506552615] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-7] [INFO] [1768764805.516201599] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-7] [INFO] [1768764805.516250108] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1768764805.517710252] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1768764805.537976428] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 296 X 199 at 0.050000 m/pix
+[component_container_isolated-7] [INFO] [1768764805.539085396] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-7] [INFO] [1768764805.539235270] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1768764805.541200740] [planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-7] [INFO] [1768764805.569958628] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.570764739] [behavior_server]: Configuring
+[component_container_isolated-7] [INFO] [1768764805.586768847] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-7] [INFO] [1768764805.587931257] [behavior_server]: Configuring spin
+[component_container_isolated-7] [INFO] [1768764805.606185198] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[component_container_isolated-7] [INFO] [1768764805.608568457] [behavior_server]: Configuring backup
+[component_container_isolated-7] [INFO] [1768764805.632386076] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[component_container_isolated-7] [INFO] [1768764805.634210924] [behavior_server]: Configuring drive_on_heading
+[component_container_isolated-7] [INFO] [1768764805.657244316] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[component_container_isolated-7] [INFO] [1768764805.659739671] [behavior_server]: Configuring assisted_teleop
+[component_container_isolated-7] [INFO] [1768764805.687684033] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[component_container_isolated-7] [INFO] [1768764805.689076165] [behavior_server]: Configuring wait
+[component_container_isolated-7] [INFO] [1768764805.712005417] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.713148626] [bt_navigator]: Configuring
+[component_container_isolated-7] [INFO] [1768764805.928304827] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.928572776] [waypoint_follower]: Configuring
+[component_container_isolated-7] [INFO] [1768764805.971512281] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-7] [INFO] [1768764805.973999666] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.975160766] [velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-7] [INFO] [1768764805.986650126] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764805.987185360] [controller_server]: Activating
+[component_container_isolated-7] [INFO] [1768764805.987281775] [local_costmap.local_costmap]: Activating
+[component_container_isolated-7] [INFO] [1768764805.987315607] [local_costmap.local_costmap]: Checking transform
+[component_container_isolated-7] [INFO] [1768764805.987533684] [local_costmap.local_costmap]: start
+[component_container_isolated-7] [INFO] [1768764806.190769082] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768764806.304954685] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-7] [INFO] [1768764806.305161805] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764806.305691143] [smoother_server]: Activating
+[component_container_isolated-7] [INFO] [1768764806.305757696] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768764806.418929094] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-7] [INFO] [1768764806.419077360] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764806.419587759] [planner_server]: Activating
+[component_container_isolated-7] [INFO] [1768764806.419674943] [global_costmap.global_costmap]: Activating
+[component_container_isolated-7] [INFO] [1768764806.419697236] [global_costmap.global_costmap]: Checking transform
+[component_container_isolated-7] [INFO] [1768764806.419720383] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1768764806.574225576] [amcl]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[component_container_isolated-7] [INFO] [1768764806.919773261] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1768764807.419805612] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1768764807.864453339] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1768764807.919804944] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1768764808.419829084] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [initial_pose_pub.py-8]: process started with pid [94774]
+[component_container_isolated-7] [INFO] [1768764808.919782457] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1768764809.419792443] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1768764809.919804664] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1768764810.419784835] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1768764810.607314997] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1768764810.919836880] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1768764811.419767845] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [patrol_node.py-9]: process started with pid [94838]
+[component_container_isolated-7] [INFO] [1768764811.919781665] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1768764812.168549955] [amcl]: initialPoseReceived
+[component_container_isolated-7] [WARN] [1768764812.168979889] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 5.671000 but the latest data is at time 5.660000, when looking up transform from frame [base_link] to frame [odom])
+[component_container_isolated-7] [INFO] [1768764812.169058238] [amcl]: Setting pose (5.671000): 0.000 0.000 0.000
+[initial_pose_pub.py-8] [INFO] [1768764812.197551530] [initial_pose_publisher]: 📍 Initial pose published to AMCL!
+[component_container_isolated-7] [INFO] [1768764812.199331567] [amcl]: initialPoseReceived
+[component_container_isolated-7] [WARN] [1768764812.199473945] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 5.693000 but the latest data is at time 5.680000, when looking up transform from frame [base_link] to frame [odom])
+[component_container_isolated-7] [INFO] [1768764812.199497062] [amcl]: Setting pose (5.693000): 0.000 0.000 0.000
+[component_container_isolated-7] [INFO] [1768764812.419816892] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 5.840000 but the earliest data is at time 6.700000, when looking up transform from frame [base_link] to frame [map]
+[patrol_node.py-9] [INFO] [1768764812.596095089] [patrol_node]: 🤖 Patrol Node (Nav2 Integrated) Ready!
+[patrol_node.py-9] [INFO] [1768764812.601529137] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764812.625890415] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764812.700259363] [amcl]: initialPoseReceived
+[component_container_isolated-7] [WARN] [1768764812.700423044] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the past.  Requested time 6.045000 but the earliest data is at time 6.700000, when looking up transform from frame [base_link] to frame [odom])
+[component_container_isolated-7] [INFO] [1768764812.700451313] [amcl]: Setting pose (6.045000): 0.000 0.000 0.000
+[component_container_isolated-7] [INFO] [1768764812.919813450] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 6.200000 but the earliest data is at time 6.700000, when looking up transform from frame [base_link] to frame [map]
+[component_container_isolated-7] [INFO] [1768764813.201288868] [amcl]: initialPoseReceived
+[component_container_isolated-7] [WARN] [1768764813.201561799] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the past.  Requested time 6.402000 but the earliest data is at time 6.700000, when looking up transform from frame [base_link] to frame [odom])
+[component_container_isolated-7] [INFO] [1768764813.201625691] [amcl]: Setting pose (6.402000): 0.000 0.000 0.000
+[component_container_isolated-7] [INFO] [1768764813.419776248] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 6.540000 but the earliest data is at time 6.700000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [sequential_planner.py-10]: process started with pid [94860]
+[initial_pose_pub.py-8] [INFO] [1768764813.703840339] [initial_pose_publisher]: ✅ Initial pose setup complete. Node shutting down.
+[component_container_isolated-7] [INFO] [1768764813.919950254] [global_costmap.global_costmap]: start
+[INFO] [initial_pose_pub.py-8]: process has finished cleanly [pid 94774]
+[patrol_node.py-9] [INFO] [1768764814.053866699] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768764814.694557856] [sequential_planner_action]: 📍 Updated Board 1 pos from Memory: (-5.0, -4.0)
+[sequential_planner.py-10] [INFO] [1768764814.695126430] [sequential_planner_action]: 📍 Updated Board 2 pos from Memory: (-3.5, -4.0)
+[sequential_planner.py-10] [INFO] [1768764814.695675172] [sequential_planner_action]: 📍 Updated Board 3 pos from Memory: (-0.5, -4.0)
+[sequential_planner.py-10] [INFO] [1768764814.696214612] [sequential_planner_action]: 📍 Updated Board 4 pos from Memory: (1.0, -4.0)
+[sequential_planner.py-10] [INFO] [1768764814.696827527] [sequential_planner_action]: 📍 Updated Board 5 pos from Memory: (4.5, -4.0)
+[sequential_planner.py-10] [INFO] [1768764814.697523979] [sequential_planner_action]: 📍 Updated Board 6 pos from Memory: (6.0, -4.0)
+[sequential_planner.py-10] [INFO] [1768764814.717408892] [sequential_planner_action]: 🧠 Sequential Planner (Smart Mode) Ready!
+[sequential_planner.py-10] [INFO] [1768764814.718055930] [sequential_planner_action]: Loaded 6 static board positions.
+[sequential_planner.py-10] [INFO] [1768764814.795998582] [sequential_planner_action]: 🔄 Round Robin Target: Board 1
+[sequential_planner.py-10] [INFO] [1768764814.796684492] [sequential_planner_action]: 🚀 Sending Goal: Board 1 at (-5.00, -4.00)
+[component_container_isolated-7] [INFO] [1768764814.972575677] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1768764814.973823488] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768764815.078209558] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-7] [INFO] [1768764815.078292239] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-7] [INFO] [1768764815.078572570] [behavior_server]: Activating
+[component_container_isolated-7] [INFO] [1768764815.078593701] [behavior_server]: Activating spin
+[component_container_isolated-7] [INFO] [1768764815.078618561] [behavior_server]: Activating backup
+[component_container_isolated-7] [INFO] [1768764815.078633661] [behavior_server]: Activating drive_on_heading
+[component_container_isolated-7] [INFO] [1768764815.078646944] [behavior_server]: Activating assisted_teleop
+[component_container_isolated-7] [INFO] [1768764815.078658522] [behavior_server]: Activating wait
+[component_container_isolated-7] [INFO] [1768764815.078672873] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768764815.183973563] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-7] [INFO] [1768764815.184067151] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-7] [INFO] [1768764815.184485151] [bt_navigator]: Activating
+[component_container_isolated-7] [INFO] [1768764815.288141797] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[patrol_node.py-9] [INFO] [1768764815.314984119] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764815.393022693] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-7] [INFO] [1768764815.393054684] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-7] [INFO] [1768764815.393267659] [waypoint_follower]: Activating
+[component_container_isolated-7] [INFO] [1768764815.393295243] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768764815.498169030] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-7] [INFO] [1768764815.498219345] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[component_container_isolated-7] [INFO] [1768764815.498516620] [velocity_smoother]: Activating
+[component_container_isolated-7] [INFO] [1768764815.498555671] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768764815.603582035] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-7] [INFO] [1768764815.603643795] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-7] [INFO] [1768764815.603652607] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-7] [INFO] [1768764815.632070172] [bt_navigator]: Begin navigating from current location (-0.02, 0.01) to (-5.00, -4.00)
+[sequential_planner.py-10] [INFO] [1768764815.632542448] [sequential_planner_action]: ✅ Goal accepted.
+[component_container_isolated-7] [WARN] [1768764815.633430439] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764815.633504960] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764815.633526100] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764815.652730068] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764815.924274049] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764815.924318282] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764815.924332387] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764815.942528449] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1768764815.943129803] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764816.360447057] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764816.924460630] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764816.924518354] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764816.924534239] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764816.942459276] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764817.396752196] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764817.923571327] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764817.923649537] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764817.923671992] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764817.942583245] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1768764817.942686717] [behavior_server]: Turning 1.57 for spin behavior.
+[parameter_bridge-2] [INFO] [1768764817.942951743] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[patrol_node.py-9] [INFO] [1768764818.438421354] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764819.480513006] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764819.642820336] [behavior_server]: spin completed successfully
+[component_container_isolated-7] [WARN] [1768764819.673312917] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764819.673362167] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764819.673376221] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764819.692429724] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764819.923270104] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764819.923305105] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764819.923315831] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764819.943005227] [behavior_server]: Running wait
+[patrol_node.py-9] [INFO] [1768764820.513140560] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764821.557297468] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764822.805924267] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764824.306291537] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764825.859317643] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764826.643239830] [behavior_server]: wait completed successfully
+[component_container_isolated-7] [WARN] [1768764826.673248223] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764826.673344143] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764826.673360244] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764826.692349620] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764826.934156200] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764826.934283874] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764826.934307629] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764826.952557992] [behavior_server]: Running backup
+[component_container_isolated-7] [INFO] [1768764826.952688040] [behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
+[patrol_node.py-9] [INFO] [1768764827.316784626] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764828.960807080] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764830.270651070] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764831.412383992] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764832.959276205] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764834.426908371] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764835.552818944] [behavior_server]: backup completed successfully
+[component_container_isolated-7] [INFO] [1768764835.603801131] [controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-7] [WARN] [1768764835.604006644] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[patrol_node.py-9] [INFO] [1768764835.854867265] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764836.655393148] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764837.315201252] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764837.704748277] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1768764838.705174261] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764838.914551401] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764839.702743012] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764839.702813159] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764839.702834261] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764839.722432873] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764839.923705588] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764839.923747747] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764839.923760560] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764839.954632711] [controller_server]: Goal was canceled. Stopping the robot.
+[component_container_isolated-7] [INFO] [1768764839.954669479] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[component_container_isolated-7] [INFO] [1768764839.954999286] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1768764839.955213293] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764839.955788927] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[patrol_node.py-9] [INFO] [1768764840.115478276] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764840.926044528] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764840.926113488] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764840.926132148] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764840.942450141] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764841.154312900] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764841.924781768] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764841.924862384] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764841.924881466] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764841.944450049] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1768764841.944654298] [behavior_server]: Turning 1.57 for spin behavior.
+[patrol_node.py-9] [INFO] [1768764842.257716686] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764843.307292963] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764843.744820455] [behavior_server]: spin completed successfully
+[component_container_isolated-7] [WARN] [1768764843.772711555] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764843.772786555] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764843.772804562] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764843.792682703] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764843.923636722] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764843.923679211] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764843.923693446] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [WARN] [1768764843.952233472] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [ERROR] [1768764843.952389315] [bt_navigator]: Goal failed
+[sequential_planner.py-10] [WARN] [1768764843.953354637] [sequential_planner_action]: ⚠️ Goal Failed (Status: 6)
+[patrol_node.py-9] [INFO] [1768764844.350149862] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764845.372623510] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768764845.372705575] [sequential_planner_action]: 🔄 Round Robin Target: Board 2
+[sequential_planner.py-10] [INFO] [1768764845.376228643] [sequential_planner_action]: 🚀 Sending Goal: Board 2 at (-3.50, -4.00)
+[component_container_isolated-7] [INFO] [1768764845.377029009] [bt_navigator]: Begin navigating from current location (-0.21, -0.05) to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764845.377617071] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764845.377652623] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764845.377665454] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[sequential_planner.py-10] [INFO] [1768764845.378235799] [sequential_planner_action]: ✅ Goal accepted.
+[component_container_isolated-7] [INFO] [1768764845.397484420] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764845.929336009] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764845.929475062] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764845.929512693] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764845.948832619] [behavior_server]: Running wait
+[patrol_node.py-9] [INFO] [1768764846.456060498] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764847.520109990] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764848.595452651] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764849.628878322] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764850.679937152] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764851.349202932] [behavior_server]: wait completed successfully
+[component_container_isolated-7] [WARN] [1768764851.378913990] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764851.379006293] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764851.379039775] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764851.397479277] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764851.743444212] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764851.929457786] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764851.929502025] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764851.929519138] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764851.947470774] [behavior_server]: Running backup
+[patrol_node.py-9] [INFO] [1768764852.775042751] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764853.837617965] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764854.889327000] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764855.919489337] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764857.037738817] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764858.091671802] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764858.347812082] [behavior_server]: backup completed successfully
+[component_container_isolated-7] [WARN] [1768764858.377784230] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764858.377847663] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764858.377863983] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764858.397511502] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764858.928945006] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764858.929023335] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764858.929041731] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764858.947286428] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1768764858.947540327] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764859.120611835] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764859.929127516] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764859.929171199] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764859.929185470] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764859.947425752] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764860.156634086] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764860.929001163] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764860.929093061] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764860.929129664] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764860.947591961] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1768764860.947679817] [behavior_server]: Turning 1.57 for spin behavior.
+[component_container_isolated-7] [WARN] [1768764861.147864293] [behavior_server]: Collision Ahead - Exiting Spin
+[component_container_isolated-7] [WARN] [1768764861.147895830] [behavior_server]: spin failed
+[component_container_isolated-7] [WARN] [1768764861.147905180] [behavior_server]: [spin] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764861.177337432] [behavior_server]: Running wait
+[patrol_node.py-9] [INFO] [1768764861.203414437] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764862.226484267] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764863.249140018] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764864.291818694] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764865.322533745] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764866.345816379] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764866.377516361] [behavior_server]: wait completed successfully
+[component_container_isolated-7] [WARN] [1768764866.407939442] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764866.407995367] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764866.408057359] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764866.427260331] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764866.929103305] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764866.929152258] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764866.929165932] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764866.947546322] [behavior_server]: Running backup
+[component_container_isolated-7] [WARN] [1768764866.947906127] [behavior_server]: Collision Ahead - Exiting DriveOnHeading
+[component_container_isolated-7] [WARN] [1768764866.947937064] [behavior_server]: backup failed
+[component_container_isolated-7] [WARN] [1768764866.947947890] [behavior_server]: [backup] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764866.977220115] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1768764866.977441473] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764867.386219872] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764867.928687198] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764867.928742076] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764867.928758564] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764867.947425298] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764868.432700915] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764868.928997113] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764868.929044252] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764868.929058060] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764868.947620047] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1768764868.947753840] [behavior_server]: Turning 1.57 for spin behavior.
+[component_container_isolated-7] [WARN] [1768764869.247950728] [behavior_server]: Collision Ahead - Exiting Spin
+[component_container_isolated-7] [WARN] [1768764869.247984240] [behavior_server]: spin failed
+[component_container_isolated-7] [WARN] [1768764869.247995884] [behavior_server]: [spin] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764869.277409750] [behavior_server]: Running wait
+[patrol_node.py-9] [INFO] [1768764869.465142833] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764870.496131236] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764871.541700157] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764872.565730107] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764873.591273432] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764874.477578258] [behavior_server]: wait completed successfully
+[component_container_isolated-7] [WARN] [1768764874.507945022] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764874.508055913] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764874.508083378] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764874.527364060] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764874.663189241] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764874.928577904] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764874.928613632] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-3.50, -4.00)
+[component_container_isolated-7] [WARN] [1768764874.928623182] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [WARN] [1768764874.957147078] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [ERROR] [1768764874.957289025] [bt_navigator]: Goal failed
+[sequential_planner.py-10] [WARN] [1768764874.958101408] [sequential_planner_action]: ⚠️ Goal Failed (Status: 6)
+[patrol_node.py-9] [INFO] [1768764875.691592375] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764876.713704027] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768764876.713744585] [sequential_planner_action]: 🔄 Round Robin Target: Board 3
+[sequential_planner.py-10] [INFO] [1768764876.716817013] [sequential_planner_action]: 🛣️  Board 1 is ON THE WAY to 3. Visiting it first!
+[sequential_planner.py-10] [INFO] [1768764876.717396350] [sequential_planner_action]: 🚀 Sending Goal: Board 1 at (-5.00, -4.00)
+[component_container_isolated-7] [INFO] [1768764876.718379881] [bt_navigator]: Begin navigating from current location (-0.41, 0.08) to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764876.718926470] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764876.718975848] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764876.718993002] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[sequential_planner.py-10] [INFO] [1768764876.719847537] [sequential_planner_action]: ✅ Goal accepted.
+[component_container_isolated-7] [INFO] [1768764876.739071830] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764876.931069776] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764876.931138867] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764876.931156734] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764876.949077203] [behavior_server]: Running backup
+[component_container_isolated-7] [WARN] [1768764876.949310485] [behavior_server]: Collision Ahead - Exiting DriveOnHeading
+[component_container_isolated-7] [WARN] [1768764876.949343628] [behavior_server]: backup failed
+[component_container_isolated-7] [WARN] [1768764876.949356255] [behavior_server]: [backup] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764876.978586788] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1768764876.978797865] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764877.752259386] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764877.929788253] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764877.929854888] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764877.929876654] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764877.948730956] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764878.794643086] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764878.929691486] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764878.929737363] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764878.929748563] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764878.949364601] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1768764878.949442003] [behavior_server]: Turning 1.57 for spin behavior.
+[component_container_isolated-7] [WARN] [1768764879.049615813] [behavior_server]: Collision Ahead - Exiting Spin
+[component_container_isolated-7] [WARN] [1768764879.049640832] [behavior_server]: spin failed
+[component_container_isolated-7] [WARN] [1768764879.049648689] [behavior_server]: [spin] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764879.078970254] [behavior_server]: Running wait
+[patrol_node.py-9] [INFO] [1768764879.827206403] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764880.858634285] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764881.899954015] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764882.921320555] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764883.946441667] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764884.279161670] [behavior_server]: wait completed successfully
+[component_container_isolated-7] [WARN] [1768764884.309736468] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764884.309870703] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764884.309893059] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764884.328816055] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764884.930122913] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764884.930184150] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764884.930201504] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764884.948871647] [behavior_server]: Running backup
+[component_container_isolated-7] [WARN] [1768764884.949126634] [behavior_server]: Collision Ahead - Exiting DriveOnHeading
+[component_container_isolated-7] [WARN] [1768764884.949164197] [behavior_server]: backup failed
+[component_container_isolated-7] [WARN] [1768764884.949177338] [behavior_server]: [backup] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764884.978589307] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1768764884.978733470] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764885.005691682] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764885.929536382] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764885.929588342] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764885.929599529] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764885.948834703] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764886.031854776] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764886.930388070] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764886.930466033] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764886.930487835] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764886.948836497] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1768764886.948929160] [behavior_server]: Turning 1.57 for spin behavior.
+[patrol_node.py-9] [INFO] [1768764887.056229962] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764888.101602077] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764888.449198022] [behavior_server]: Collision Ahead - Exiting Spin
+[component_container_isolated-7] [WARN] [1768764888.449258261] [behavior_server]: spin failed
+[component_container_isolated-7] [WARN] [1768764888.449277748] [behavior_server]: [spin] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764888.479120307] [behavior_server]: Running wait
+[patrol_node.py-9] [INFO] [1768764889.169718661] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764890.200532468] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764891.266103796] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764892.662931325] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764894.029542630] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764894.579449739] [behavior_server]: wait completed successfully
+[component_container_isolated-7] [WARN] [1768764894.609967618] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764894.610106744] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764894.610130136] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764894.628977456] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764894.931931648] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764894.932089169] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764894.932124366] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764894.949067647] [behavior_server]: Running backup
+[component_container_isolated-7] [WARN] [1768764894.949367211] [behavior_server]: Collision Ahead - Exiting DriveOnHeading
+[component_container_isolated-7] [WARN] [1768764894.949404996] [behavior_server]: backup failed
+[component_container_isolated-7] [WARN] [1768764894.949418874] [behavior_server]: [backup] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764894.978673173] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1768764894.978940237] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764895.404851974] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764895.931778103] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764895.931977207] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764895.932016705] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764895.948747330] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764896.742814975] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764896.931067136] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764896.931130769] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764896.931146143] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764896.949441186] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1768764896.949605476] [behavior_server]: Turning 1.57 for spin behavior.
+[patrol_node.py-9] [INFO] [1768764898.139947937] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764899.350640454] [behavior_server]: spin completed successfully
+[component_container_isolated-7] [WARN] [1768764899.379276718] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764899.379349924] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764899.379363541] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764899.398624320] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764899.613716883] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764899.929945544] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764899.930091616] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764899.930118738] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [WARN] [1768764899.958577647] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [ERROR] [1768764899.959339994] [bt_navigator]: Goal failed
+[sequential_planner.py-10] [WARN] [1768764899.960695820] [sequential_planner_action]: ⚠️ Goal Failed (Status: 6)
+[patrol_node.py-9] [INFO] [1768764901.047694578] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768764902.376095823] [sequential_planner_action]: 🔄 Round Robin Target: Board 4
+[patrol_node.py-9] [INFO] [1768764902.376090086] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768764902.383774931] [sequential_planner_action]: 🚀 Sending Goal: Board 4 at (1.00, -4.00)
+[component_container_isolated-7] [INFO] [1768764902.387570765] [bt_navigator]: Begin navigating from current location (-0.28, -0.03) to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764902.388245666] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764902.388282350] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764902.388329211] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[sequential_planner.py-10] [INFO] [1768764902.389269992] [sequential_planner_action]: ✅ Goal accepted.
+[component_container_isolated-7] [INFO] [1768764902.408067026] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764902.931106396] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764902.931253941] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764902.931291027] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764902.947970763] [behavior_server]: Running wait
+[patrol_node.py-9] [INFO] [1768764903.772994977] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764905.194837616] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764906.593989176] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764907.999969456] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764909.313839630] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764909.948139938] [behavior_server]: wait completed successfully
+[component_container_isolated-7] [WARN] [1768764909.979998114] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764909.980207187] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764909.980258483] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764909.998042627] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764910.731333303] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764910.930574037] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764910.930653618] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764910.930677733] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764910.948759008] [behavior_server]: Running backup
+[patrol_node.py-9] [INFO] [1768764912.114142558] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764913.577653511] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764914.955045479] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764916.412124686] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764917.986732985] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764919.472124067] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764919.749380199] [behavior_server]: backup completed successfully
+[component_container_isolated-7] [WARN] [1768764919.778618526] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764919.778684065] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764919.778696536] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764919.798093067] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764919.931186359] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764919.931262624] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764919.931274846] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764919.947982339] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1768764919.948597444] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764920.930933557] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764920.931553543] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764920.931610324] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[patrol_node.py-9] [INFO] [1768764920.942791442] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764920.948094252] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764921.930253167] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764921.930378564] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764921.930405692] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764921.948349964] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1768764921.948545882] [behavior_server]: Turning 1.57 for spin behavior.
+[patrol_node.py-9] [INFO] [1768764922.436438271] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764924.012515703] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764924.649103059] [behavior_server]: spin completed successfully
+[component_container_isolated-7] [WARN] [1768764924.678399097] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764924.678465429] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764924.678477011] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764924.698298315] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764924.930131046] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764924.930258164] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764924.930281084] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764924.948695559] [behavior_server]: Running wait
+[patrol_node.py-9] [INFO] [1768764925.587005661] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764927.085477861] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764928.575031264] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764930.122978063] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764931.569441633] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764932.449037691] [behavior_server]: wait completed successfully
+[component_container_isolated-7] [WARN] [1768764932.479368079] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764932.479458651] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764932.479480508] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764932.497930542] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764932.930133542] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764932.930238452] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764932.930262797] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764932.948284588] [behavior_server]: Running backup
+[patrol_node.py-9] [INFO] [1768764933.033006683] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764934.592729171] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764936.101838201] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764937.638441098] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764939.198104503] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764940.645789010] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764942.148648415] [behavior_server]: backup completed successfully
+[patrol_node.py-9] [INFO] [1768764942.149483126] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764942.178951489] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764942.179103734] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764942.179129797] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764942.198068967] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764942.930024166] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764942.930325498] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764942.930364872] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [WARN] [1768764942.957802989] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [ERROR] [1768764942.958229142] [bt_navigator]: Goal failed
+[sequential_planner.py-10] [WARN] [1768764942.959749990] [sequential_planner_action]: ⚠️ Goal Failed (Status: 6)
+[patrol_node.py-9] [INFO] [1768764943.463260430] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768764943.463433996] [sequential_planner_action]: 🔄 Round Robin Target: Board 5
+[sequential_planner.py-10] [INFO] [1768764943.468890036] [sequential_planner_action]: 🛣️  Board 1 is ON THE WAY to 5. Visiting it first!
+[sequential_planner.py-10] [INFO] [1768764943.469641032] [sequential_planner_action]: 🚀 Sending Goal: Board 1 at (-5.00, -4.00)
+[component_container_isolated-7] [INFO] [1768764943.471338636] [bt_navigator]: Begin navigating from current location (0.06, 0.03) to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764943.472389571] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764943.472528181] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764943.472544967] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[sequential_planner.py-10] [INFO] [1768764943.475092810] [sequential_planner_action]: ✅ Goal accepted.
+[component_container_isolated-7] [INFO] [1768764943.493051939] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1768764943.935450816] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764943.935586398] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764943.935627425] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764943.953623941] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1768764943.958103520] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764944.695502299] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764944.930308802] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764944.930384956] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764944.930406043] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764944.941594609] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764945.721463938] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764945.932646952] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764945.932711707] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764945.932726524] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764945.952175054] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1768764945.952262257] [behavior_server]: Turning 1.57 for spin behavior.
+[patrol_node.py-9] [INFO] [1768764946.747873742] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764947.652410506] [behavior_server]: spin completed successfully
+[component_container_isolated-7] [WARN] [1768764947.681896243] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1768764947.681934221] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (-5.00, -4.00)
+[component_container_isolated-7] [WARN] [1768764947.681958949] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768764947.701663601] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[patrol_node.py-9] [INFO] [1768764947.798744598] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [WARN] [1768764947.934337123] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 4.4643 Hz
+[component_container_isolated-7] [INFO] [1768764947.952315133] [controller_server]: Received a goal, begin computing control effort.
+[patrol_node.py-9] [INFO] [1768764948.831221743] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764949.002867292] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764949.858996016] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764950.052759770] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764950.897199702] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764951.052759149] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764951.939417671] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764952.102769006] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764952.965607707] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764953.102758551] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764953.998927411] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764954.152763904] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764955.059559851] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764955.202762684] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1768764956.202852100] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764956.357323505] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764957.252824892] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764957.843861314] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764958.252759423] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764958.895309482] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764959.302759301] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764959.925779000] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764960.302761311] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764960.952172351] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764961.352759395] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764962.000075788] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764962.402757835] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764963.066716826] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764963.402764785] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764964.092150679] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764964.452766671] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764965.130291979] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764965.452761773] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764966.174962241] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764966.502761873] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764967.202294672] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764967.552763397] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764968.231611936] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764968.552767719] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764969.285317008] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764969.602765685] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764970.320448684] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764970.602876266] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764971.351116917] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764971.652761252] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764972.405827195] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764972.702785314] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764973.446907238] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764973.702759188] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764974.476659531] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764974.752792314] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764975.515194253] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764975.752758822] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764976.565597975] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764976.802762422] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764977.592997456] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764977.802771350] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764978.624820864] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764978.852763442] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764979.687780541] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764979.807731091] [controller_server]: Reached the goal!
+[component_container_isolated-7] [INFO] [1768764979.841662267] [bt_navigator]: Goal succeeded
+[sequential_planner.py-10] [INFO] [1768764979.842854611] [sequential_planner_action]: 🏁 Arrived at Board 1. Starting Analysis...
+[patrol_node.py-9] [INFO] [1768764980.716540493] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764981.744037659] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764982.796461736] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764983.831613744] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764984.857931537] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764985.890265526] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764986.941935403] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764987.968856839] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764988.998459255] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764990.053918051] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768764990.201254952] [sequential_planner_action]: ✅ Analysis period ended. Resume patrol.
+[patrol_node.py-9] [INFO] [1768764991.081116383] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768764992.183310044] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768764992.183536534] [sequential_planner_action]: 🔄 Round Robin Target: Board 6
+[sequential_planner.py-10] [INFO] [1768764992.184274797] [sequential_planner_action]: 🚀 Sending Goal: Board 6 at (6.00, -4.00)
+[component_container_isolated-7] [INFO] [1768764992.184970827] [bt_navigator]: Begin navigating from current location (-4.87, -3.81) to (6.00, -4.00)
+[sequential_planner.py-10] [INFO] [1768764992.186489742] [sequential_planner_action]: ✅ Goal accepted.
+[component_container_isolated-7] [INFO] [1768764992.205811969] [controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-7] [INFO] [1768764993.256190414] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764993.298476570] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764994.306175481] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764994.593469094] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764995.306264599] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764995.638206430] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764996.356168148] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764996.690586802] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764997.356163288] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764997.777264375] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764998.406165044] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764998.876452438] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768764999.456162542] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768764999.929336199] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765000.456160071] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765000.991857319] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765001.506165181] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765002.044310578] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765002.506164689] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765003.098284597] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765003.556186323] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765004.181633302] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765004.606181430] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765005.273794478] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765005.606170794] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765006.324265777] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765006.656163273] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765007.443033328] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765007.656185724] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765008.489420851] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765008.706183289] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765009.539765773] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765009.756190911] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765010.591498297] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765010.756204065] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765011.647855780] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765011.806163795] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765012.688490522] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765012.806168606] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765013.742082863] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765013.856163794] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765014.808263804] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765014.906167421] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765015.838848909] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765015.906169764] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765016.924074584] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765016.956130936] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1768765017.956182374] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765018.026950924] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765019.006168530] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765019.067000059] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765020.056165817] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765020.137245919] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765021.056639137] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765021.204975990] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765022.106231954] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765022.294617553] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765023.106174191] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765023.412480868] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765024.156181174] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765024.579813141] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765025.206162898] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765025.648519594] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765026.206170106] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765026.703150401] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765027.256360895] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765027.742392790] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765028.256155350] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765028.862487316] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765029.306310932] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765030.098246372] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765030.356200449] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765031.144440098] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765031.356162322] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765032.214148248] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765032.406161635] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1768765033.406181579] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765033.432434011] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765034.456172719] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765034.643514230] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765035.506165171] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765035.730796097] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765036.506166848] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765036.971234905] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765037.556159651] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765038.060300348] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765038.606172584] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765039.197938471] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765039.606164525] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765040.266890936] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765040.656156610] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765041.307421227] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765041.656167669] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765042.348925035] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765042.706238398] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765043.444018706] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765043.706162700] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765044.535547643] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765044.756164793] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765045.649351782] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765045.806171270] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765046.687154705] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765046.806175713] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765047.751192250] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765047.856164738] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1768765048.361748563] [controller_server]: Reached the goal!
+[component_container_isolated-7] [INFO] [1768765048.395172874] [bt_navigator]: Goal succeeded
+[sequential_planner.py-10] [INFO] [1768765048.396896601] [sequential_planner_action]: 🏁 Arrived at Board 6. Starting Analysis...
+[patrol_node.py-9] [INFO] [1768765048.791927896] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768765049.825096837] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768765050.887578333] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768765051.921527443] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768765052.946292870] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768765053.995391093] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768765055.035715619] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768765056.067147268] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768765057.112567784] [patrol_node]: 📤 Publishing Status: IDLE
+[patrol_node.py-9] [INFO] [1768765058.474456052] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768765059.347722217] [sequential_planner_action]: ✅ Analysis period ended. Resume patrol.
+[sequential_planner.py-10] [INFO] [1768765059.897346222] [sequential_planner_action]: 🔄 Round Robin Target: Board 1
+[patrol_node.py-9] [INFO] [1768765059.897652369] [patrol_node]: 📤 Publishing Status: IDLE
+[sequential_planner.py-10] [INFO] [1768765059.900351990] [sequential_planner_action]: 🚀 Sending Goal: Board 1 at (-5.00, -4.00)
+[component_container_isolated-7] [INFO] [1768765059.902758670] [bt_navigator]: Begin navigating from current location (5.88, -4.21) to (-5.00, -4.00)
+[sequential_planner.py-10] [INFO] [1768765059.906783427] [sequential_planner_action]: ✅ Goal accepted.
+[component_container_isolated-7] [INFO] [1768765059.923910225] [controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-7] [INFO] [1768765060.974500239] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765061.526629153] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765062.024498954] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1768765063.024483681] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765063.031665374] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765064.074502958] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765064.547785123] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765065.074485106] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1768765066.124518707] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765066.198485275] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765067.174520129] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765067.948263888] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765068.174487770] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765069.059568715] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765069.224493055] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765070.098082137] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765070.224479496] [controller_server]: Passing new path to controller.
+[patrol_node.py-9] [INFO] [1768765071.145437122] [patrol_node]: 📤 Publishing Status: IDLE
+[component_container_isolated-7] [INFO] [1768765071.274478885] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1768765071.604057174] [rclcpp]: signal_handler(signum=2)
+[component_container_isolated-7] [INFO] [1768765071.604162744] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[component_container_isolated-7] [INFO] [1768765071.604255941] [bt_navigator]: Deactivating
+[component_container_isolated-7] [WARN] [1768765071.604278256] [bt_navigator]: [navigate_to_pose] [ActionServer] Requested to deactivate server but goal is still executing. Should check if action server is running before deactivating.
+[static_transform_publisher-4] [INFO] [1768765071.604121353] [rclcpp]: signal_handler(signum=2)
+[parameter_bridge-2] [INFO] [1768765071.604156632] [rclcpp]: signal_handler(signum=2)
+[static_transform_publisher-3] [INFO] [1768765071.604181555] [rclcpp]: signal_handler(signum=2)
+[sequential_planner.py-10] ✅ Hafıza yüklendi: 6 pano kaydı bulundu
+[gemini_node-6] [ERROR] [1768765071.612045537] [perception_node]: ImgCB Hatasi: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[gemini_node-6] Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[component_container_isolated-7] [INFO] [1768765071.624483153] [controller_server]: Goal was canceled. Stopping the robot.
+[component_container_isolated-7] [INFO] [1768765071.624601639] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[component_container_isolated-7] [WARN] [1768765071.624795320] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1768765071.625004074] [bt_navigator]: Goal canceled
+[component_container_isolated-7] [WARN] [1768765071.625051619] [bt_navigator]: [navigate_to_pose] [ActionServer] Stopping the thread per request.
+[component_container_isolated-7] [INFO] [1768765071.625188104] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[gemini_node-6] 🖥️  GUI Ana Thread'de başlatıldı...
+[component_container_isolated-7] [INFO] [1768765071.635802119] [bt_navigator]: Cleaning up
+[gemini_node-6] Traceback (most recent call last):
+[gemini_node-6]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/perception_pkg/lib/perception_pkg/gemini_node", line 33, in <module>
+[gemini_node-6]     sys.exit(load_entry_point('perception-pkg', 'console_scripts', 'gemini_node')())
+[gemini_node-6]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/build/perception_pkg/perception_pkg/gemini_node.py", line 433, in main
+[gemini_node-6]     rclpy.shutdown()
+[gemini_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+[gemini_node-6]     _shutdown(context=context)
+[gemini_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+[gemini_node-6]     return context.shutdown()
+[gemini_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+[gemini_node-6]     self.__context.shutdown()
+[gemini_node-6] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[sequential_planner.py-10] Traceback (most recent call last):
+[sequential_planner.py-10]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/sequential_planner.py", line 367, in <module>
+[sequential_planner.py-10]     main()
+[sequential_planner.py-10]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/sequential_planner.py", line 362, in main
+[sequential_planner.py-10]     rclpy.spin(node)
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[sequential_planner.py-10]     executor.spin_once()
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[sequential_planner.py-10]     self._spin_once_impl(timeout_sec)
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[sequential_planner.py-10]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[sequential_planner.py-10]     return next(self._cb_iter)
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 596, in _wait_for_ready_callbacks
+[sequential_planner.py-10]     wait_set = _rclpy.WaitSet(
+[sequential_planner.py-10] rclpy._rclpy_pybind11.RCLError: failed to initialize wait set: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/wait.c:130
+[patrol_node.py-9] Traceback (most recent call last):
+[patrol_node.py-9]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/patrol_node.py", line 205, in <module>
+[patrol_node.py-9]     main()
+[patrol_node.py-9]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/patrol_node.py", line 200, in main
+[patrol_node.py-9]     rclpy.spin(node)
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[patrol_node.py-9]     executor.spin_once()
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[patrol_node.py-9]     self._spin_once_impl(timeout_sec)
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[patrol_node.py-9]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[patrol_node.py-9]     return next(self._cb_iter)
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 596, in _wait_for_ready_callbacks
+[patrol_node.py-9]     wait_set = _rclpy.WaitSet(
+[patrol_node.py-9] rclpy._rclpy_pybind11.RCLError: failed to initialize wait set: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/wait.c:130
+[INFO] [parameter_bridge-2]: process has finished cleanly [pid 94251]
+[INFO] [static_transform_publisher-4]: process has finished cleanly [pid 94255]
+[INFO] [static_transform_publisher-3]: process has finished cleanly [pid 94253]
+[component_container_isolated-7] [INFO] [1768765071.800184480] [lifecycle_manager_navigation]: [34m[1mHave not received a heartbeat from bt_navigator.[0m[0m
+[component_container_isolated-7] [ERROR] [1768765071.800216598] [lifecycle_manager_navigation]: CRITICAL FAILURE: SERVER bt_navigator IS DOWN after not receiving a heartbeat for 4000 ms. Shutting down related nodes.
+[component_container_isolated-7] [INFO] [1768765071.800238519] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[component_container_isolated-7] [INFO] [1768765071.800245938] [lifecycle_manager_navigation]: [34m[1mResetting managed nodes...[0m[0m
+[component_container_isolated-7] [INFO] [1768765071.800251751] [lifecycle_manager_navigation]: [34m[1mDeactivating velocity_smoother[0m[0m
+[component_container_isolated-7] [INFO] [1768765071.800400629] [velocity_smoother]: Deactivating
+[component_container_isolated-7] [INFO] [1768765071.800433816] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765071.807419721] [bt_navigator]: Completed Cleaning up
+[component_container_isolated-7] [INFO] [1768765071.807485967] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765071.807498673] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[component_container_isolated-7] [INFO] [1768765071.807522783] [behavior_server]: Deactivating
+[component_container_isolated-7] [INFO] [1768765071.807550201] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765071.817951933] [behavior_server]: Cleaning up
+[component_container_isolated-7] [INFO] [1768765071.833096214] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765071.833141671] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[component_container_isolated-7] [INFO] [1768765071.833167600] [waypoint_follower]: Deactivating
+[component_container_isolated-7] [INFO] [1768765071.833190689] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765071.843542909] [waypoint_follower]: Cleaning up
+[component_container_isolated-7] [INFO] [1768765071.860154690] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765071.860187330] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[component_container_isolated-7] [INFO] [1768765071.860211859] [planner_server]: Deactivating
+[component_container_isolated-7] [INFO] [1768765071.860249042] [global_costmap.global_costmap]: Deactivating
+[ERROR] [sequential_planner.py-10]: process has died [pid 94860, exit code 1, cmd '/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/sequential_planner.py --ros-args --params-file /tmp/launch_params_krwrm8jq'].
+[ERROR] [patrol_node.py-9]: process has died [pid 94838, exit code 1, cmd '/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/patrol_node.py --ros-args --params-file /tmp/launch_params_0jzbe2zb'].
+[component_container_isolated-7] [INFO] [1768765071.913379940] [lifecycle_manager_navigation]: [34m[1mDeactivating waypoint_follower[0m[0m
+[component_container_isolated-7] [WARN] [1768765071.913621008] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-7] [WARN] [1768765071.913631479] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-7] [ERROR] [1768765071.913638420] [waypoint_follower]: Unable to start transition 4 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-7] [ERROR] [1768765071.913816308] [lifecycle_manager_navigation]: Failed to change state for node: waypoint_follower
+[component_container_isolated-7] [INFO] [1768765071.913833044] [lifecycle_manager_navigation]: [34m[1mDeactivating bt_navigator[0m[0m
+[component_container_isolated-7] [INFO] [1768765071.920095739] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1768765071.920134313] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[component_container_isolated-7] [WARN] [1768765071.929802557] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-7] [WARN] [1768765071.929829188] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-7] [ERROR] [1768765071.929833971] [bt_navigator]: Unable to start transition 4 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-7] [ERROR] [1768765071.930139402] [lifecycle_manager_navigation]: Failed to change state for node: bt_navigator
+[component_container_isolated-7] [INFO] [1768765071.930187843] [lifecycle_manager_navigation]: [34m[1mDeactivating behavior_server[0m[0m
+[component_container_isolated-7] [WARN] [1768765071.930276779] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-7] [WARN] [1768765071.930285402] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-7] [ERROR] [1768765071.930289058] [behavior_server]: Unable to start transition 4 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-7] [INFO] [1768765071.930402035] [planner_server]: Cleaning up
+[component_container_isolated-7] [ERROR] [1768765071.930461871] [lifecycle_manager_navigation]: Failed to change state for node: behavior_server
+[component_container_isolated-7] [INFO] [1768765071.930476671] [lifecycle_manager_navigation]: [34m[1mDeactivating planner_server[0m[0m
+[component_container_isolated-7] [WARN] [1768765071.934282434] [rcl_lifecycle]: No transition matching 4 found for current state cleaningup
+[component_container_isolated-7] [WARN] [1768765071.934302814] [rcl_lifecycle]: No transition matching 4 found for current state cleaningup
+[component_container_isolated-7] [ERROR] [1768765071.934309583] [planner_server]: Unable to start transition 4 from current state cleaningup: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-7] [ERROR] [1768765071.934554233] [lifecycle_manager_navigation]: Failed to change state for node: planner_server
+[component_container_isolated-7] [INFO] [1768765071.934575401] [lifecycle_manager_navigation]: [34m[1mDeactivating smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1768765071.934703706] [smoother_server]: Deactivating
+[component_container_isolated-7] [INFO] [1768765071.934742421] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765071.952672527] [global_costmap.global_costmap]: Cleaning up
+[component_container_isolated-7] [INFO] [1768765071.964305136] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1768765071.964712022] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1768765071.989576663] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765071.989652091] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[component_container_isolated-7] [INFO] [1768765072.046778652] [lifecycle_manager_navigation]: [34m[1mDeactivating controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1768765072.047004140] [controller_server]: Deactivating
+[component_container_isolated-7] [INFO] [1768765072.047064988] [local_costmap.local_costmap]: Deactivating
+[component_container_isolated-7] [INFO] [1768765072.187718745] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765072.299759416] [lifecycle_manager_navigation]: [34m[1mCleaning up velocity_smoother[0m[0m
+[component_container_isolated-7] [INFO] [1768765072.299972004] [velocity_smoother]: Cleaning up
+[component_container_isolated-7] [INFO] [1768765072.301800008] [lifecycle_manager_navigation]: [34m[1mCleaning up waypoint_follower[0m[0m
+[component_container_isolated-7] [WARN] [1768765072.301879128] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-7] [WARN] [1768765072.301890251] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-7] [ERROR] [1768765072.301896247] [waypoint_follower]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-7] [INFO] [1768765072.302034006] [lifecycle_manager_navigation]: [34m[1mCleaning up bt_navigator[0m[0m
+[component_container_isolated-7] [WARN] [1768765072.302118468] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-7] [WARN] [1768765072.302125339] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-7] [ERROR] [1768765072.302128676] [bt_navigator]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-7] [INFO] [1768765072.302231815] [lifecycle_manager_navigation]: [34m[1mCleaning up behavior_server[0m[0m
+[component_container_isolated-7] [WARN] [1768765072.302310871] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-7] [WARN] [1768765072.302321452] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-7] [ERROR] [1768765072.302325881] [behavior_server]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-7] [INFO] [1768765072.302456004] [lifecycle_manager_navigation]: [34m[1mCleaning up planner_server[0m[0m
+[component_container_isolated-7] [WARN] [1768765072.303330681] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-7] [WARN] [1768765072.303341078] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-7] [ERROR] [1768765072.303344939] [planner_server]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-7] [INFO] [1768765072.303461502] [lifecycle_manager_navigation]: [34m[1mCleaning up smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1768765072.303554710] [smoother_server]: Cleaning up
+[component_container_isolated-7] [INFO] [1768765072.315714218] [lifecycle_manager_navigation]: [34m[1mCleaning up controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1768765072.315839007] [controller_server]: Cleaning up
+[component_container_isolated-7] [INFO] [1768765072.324061454] [local_costmap.local_costmap]: Cleaning up
+[component_container_isolated-7] [INFO] [1768765072.351858925] [lifecycle_manager_navigation]: [34m[1mManaged nodes have been reset[0m[0m
+[component_container_isolated-7] [INFO] [1768765072.399957445] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[component_container_isolated-7] [INFO] [1768765072.399988297] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[component_container_isolated-7] [INFO] [1768765072.423632150] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[component_container_isolated-7] [INFO] [1768765072.423688628] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765072.423699340] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[component_container_isolated-7] [INFO] [1768765072.423725323] [amcl]: Deactivating
+[component_container_isolated-7] [INFO] [1768765072.423747220] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765072.433886503] [amcl]: Cleaning up
+[component_container_isolated-7] [INFO] [1768765072.440193661] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765072.440265239] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[component_container_isolated-7] [INFO] [1768765072.440286792] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765072.440295240] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[component_container_isolated-7] [INFO] [1768765072.440308314] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765072.440316047] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[component_container_isolated-7] [INFO] [1768765072.440358916] [map_server]: Deactivating
+[component_container_isolated-7] [INFO] [1768765072.440376734] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1768765072.450604586] [map_server]: Cleaning up
+[component_container_isolated-7] [INFO] [1768765072.450644468] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [ign gazebo-1]: process has finished cleanly [pid 94248]
+[INFO] [launch]: process[ign gazebo-1] was required: shutting down launched system
+[INFO] [component_container_isolated-7]: sending signal 'SIGINT' to process[component_container_isolated-7]
+[INFO] [gemini_node-6]: sending signal 'SIGINT' to process[gemini_node-6]
+[component_container_isolated-7] [INFO] [1768765073.400183339] [rclcpp]: signal_handler(signum=2)
+[ERROR] [gemini_node-6]: process has died [pid 94259, exit code 1, cmd '/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/perception_pkg/lib/perception_pkg/gemini_node --ros-args --params-file /tmp/launch_params_d_8t_mhc'].
+[ERROR] [component_container_isolated-7]: process[component_container_isolated-7] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [component_container_isolated-7]: sending signal 'SIGTERM' to process[component_container_isolated-7]
+[component_container_isolated-7] [INFO] [1768765078.404856561] [rclcpp]: signal_handler(signum=15)
+[ERROR] [component_container_isolated-7]: process[component_container_isolated-7] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [component_container_isolated-7]: sending signal 'SIGKILL' to process[component_container_isolated-7]
+[ERROR] [component_container_isolated-7]: process has died [pid 94528, exit code -9, cmd '/opt/ros/humble/lib/rclcpp_components/component_container_isolated --ros-args --log-level info --ros-args -r __node:=nav2_container --params-file /tmp/launch_params_muzszzcc --params-file /tmp/launch_params_fhwiop46 -r /tf:=tf -r /tf_static:=tf_static'].

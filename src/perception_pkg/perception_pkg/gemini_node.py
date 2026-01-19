@@ -430,7 +430,10 @@ def main(args=None):
         pass
         
     node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.shutdown()
+    except Exception:
+        pass
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':

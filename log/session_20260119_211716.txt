@@ -1,0 +1,26 @@
+[INFO] [1768846637.355624581] [planner_node]: 🧠 Planner Node (MEMORY SYSTEM) Başlatıldı!
+[INFO] [1768846637.356128407] [planner_node]: 📂 Hafıza Dosyası: /home/metin/itu_robotics_ws/itu_robotics_combined_ws/board_memory.json
+Traceback (most recent call last):
+  File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/planner_node.py", line 298, in <module>
+    main()
+  File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/planner_node.py", line 293, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 748, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 254, in __call__
+    self._handler.send(None)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 447, in handler
+    await call_coroutine(entity, arg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 361, in _execute_timer
+    await await_or_execute(tmr.callback)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+    return callback(*args)
+  File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/planner_node.py", line 192, in planning_loop
+    if info["visit_count"] == 0:
+KeyError: 'visit_count'
+[ERROR] [1768846642.494090329] [rclpy.signals]: rcl_trigger_guard_condition() failed: guard condition implementation is invalid, at ./src/rcl/guard_condition.c:172
+[ros2run]: Process exited with failure 1

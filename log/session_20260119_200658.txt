@@ -1,0 +1,489 @@
+[INFO] [launch]: All log files can be found below /home/metin/.ros/log/2026-01-19-20-07-15-475004-metin-MSI-8250
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo-1]: process started with pid [8281]
+[INFO] [create-2]: process started with pid [8284]
+[INFO] [parameter_bridge-3]: process started with pid [8286]
+[INFO] [static_transform_publisher-4]: process started with pid [8288]
+[INFO] [static_transform_publisher-5]: process started with pid [8290]
+[INFO] [async_slam_toolbox_node-6]: process started with pid [8292]
+[INFO] [controller_server-7]: process started with pid [8294]
+[INFO] [smoother_server-8]: process started with pid [8296]
+[INFO] [planner_server-9]: process started with pid [8298]
+[INFO] [behavior_server-10]: process started with pid [8300]
+[INFO] [bt_navigator-11]: process started with pid [8302]
+[INFO] [waypoint_follower-12]: process started with pid [8304]
+[INFO] [velocity_smoother-13]: process started with pid [8306]
+[INFO] [lifecycle_manager-14]: process started with pid [8308]
+[INFO] [rviz2-15]: process started with pid [8310]
+[INFO] [gemini_node-16]: process started with pid [8312]
+[INFO] [poster_logger.py-17]: process started with pid [8314]
+[INFO] [simple_explorer.py-18]: process started with pid [8316]
+[static_transform_publisher-4] [WARN] [1768842436.069026572] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-5] [WARN] [1768842436.078672581] []: Old-style arguments are deprecated; see --help for new-style arguments
+[create-2] [INFO] [1768842436.147527768] [ros_gz_sim]: Requesting list of world names.
+[async_slam_toolbox_node-6] [INFO] [1768842436.152829956] [slam_toolbox]: Node using stack size 40000000
+[static_transform_publisher-4] [INFO] [1768842436.156615423] [static_transform_publisher_oUBtOduVWfozoSYB]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_footprint' to 'base_link'
+[static_transform_publisher-5] [INFO] [1768842436.156742677] [static_transform_publisher_DYP6SwmjMPwZPfgZ]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.100000', '0.000000', '0.250000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'base_link' to 'itu_bot/chassis/lidar'
+[waypoint_follower-12] [INFO] [1768842436.159026003] [waypoint_follower]: 
+[waypoint_follower-12] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-12] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1768842436.161206485] [waypoint_follower]: Creating
+[behavior_server-10] [INFO] [1768842436.162821528] [behavior_server]: 
+[behavior_server-10] 	behavior_server lifecycle node launched. 
+[behavior_server-10] 	Waiting on external lifecycle transitions to activate
+[behavior_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1768842436.163799815] [planner_server]: 
+[planner_server-9] 	planner_server lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1768842436.164808749] [bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1768842436.164979358] [bt_navigator]: Creating
+[smoother_server-8] [INFO] [1768842436.166433160] [smoother_server]: 
+[smoother_server-8] 	smoother_server lifecycle node launched. 
+[smoother_server-8] 	Waiting on external lifecycle transitions to activate
+[smoother_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1768842436.176008071] [planner_server]: Creating
+[smoother_server-8] [INFO] [1768842436.176664336] [smoother_server]: Creating smoother server
+[lifecycle_manager-14] [INFO] [1768842436.178657421] [lifecycle_manager_navigation]: Creating
+[rviz2-15] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ""
+[controller_server-7] [INFO] [1768842436.191187395] [controller_server]: 
+[controller_server-7] 	controller_server lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[velocity_smoother-13] [INFO] [1768842436.192074316] [velocity_smoother]: 
+[velocity_smoother-13] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-13] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-7] [INFO] [1768842436.197502456] [controller_server]: Creating controller server
+[lifecycle_manager-14] [INFO] [1768842436.200534511] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[planner_server-9] [INFO] [1768842436.223424284] [global_costmap.global_costmap]: 
+[planner_server-9] 	global_costmap lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1768842436.228603254] [global_costmap.global_costmap]: Creating Costmap
+[parameter_bridge-3] [INFO] [1768842436.247945173] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera (gz.msgs.Image) -> /camera (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768842436.256716641] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/camera (sensor_msgs/msg/Image) -> /camera (gz.msgs.Image)] (Lazy 0)
+[lifecycle_manager-14] [INFO] [1768842436.261043715] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-14] [INFO] [1768842436.261092497] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[parameter_bridge-3] [INFO] [1768842436.262472364] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768842436.264724258] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/scan (sensor_msgs/msg/LaserScan) -> /scan (gz.msgs.LaserScan)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768842436.265330954] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/cmd_vel (gz.msgs.Twist) -> /cmd_vel (geometry_msgs/msg/Twist)] (Lazy 0)
+[controller_server-7] [INFO] [1768842436.264728842] [local_costmap.local_costmap]: 
+[controller_server-7] 	local_costmap lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-7] [INFO] [1768842436.265326792] [local_costmap.local_costmap]: Creating Costmap
+[controller_server-7] [INFO] [1768842436.266233861] [controller_server]: Configuring controller interface
+[controller_server-7] [INFO] [1768842436.266391067] [controller_server]: getting goal checker plugins..
+[controller_server-7] [INFO] [1768842436.266463477] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-7] [INFO] [1768842436.266500862] [local_costmap.local_costmap]: Configuring
+[parameter_bridge-3] [INFO] [1768842436.273135025] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768842436.275873457] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[controller_server-7] [INFO] [1768842436.276629809] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[parameter_bridge-3] [INFO] [1768842436.282937581] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/odom (nav_msgs/msg/Odometry) -> /odom (gz.msgs.Odometry)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768842436.285131319] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768842436.289162115] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/clock (rosgraph_msgs/msg/Clock) -> /clock (gz.msgs.Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768842436.289975509] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[async_slam_toolbox_node-6] [INFO] [1768842436.292513994] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[controller_server-7] [INFO] [1768842436.296731050] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[parameter_bridge-3] [INFO] [1768842436.299102147] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/tf (tf2_msgs/msg/TFMessage) -> /tf (gz.msgs.Pose_V)] (Lazy 0)
+[async_slam_toolbox_node-6] [INFO] [1768842436.299409092] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[controller_server-7] [INFO] [1768842436.334494571] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-7] [INFO] [1768842436.334529422] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-7] [INFO] [1768842436.338337092] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-7] [INFO] [1768842436.373009473] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-7] [INFO] [1768842436.376542162] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-7] [INFO] [1768842436.380043500] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-7] [INFO] [1768842436.393693006] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-7] [INFO] [1768842436.402353287] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-7] [INFO] [1768842436.440265598] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-7] [INFO] [1768842436.442069679] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768842436.442249223] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-7] [INFO] [1768842436.442509444] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768842436.442639720] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-7] [INFO] [1768842436.442752129] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768842436.442815996] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-7] [INFO] [1768842436.443022643] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768842436.443098779] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-7] [INFO] [1768842436.443249822] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768842436.443320808] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-7] [INFO] [1768842436.443453653] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768842436.443529647] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-7] [INFO] [1768842436.443647409] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768842436.443667090] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-14] [INFO] [1768842436.457514429] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-8] [INFO] [1768842436.457777398] [smoother_server]: Configuring smoother server
+[smoother_server-8] [INFO] [1768842436.474306119] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-8] [INFO] [1768842436.474986019] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-14] [INFO] [1768842436.483321720] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-9] [INFO] [1768842436.483951132] [planner_server]: Configuring
+[planner_server-9] [INFO] [1768842436.484028067] [global_costmap.global_costmap]: Configuring
+[planner_server-9] [INFO] [1768842436.494680775] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-9] [INFO] [1768842436.504811143] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-9] [INFO] [1768842436.506749522] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-9] [INFO] [1768842436.506784465] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-9] [INFO] [1768842436.507112959] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-9] [INFO] [1768842436.514318922] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-9] [INFO] [1768842436.514411710] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-9] [INFO] [1768842436.517524269] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-9] [INFO] [1768842436.534710909] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-9] [INFO] [1768842436.534787133] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768842436.536140422] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-14] [INFO] [1768842436.546947607] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-10] [INFO] [1768842436.547526436] [behavior_server]: Configuring
+[behavior_server-10] [INFO] [1768842436.565719934] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-10] [INFO] [1768842436.568149618] [behavior_server]: Configuring spin
+[behavior_server-10] [INFO] [1768842436.588384767] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-10] [INFO] [1768842436.590711621] [behavior_server]: Configuring backup
+[behavior_server-10] [INFO] [1768842436.602474337] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-10] [INFO] [1768842436.604478137] [behavior_server]: Configuring drive_on_heading
+[behavior_server-10] [INFO] [1768842436.612116391] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-10] [INFO] [1768842436.615978323] [behavior_server]: Configuring assisted_teleop
+[behavior_server-10] [INFO] [1768842436.628012997] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-10] [INFO] [1768842436.630723270] [behavior_server]: Configuring wait
+[lifecycle_manager-14] [INFO] [1768842436.640337311] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1768842436.640816352] [bt_navigator]: Configuring
+[ign gazebo-1] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ""
+[rviz2-15] [INFO] [1768842436.770612592] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-15] [INFO] [1768842436.770838371] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[lifecycle_manager-14] [INFO] [1768842436.783990872] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1768842436.784359313] [waypoint_follower]: Configuring
+[waypoint_follower-12] [INFO] [1768842436.808126807] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-14] [INFO] [1768842436.810378901] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-13] [INFO] [1768842436.811272554] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-14] [INFO] [1768842436.815936629] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-7] [INFO] [1768842436.817282150] [controller_server]: Activating
+[controller_server-7] [INFO] [1768842436.817350225] [local_costmap.local_costmap]: Activating
+[controller_server-7] [INFO] [1768842436.817371613] [local_costmap.local_costmap]: Checking transform
+[controller_server-7] [INFO] [1768842436.817414800] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[poster_logger.py-17] [INFO] [1768842436.818833579] [poster_logger]: Loaded 6 existing posters.
+[rviz2-15] [INFO] [1768842436.819615833] [rviz2]: Stereo is NOT SUPPORTED
+[poster_logger.py-17] [INFO] [1768842436.825814293] [poster_logger]: 📋 Poster Logger Started. Saving to: /home/metin/itu_robotics_ws/itu_robotics_combined_ws/src/simulation_pkg/scripts/board_positions.json
+[simple_explorer.py-18] [INFO] [1768842436.834497493] [auto_explorer]: 🧭 Smart Explorer Started (v2)! Steering towards open spaces.
+[rviz2-15] [INFO] [1768842436.993300631] [rviz2]: Stereo is NOT SUPPORTED
+[gemini_node-16] /home/metin/.local/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.12) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+[gemini_node-16]   warnings.warn(message, FutureWarning)
+[controller_server-7] [INFO] [1768842437.317491065] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[create-2] [INFO] [1768842437.437503973] [ros_gz_sim]: Requested creation of entity.
+[create-2] [INFO] [1768842437.437561974] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-2]: process has finished cleanly [pid 8284]
+[gemini_node-16] [INFO] [1768842437.692238794] [perception_node]: 🔑 API Key Yüklendi: AIzaS...Q4Q
+[gemini_node-16] [INFO] [1768842437.692586290] [perception_node]: 🔍 Uygun Modeller Listeleniyor...
+[controller_server-7] [INFO] [1768842437.817485014] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[gemini_node-16] [INFO] [1768842438.126795045] [perception_node]: 📋 Bulunan Modeller: ['models/gemini-2.5-flash', 'models/gemini-2.5-pro', 'models/gemini-2.0-flash-exp', 'models/gemini-2.0-flash', 'models/gemini-2.0-flash-001', 'models/gemini-2.0-flash-exp-image-generation', 'models/gemini-2.0-flash-lite-001', 'models/gemini-2.0-flash-lite', 'models/gemini-2.0-flash-lite-preview-02-05', 'models/gemini-2.0-flash-lite-preview', 'models/gemini-exp-1206', 'models/gemini-2.5-flash-preview-tts', 'models/gemini-2.5-pro-preview-tts', 'models/gemma-3-1b-it', 'models/gemma-3-4b-it', 'models/gemma-3-12b-it', 'models/gemma-3-27b-it', 'models/gemma-3n-e4b-it', 'models/gemma-3n-e2b-it', 'models/gemini-flash-latest', 'models/gemini-flash-lite-latest', 'models/gemini-pro-latest', 'models/gemini-2.5-flash-lite', 'models/gemini-2.5-flash-image', 'models/gemini-2.5-flash-preview-09-2025', 'models/gemini-2.5-flash-lite-preview-09-2025', 'models/gemini-3-pro-preview', 'models/gemini-3-flash-preview', 'models/gemini-3-pro-image-preview', 'models/nano-banana-pro-preview', 'models/gemini-robotics-er-1.5-preview', 'models/gemini-2.5-computer-use-preview-10-2025', 'models/deep-research-pro-preview-12-2025']
+[gemini_node-16] [INFO] [1768842438.127319137] [perception_node]: ✅ OTOMATIK SEÇİLEN MODEL: models/gemini-2.5-flash
+[controller_server-7] [INFO] [1768842438.317457704] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768842438.817490459] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768842439.317449271] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768842439.817457663] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[parameter_bridge-3] [INFO] [1768842439.955948318] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[async_slam_toolbox_node-6] [INFO] [1768842440.066016414] [slam_toolbox]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.002 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-6] [WARN] [1768842440.066335321] [slam_toolbox]: minimum laser range setting (0.0 m) exceeds the capabilities of the used Lidar (0.1 m)
+[async_slam_toolbox_node-6] [WARN] [1768842440.066486768] [slam_toolbox]: maximum laser range setting (20.0 m) exceeds the capabilities of the used Lidar (10.0 m)
+[async_slam_toolbox_node-6] Info: clipped range threshold to be within minimum and maximum range!
+[async_slam_toolbox_node-6] Registering sensor: [Custom Described Lidar]
+[parameter_bridge-3] [INFO] [1768842440.069620510] [ros_gz_bridge]: Passing message from ROS tf2_msgs/msg/TFMessage to Gazebo gz.msgs.Pose_V (showing msg only once per type)
+[controller_server-7] [INFO] [1768842440.317595217] [local_costmap.local_costmap]: start
+[planner_server-9] [INFO] [1768842440.373276940] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 279 X 196 at 0.050000 m/pix
+[rviz2-15] [INFO] [1768842440.394092029] [rviz2]: Trying to create a map of size 279 x 196 using 1 swatches
+[rviz2-15] [ERROR] [1768842440.427540422] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-15] active samplers with a different type refer to the same texture image unit
+[controller_server-7] [INFO] [1768842440.518976571] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768842440.626591921] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768842440.626693968] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-8] [INFO] [1768842440.627186894] [smoother_server]: Activating
+[smoother_server-8] [INFO] [1768842440.627265745] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768842440.733924445] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768842440.734029906] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-9] [INFO] [1768842440.734532827] [planner_server]: Activating
+[planner_server-9] [INFO] [1768842440.734632571] [global_costmap.global_costmap]: Activating
+[planner_server-9] [INFO] [1768842440.734652199] [global_costmap.global_costmap]: Checking transform
+[planner_server-9] [INFO] [1768842440.734760436] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.680000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[gemini_node-16] [INFO] [1768842440.954390277] [perception_node]: 🟢 BAĞLANTI OK: Pong!
+[gemini_node-16] 
+[gemini_node-16] How can I help you today?
+[simple_explorer.py-18] [INFO] [1768842440.988308906] [auto_explorer]: 🚧 Blocked (0.59m). Turning RIGHT (Space R:4.8 > L:0.7)
+[rviz2-15] [INFO] [1768842441.125137625] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.002 for reason 'discarding message because the queue is full'
+[planner_server-9] [INFO] [1768842441.234854106] [global_costmap.global_costmap]: start
+[rviz2-15] [INFO] [1768842441.317822996] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.100 for reason 'discarding message because the queue is full'
+[gemini_node-16] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in "/home/metin/.local/lib/python3.10/site-packages/cv2/qt/plugins"
+[planner_server-9] [INFO] [1768842442.236840997] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768842442.238934857] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768842442.347249431] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768842442.347337500] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-10] [INFO] [1768842442.347774481] [behavior_server]: Activating
+[behavior_server-10] [INFO] [1768842442.347803613] [behavior_server]: Activating spin
+[behavior_server-10] [INFO] [1768842442.347814794] [behavior_server]: Activating backup
+[behavior_server-10] [INFO] [1768842442.347823086] [behavior_server]: Activating drive_on_heading
+[behavior_server-10] [INFO] [1768842442.347830362] [behavior_server]: Activating assisted_teleop
+[behavior_server-10] [INFO] [1768842442.347837872] [behavior_server]: Activating wait
+[behavior_server-10] [INFO] [1768842442.347851341] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768842442.455594809] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768842442.455656674] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1768842442.456084909] [bt_navigator]: Activating
+[bt_navigator-11] [INFO] [1768842442.569548639] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768842442.676508638] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-14] [INFO] [1768842442.676569317] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1768842442.676944693] [waypoint_follower]: Activating
+[waypoint_follower-12] [INFO] [1768842442.676977589] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768842442.787675756] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-14] [INFO] [1768842442.787724379] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-13] [INFO] [1768842442.788030625] [velocity_smoother]: Activating
+[velocity_smoother-13] [INFO] [1768842442.788093523] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768842442.899227344] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-14] [INFO] [1768842442.899550193] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-14] [INFO] [1768842442.899612632] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[rviz2-15] [INFO] [1768842446.376380440] [rviz2]: Trying to create a map of size 296 x 197 using 1 swatches
+[planner_server-9] [INFO] [1768842447.235046415] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 296 X 197 at 0.050000 m/pix
+[planner_server-9] [INFO] [1768842451.234977610] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 296 X 197 at 0.050000 m/pix
+[rviz2-15] [INFO] [1768842451.899525376] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1768842452.022653712] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.300 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1768842452.144254992] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1768842452.267146029] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1768842452.381696722] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1768842452.497083201] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.700 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1768842452.609322966] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1768842452.720561121] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 0.900 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-15] [INFO] [1768842452.836438535] [rviz2]: Message Filter dropping message: frame 'itu_bot/chassis/lidar' at time 1.000 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[poster_logger.py-17] [INFO] [1768842455.100862405] [poster_logger]: ✨ NEW BOARD DISCOVERED! ID: 7 -> Approach: [0.6, -2.4]
+[poster_logger.py-17] [INFO] [1768842455.102003634] [poster_logger]: 💾 Saved 7 posters to memory.
+[simple_explorer.py-18] [INFO] [1768842463.169137276] [auto_explorer]: 🚧 Blocked (0.59m). Turning LEFT (Space L:1.1 > R:0.9)
+[rviz2-15] [INFO] [1768842472.391788687] [rviz2]: Trying to create a map of size 297 x 197 using 1 swatches
+[planner_server-9] [INFO] [1768842473.235055482] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 197 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768842533.600364310] [auto_explorer]: 🚧 Blocked (0.58m). Turning LEFT (Space L:4.5 > R:1.3)
+[planner_server-9] [INFO] [1768842543.234991310] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 197 at 0.050000 m/pix
+[rviz2-15] [INFO] [1768842558.411548701] [rviz2]: Trying to create a map of size 297 x 198 using 1 swatches
+[planner_server-9] [INFO] [1768842559.235023254] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 198 at 0.050000 m/pix
+[rviz2-15] [INFO] [1768842590.407898359] [rviz2]: Trying to create a map of size 297 x 199 using 1 swatches
+[planner_server-9] [INFO] [1768842591.235067384] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 199 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768842600.667274559] [auto_explorer]: 🚧 Blocked (0.60m). Turning LEFT (Space L:4.0 > R:0.6)
+[planner_server-9] [INFO] [1768842625.235165322] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 199 at 0.050000 m/pix
+[async_slam_toolbox_node-6] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[async_slam_toolbox_node-6] W0119 20:10:28.170802  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842629.235110733] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 199 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:10:48.030429  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842649.235104290] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 199 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768842666.824894737] [auto_explorer]: 🚧 Blocked (0.58m). Turning RIGHT (Space R:2.0 > L:0.6)
+[async_slam_toolbox_node-6] W0119 20:11:42.736768  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842705.234957052] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 199 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:11:50.052870  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[rviz2-15] [INFO] [1768842710.407278094] [rviz2]: Trying to create a map of size 297 x 200 using 1 swatches
+[planner_server-9] [INFO] [1768842711.234957024] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[poster_logger.py-17] [INFO] [1768842713.106082170] [poster_logger]: ✨ NEW BOARD DISCOVERED! ID: 8 -> Approach: [-1.3, -3.7]
+[poster_logger.py-17] [INFO] [1768842713.106771819] [poster_logger]: 💾 Saved 8 posters to memory.
+[async_slam_toolbox_node-6] W0119 20:12:04.636138  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842727.234988616] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768842747.733049580] [auto_explorer]: 🚧 Blocked (0.59m). Turning LEFT (Space L:4.1 > R:0.6)
+[planner_server-9] [INFO] [1768842775.235004330] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:12:57.856954  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842779.234956854] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:13:16.109882  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842797.234992303] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768842814.240718014] [auto_explorer]: 🚧 Blocked (0.59m). Turning RIGHT (Space R:1.6 > L:0.6)
+[planner_server-9] [INFO] [1768842849.234955203] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:14:10.256060  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842851.234957114] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:14:28.495769  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842871.234990407] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:14:46.736637  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842889.234977357] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768842900.103243288] [auto_explorer]: 🚧 Blocked (0.59m). Turning LEFT (Space L:4.0 > R:0.6)
+[async_slam_toolbox_node-6] W0119 20:15:26.088035  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842927.234976696] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:15:44.347007  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842945.234949491] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768842961.554823179] [auto_explorer]: 🚧 Blocked (0.59m). Turning RIGHT (Space R:2.0 > L:0.6)
+[async_slam_toolbox_node-6] W0119 20:16:31.482515  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768842993.234953492] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:16:49.721776  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843011.234959403] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768843032.097054457] [auto_explorer]: 🚧 Blocked (0.59m). Turning LEFT (Space L:1.8 > R:0.7)
+[async_slam_toolbox_node-6] W0119 20:17:41.956007  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843063.235103093] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:18:01.798738  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843083.234986984] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768843100.375628136] [auto_explorer]: 🚧 Blocked (0.59m). Turning RIGHT (Space R:1.9 > L:0.6)
+[simple_explorer.py-18] [INFO] [1768843109.136240721] [auto_explorer]: 🚧 Blocked (0.60m). Turning RIGHT (Space R:4.0 > L:0.6)
+[async_slam_toolbox_node-6] W0119 20:19:02.513532  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843145.235001737] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:19:26.801271  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843169.235014352] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:19:47.481621  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843189.235785271] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768843190.392935327] [auto_explorer]: 🚧 Blocked (0.59m). Turning LEFT (Space L:1.0 > R:0.6)
+[simple_explorer.py-18] [INFO] [1768843195.939851038] [auto_explorer]: 🚧 Blocked (0.59m). Turning LEFT (Space L:4.1 > R:0.5)
+[async_slam_toolbox_node-6] W0119 20:20:28.619859  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843231.235022122] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:20:48.958791  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843251.235012870] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768843266.950417433] [auto_explorer]: 🚧 Blocked (0.58m). Turning RIGHT (Space R:1.7 > L:0.6)
+[simple_explorer.py-18] [INFO] [1768843273.684980072] [auto_explorer]: 🚧 Blocked (0.58m). Turning RIGHT (Space R:4.3 > L:0.6)
+[async_slam_toolbox_node-6] W0119 20:21:48.458534  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843311.235039368] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:22:08.222739  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843329.234983805] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768843347.739463031] [auto_explorer]: 🚧 Blocked (0.59m). Turning LEFT (Space L:1.6 > R:0.6)
+[poster_logger.py-17] [INFO] [1768843349.936662878] [poster_logger]: ✨ NEW BOARD DISCOVERED! ID: 9 -> Approach: [-6.7, -3.1]
+[poster_logger.py-17] [INFO] [1768843349.937602182] [poster_logger]: 💾 Saved 9 posters to memory.
+[planner_server-9] [INFO] [1768843383.234991294] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:23:06.330833  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843387.235103570] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:23:30.474916  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843413.235007855] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768843436.142974668] [auto_explorer]: 🚧 Blocked (0.60m). Turning RIGHT (Space R:3.1 > L:0.5)
+[async_slam_toolbox_node-6] W0119 20:24:27.289587  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843469.234974137] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[async_slam_toolbox_node-6] W0119 20:24:43.296006  8292 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[planner_server-9] [INFO] [1768843485.235086016] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 297 X 200 at 0.050000 m/pix
+[simple_explorer.py-18] [INFO] [1768843499.981466721] [auto_explorer]: 🚧 Blocked (0.58m). Turning LEFT (Space L:1.2 > R:0.9)
+[rviz2-15] [INFO] [1768843507.024526774] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-14] [INFO] [1768843507.024526901] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-13] [INFO] [1768843507.024566788] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-13] [INFO] [1768843507.024685921] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[smoother_server-8] [INFO] [1768843507.024583895] [rclcpp]: signal_handler(signum=2)
+[smoother_server-8] [INFO] [1768843507.024740085] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[static_transform_publisher-5] [INFO] [1768843507.024620165] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-11] [INFO] [1768843507.024649994] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-11] [INFO] [1768843507.024751444] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-11] [INFO] [1768843507.024830263] [bt_navigator]: Deactivating
+[bt_navigator-11] [INFO] [1768843507.024853475] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[waypoint_follower-12] [INFO] [1768843507.024657532] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-12] [INFO] [1768843507.024746752] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-12] [INFO] [1768843507.024829349] [waypoint_follower]: Deactivating
+[waypoint_follower-12] [INFO] [1768843507.024854673] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[parameter_bridge-3] [INFO] [1768843507.024700143] [rclcpp]: signal_handler(signum=2)
+[controller_server-7] [INFO] [1768843507.024718095] [rclcpp]: signal_handler(signum=2)
+[controller_server-7] [INFO] [1768843507.024920418] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[behavior_server-10] [INFO] [1768843507.024720237] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-13] [INFO] [1768843507.024777888] [velocity_smoother]: Deactivating
+[velocity_smoother-13] [INFO] [1768843507.024810822] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[smoother_server-8] [INFO] [1768843507.024821007] [smoother_server]: Deactivating
+[smoother_server-8] [INFO] [1768843507.024842957] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[controller_server-7] [INFO] [1768843507.024992757] [controller_server]: Deactivating
+[controller_server-7] [INFO] [1768843507.025037152] [local_costmap.local_costmap]: Deactivating
+[planner_server-9] [INFO] [1768843507.025404307] [rclcpp]: signal_handler(signum=2)
+[static_transform_publisher-4] [INFO] [1768843507.025449956] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-14] [INFO] [1768843507.025529464] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-14] [INFO] [1768843507.025584553] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[behavior_server-10] [INFO] [1768843507.025783855] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-10] [INFO] [1768843507.025889772] [behavior_server]: Deactivating
+[behavior_server-10] [INFO] [1768843507.025932137] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[planner_server-9] [INFO] [1768843507.025800844] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-9] [INFO] [1768843507.025876144] [planner_server]: Deactivating
+[planner_server-9] [INFO] [1768843507.025911324] [global_costmap.global_costmap]: Deactivating
+[async_slam_toolbox_node-6] [INFO] [1768843507.026228829] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-12] [INFO] [1768843507.035142573] [waypoint_follower]: Cleaning up
+[bt_navigator-11] [INFO] [1768843507.036053135] [bt_navigator]: Cleaning up
+[smoother_server-8] [INFO] [1768843507.036279339] [smoother_server]: Cleaning up
+[velocity_smoother-13] [INFO] [1768843507.037673470] [velocity_smoother]: Cleaning up
+[velocity_smoother-13] [INFO] [1768843507.037733711] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[behavior_server-10] [INFO] [1768843507.038026044] [behavior_server]: Cleaning up
+[velocity_smoother-13] [INFO] [1768843507.040600168] [velocity_smoother]: Destroying
+[gemini_node-16] 🖥️  GUI Ana Thread'de başlatıldı...
+[waypoint_follower-12] [INFO] [1768843507.058216604] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-12] [INFO] [1768843507.060331144] [waypoint_follower]: Destroying
+[behavior_server-10] [INFO] [1768843507.064801440] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[smoother_server-8] [INFO] [1768843507.064924035] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[smoother_server-8] [INFO] [1768843507.075472409] [smoother_server]: Destroying
+[gemini_node-16] Traceback (most recent call last):
+[gemini_node-16]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/perception_pkg/lib/perception_pkg/gemini_node", line 33, in <module>
+[gemini_node-16]     sys.exit(load_entry_point('perception-pkg', 'console_scripts', 'gemini_node')())
+[gemini_node-16]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/build/perception_pkg/perception_pkg/gemini_node.py", line 433, in main
+[gemini_node-16]     rclpy.shutdown()
+[gemini_node-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+[gemini_node-16]     _shutdown(context=context)
+[gemini_node-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+[gemini_node-16]     return context.shutdown()
+[gemini_node-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+[gemini_node-16]     self.__context.shutdown()
+[gemini_node-16] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[behavior_server-10] [INFO] [1768843507.103110064] [behavior_server]: Destroying
+[poster_logger.py-17] Traceback (most recent call last):
+[poster_logger.py-17]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/poster_logger.py", line 155, in <module>
+[poster_logger.py-17]     main()
+[poster_logger.py-17]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/poster_logger.py", line 152, in main
+[poster_logger.py-17]     rclpy.shutdown()
+[poster_logger.py-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+[poster_logger.py-17]     _shutdown(context=context)
+[poster_logger.py-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+[poster_logger.py-17]     return context.shutdown()
+[poster_logger.py-17]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+[poster_logger.py-17]     self.__context.shutdown()
+[poster_logger.py-17] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[controller_server-7] [INFO] [1768843507.118047548] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-7] [INFO] [1768843507.128368132] [controller_server]: Cleaning up
+[controller_server-7] [INFO] [1768843507.128889489] [local_costmap.local_costmap]: Cleaning up
+[simple_explorer.py-18] Traceback (most recent call last):
+[simple_explorer.py-18]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/simple_explorer.py", line 139, in main
+[simple_explorer.py-18]     rclpy.spin(node)
+[simple_explorer.py-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[simple_explorer.py-18]     executor.spin_once()
+[simple_explorer.py-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[simple_explorer.py-18]     self._spin_once_impl(timeout_sec)
+[simple_explorer.py-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[simple_explorer.py-18]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[simple_explorer.py-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[simple_explorer.py-18]     return next(self._cb_iter)
+[simple_explorer.py-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 624, in _wait_for_ready_callbacks
+[simple_explorer.py-18]     raise ExternalShutdownException()
+[simple_explorer.py-18] rclpy.executors.ExternalShutdownException
+[simple_explorer.py-18] 
+[simple_explorer.py-18] During handling of the above exception, another exception occurred:
+[simple_explorer.py-18] 
+[simple_explorer.py-18] Traceback (most recent call last):
+[simple_explorer.py-18]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/simple_explorer.py", line 149, in <module>
+[simple_explorer.py-18]     main()
+[simple_explorer.py-18]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/simple_explorer.py", line 146, in main
+[simple_explorer.py-18]     rclpy.shutdown()
+[simple_explorer.py-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+[simple_explorer.py-18]     _shutdown(context=context)
+[simple_explorer.py-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+[simple_explorer.py-18]     return context.shutdown()
+[simple_explorer.py-18]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+[simple_explorer.py-18]     self.__context.shutdown()
+[simple_explorer.py-18] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[controller_server-7] [INFO] [1768843507.144030114] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-7] [INFO] [1768843507.153341273] [local_costmap.local_costmap]: Destroying
+[INFO] [static_transform_publisher-5]: process has finished cleanly [pid 8290]
+[lifecycle_manager-14] [INFO] [1768843507.158871855] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[INFO] [static_transform_publisher-4]: process has finished cleanly [pid 8288]
+[bt_navigator-11] [INFO] [1768843507.165798780] [bt_navigator]: Completed Cleaning up
+[bt_navigator-11] [INFO] [1768843507.165874073] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[controller_server-7] [INFO] [1768843507.166869788] [controller_server]: Destroying
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 8286]
+[bt_navigator-11] [INFO] [1768843507.175177992] [bt_navigator]: Destroying
+[INFO] [velocity_smoother-13]: process has finished cleanly [pid 8306]
+[INFO] [async_slam_toolbox_node-6]: process has finished cleanly [pid 8292]
+[INFO] [waypoint_follower-12]: process has finished cleanly [pid 8304]
+[INFO] [smoother_server-8]: process has finished cleanly [pid 8296]
+[INFO] [behavior_server-10]: process has finished cleanly [pid 8300]
+[planner_server-9] [INFO] [1768843507.235386731] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768843507.235502473] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-9] [INFO] [1768843507.245761393] [planner_server]: Cleaning up
+[planner_server-9] [INFO] [1768843507.249466584] [global_costmap.global_costmap]: Cleaning up
+[planner_server-9] [INFO] [1768843507.251397473] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768843507.251715804] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768843507.254859377] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-9] [INFO] [1768843507.257926516] [global_costmap.global_costmap]: Destroying
+[planner_server-9] [INFO] [1768843507.261955204] [planner_server]: Destroying
+[INFO] [rviz2-15]: process has finished cleanly [pid 8310]
+[INFO] [lifecycle_manager-14]: process has finished cleanly [pid 8308]
+[INFO] [controller_server-7]: process has finished cleanly [pid 8294]
+[INFO] [bt_navigator-11]: process has finished cleanly [pid 8302]
+[INFO] [planner_server-9]: process has finished cleanly [pid 8298]
+[ERROR] [poster_logger.py-17]: process has died [pid 8314, exit code 1, cmd '/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/poster_logger.py --ros-args --params-file /tmp/launch_params_wm97yw97'].
+[ERROR] [simple_explorer.py-18]: process has died [pid 8316, exit code 1, cmd '/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/simple_explorer.py --ros-args -r __node:=auto_explorer --params-file /tmp/launch_params_nbxe6lc4'].
+[INFO] [ign gazebo-1]: process has finished cleanly [pid 8281]
+[INFO] [launch]: process[ign gazebo-1] was required: shutting down launched system
+[INFO] [gemini_node-16]: sending signal 'SIGINT' to process[gemini_node-16]
+[ERROR] [gemini_node-16]: process has died [pid 8312, exit code 1, cmd '/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/perception_pkg/lib/perception_pkg/gemini_node --ros-args --params-file /tmp/launch_params_5fwosz_l'].

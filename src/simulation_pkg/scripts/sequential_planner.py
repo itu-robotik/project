@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 """
 Sequential Planner with Memory Integration
-Integrates Emre Sarac's Planner Logic (Priority, Recycling, Memory) into a Nav2 Action Client node.
+Integrates Emre Sarac's Planner Logic (Priority, Recycling, Memory) 
+Delegates execution to patrol_node via /planner/goal
 """
 import rclpy
 from rclpy.node import Node
-from rclpy.action import ActionClient
-from nav2_msgs.action import NavigateToPose
 from geometry_msgs.msg import PoseStamped
 from std_msgs.msg import String
-from action_msgs.msg import GoalStatus
 from nav_msgs.msg import Path
 
 import json
@@ -26,7 +24,6 @@ class SequentialPlannerAction(Node):
         super().__init__('sequential_planner_action')
         
         # 1. Initialize Memory Manager
-        # We assume board_memory.json is in the workspace root or same param as before
         workspace_root = os.path.expanduser('~/itu_robotics_ws/itu_robotics_combined_ws')
         memory_path = os.path.join(workspace_root, 'board_memory.json')
         self.memory = MemoryManager(memory_file=memory_path)
@@ -37,21 +34,21 @@ class SequentialPlannerAction(Node):
         self.board_positions = self.load_board_positions(positions_path)
 
         # MERGE MEMORY POSITIONS
-        # Use coordinates from memory if they exist, overriding static file
         for bid, bdata in self.memory.boards.items():
             if bid in self.board_positions and 'x' in bdata and 'y' in bdata:
-                # Check for validity (0,0 is suspicious if originally -5, -4)
+                # Check for validity
                 if bdata['x'] != 0 or bdata['y'] != 0:
                      self.board_positions[bid]['x'] = bdata['x']
                      self.board_positions[bid]['y'] = bdata['y']
                      self.board_positions[bid]['theta'] = bdata.get('theta', self.board_positions[bid]['theta'])
                      self.get_logger().info(f"📍 Updated Board {bid} pos from Memory: ({bdata['x']}, {bdata['y']})")
         
-        # 3. Nav2 Action Client
-        self._action_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
+        # 3. Communications
+        # Publisher for Goals (to patrol_node)
+        self.goal_pub = self.create_publisher(PoseStamped, '/planner/goal', 10)
         
-        # 4. Publishers/Subscribers
-        self.status_pub = self.create_publisher(String, '/patrol/status', 10)
+        # Subscriber for Status (from patrol_node)
+        self.status_sub = self.create_subscription(String, '/patrol/status', self.status_callback, 10)
         
         # Subscribe to /poster_analysis to keep memory updated
         self.poster_sub = self.create_subscription(
@@ -63,9 +60,8 @@ class SequentialPlannerAction(Node):
         
         # Internal State
         self.current_goal_board_id = None
-        self.retry_count = 0
-        self.max_retries = 3
-        self.is_analyzing = False
+        self.robot_state = "IDLE"  # Track patrol_node state
+        self.failed_counts = {} # Track failures per board
         
         # Round Robin State
         self.all_board_ids = sorted([int(k) for k in self.board_positions.keys()])
@@ -74,16 +70,13 @@ class SequentialPlannerAction(Node):
         # Config
         self.recent_visit_threshold_minutes = 10
         
-        self.get_logger().info("🧠 Sequential Planner (Smart Mode) Ready!")
-        self.get_logger().info(f"Loaded {len(self.board_positions)} static board positions.")
+        self.get_logger().info("🧠 Sequential Planner (Coordinator Mode) Ready!")
         
         # Start the loop
         self.timer = self.create_timer(2.0, self.planning_loop_callback)
-        self.is_moving = False
         
         # 5. TF Listener and Path Subscriber for "Board on Path" Logic
         from tf2_ros import Buffer, TransformListener
-        from nav_msgs.msg import Path
         
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
@@ -99,6 +92,15 @@ class SequentialPlannerAction(Node):
         )
         
         self.previous_goal_board_id = None
+
+    def status_callback(self, msg):
+        new_state = msg.data
+        if new_state == "FAILED" and self.robot_state != "FAILED":
+             if self.current_goal_board_id is not None:
+                 self.failed_counts[self.current_goal_board_id] = self.failed_counts.get(self.current_goal_board_id, 0) + 1
+                 self.get_logger().warn(f"⚠️ Board {self.current_goal_board_id} Failed! Failure Count: {self.failed_counts[self.current_goal_board_id]}")
+        
+        self.robot_state = new_state
 
     def path_callback(self, msg: Path):
         self.nav2_path = msg
@@ -123,9 +125,6 @@ class SequentialPlannerAction(Node):
         if path is None or len(path.poses) < 2:
             return float('inf')
         min_dist = float('inf')
-        # Check every segment (heavy but accurate)
-        # Optimized: only check every Nth point or if path is simplified 
-        # But for robustness we check segments.
         for i in range(len(path.poses) - 1):
             p1 = path.poses[i].pose.position
             p2 = path.poses[i+1].pose.position
@@ -135,7 +134,6 @@ class SequentialPlannerAction(Node):
         return min_dist
 
     def find_boards_on_path(self, from_id, to_id, max_distance=1.0):
-        """Check if any boards are on the way to the target"""
         if from_id not in self.board_positions or to_id not in self.board_positions:
             return []
             
@@ -147,7 +145,6 @@ class SequentialPlannerAction(Node):
             if bid == from_id or bid == to_id:
                 continue
             
-            # Skip if visited recently
             if self.memory.is_recently_visited(bid, self.recent_visit_threshold_minutes):
                 continue
 
@@ -155,7 +152,6 @@ class SequentialPlannerAction(Node):
             if self.nav2_path and len(self.nav2_path.poses) > 0:
                 dist = self.point_to_path_distance(pos['x'], pos['y'], self.nav2_path)
             else:
-                 # Fallback to straight line
                 dist = self.point_to_line_distance(
                     pos['x'], pos['y'], 
                     from_pos['x'], from_pos['y'], 
@@ -179,7 +175,7 @@ class SequentialPlannerAction(Node):
         if len(revisit_list) == 1: return revisit_list[0]
         
         if current_pos is None: 
-            current_pos = (0,0) # Fallback
+            current_pos = (0,0)
 
         max_priority = revisit_list[0]['priority']
         same_priority = [x for x in revisit_list if x['priority'] == max_priority]
@@ -187,7 +183,6 @@ class SequentialPlannerAction(Node):
         if len(same_priority) == 1:
             return same_priority[0]
             
-        # Find closest
         best_board = None
         min_dist = float('inf')
         
@@ -212,7 +207,6 @@ class SequentialPlannerAction(Node):
         try:
             with open(filename, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                # Convert keys to int
                 return {int(k): v for k, v in data.items()}
         except Exception as e:
             self.get_logger().error(f"Error loading positions: {e}")
@@ -224,16 +218,18 @@ class SequentialPlannerAction(Node):
             data = json.loads(msg.data)
             self.get_logger().info(f"📥 Received Analysis for Board {data.get('board_id')}")
             self.memory.update_board(data)
-            
-            # If we were traveling to this board, we might consider it 'arrived' 
-            # but usually Nav2 finishes first, then we analyze.
         except Exception as e:
             self.get_logger().error(f"Failed to process analysis: {e}")
 
     def planning_loop_callback(self):
         """Main loop: Decides where to go next if idle"""
-        if self.is_moving or self.is_analyzing:
+        # Listen to patrol_node's state
+        if self.robot_state != "IDLE":
+            # self.get_logger().info(f"Waiting for robot... (State: {self.robot_state})")
             return
+        
+        # Throttle to prevent 100% CPU on rapid failures
+        time.sleep(1.0)
 
         # Update Robot Position
         current_pos = self.get_robot_pose()
@@ -242,12 +238,11 @@ class SequentialPlannerAction(Node):
 
         # DECISION LOGIC (Strict Port)
         
-        # 1. Check Revisit List (Expired, Unclear, Duplicate)
+        # 1. Check Revisit List
         revisit_list = self.memory.get_boards_needing_revisit(self.recent_visit_threshold_minutes)
         target_board_id = None
         
         if revisit_list:
-            # Pick highest priority AND closest
             target_item = self.select_closest_by_priority(revisit_list, current_pos)
             if target_item:
                 target_board_id = target_item['board_id']
@@ -256,12 +251,21 @@ class SequentialPlannerAction(Node):
             # 2. Round Robin
             available_boards = []
             for bid in self.all_board_ids:
+                if self.failed_counts.get(bid, 0) >= 3:
+                    continue # Skip failed boards
                 if not self.memory.is_recently_visited(bid, self.recent_visit_threshold_minutes):
                     available_boards.append(bid)
             
             if not available_boards:
-                self.get_logger().info("⏰ All boards visited recently. Resetting filter.")
-                available_boards = list(self.all_board_ids)
+                 # Check if we have failed boards only?
+                 if len(self.failed_counts) > 0:
+                     self.get_logger().info("⚠️ All boards visited or failed. Waiting...")
+                     return
+
+                 self.get_logger().info("⏰ All boards visited recently. Resetting filter.")
+                 available_boards = list(self.all_board_ids)
+                 # Filter failed again
+                 available_boards = [b for b in available_boards if self.failed_counts.get(b, 0) < 3]
                 
             if not available_boards:
                 return
@@ -279,14 +283,12 @@ class SequentialPlannerAction(Node):
             if on_path:
                 short_term_target = on_path[0]
                 self.get_logger().info(f"🛣️  Board {short_term_target} is ON THE WAY to {target_board_id}. Visiting it first!")
-                # Override target
                 target_board_id = short_term_target
-                # Note: We don't increment round robin index here because we want to resume original target later
 
         # EXECUTE
         if target_board_id:
-            # Only send if different from current or if we are idle
-            if target_board_id != self.current_goal_board_id or not self.is_moving:
+            # Only publish if we have a target
+            if target_board_id != self.current_goal_board_id or self.robot_state == "IDLE":
                 self.send_goal_to_board(target_board_id)
                 self.previous_goal_board_id = self.current_goal_board_id
 
@@ -298,63 +300,25 @@ class SequentialPlannerAction(Node):
         self.current_goal_board_id = board_id
         pos = self.board_positions[board_id]
         
-        # Notify
-        self.status_pub.publish(String(data=f"TRAVELING_TO_{board_id}"))
-        self.is_moving = True
+        # Create PoseStamped
+        goal_msg = PoseStamped()
+        goal_msg.header.frame_id = 'map'
+        goal_msg.header.stamp = self.get_clock().now().to_msg()
         
-        # Create Goal
-        goal_msg = NavigateToPose.Goal()
-        goal_msg.pose.header.frame_id = 'map'
-        goal_msg.pose.header.stamp = self.get_clock().now().to_msg()
-        
-        goal_msg.pose.pose.position.x = float(pos['x'])
-        goal_msg.pose.pose.position.y = float(pos['y'])
+        goal_msg.pose.position.x = float(pos['x'])
+        goal_msg.pose.position.y = float(pos['y'])
         
         theta = float(pos['theta'])
-        goal_msg.pose.pose.orientation.z = math.sin(theta / 2.0)
-        goal_msg.pose.pose.orientation.w = math.cos(theta / 2.0)
+        goal_msg.pose.orientation.z = math.sin(theta / 2.0)
+        goal_msg.pose.orientation.w = math.cos(theta / 2.0)
         
-        self.get_logger().info(f"🚀 Sending Goal: Board {board_id} at ({pos['x']:.2f}, {pos['y']:.2f})")
+        self.get_logger().info(f"🚀 Publishing Goal: Board {board_id} at ({pos['x']:.2f}, {pos['y']:.2f})")
         
-        self._action_client.wait_for_server()
-        future = self._action_client.send_goal_async(goal_msg)
-        future.add_done_callback(self.goal_response_callback)
-
-    def goal_response_callback(self, future):
-        goal_handle = future.result()
-        if not goal_handle.accepted:
-            self.get_logger().warn('❌ Goal rejected!')
-            self.is_moving = False
-            # Retry logic could go here, or just let the loop pick another one
-            return
-
-        self.get_logger().info('✅ Goal accepted.')
-        result_future = goal_handle.get_result_async()
-        result_future.add_done_callback(self.get_result_callback)
-
-    def get_result_callback(self, future):
-        result = future.result()
-        status = result.status
-        self.is_moving = False
+        # Publish to /planner/goal (PatrolNode will pick this up)
+        self.goal_pub.publish(goal_msg)
         
-        if status == GoalStatus.STATUS_SUCCEEDED:
-            self.get_logger().info(f'🏁 Arrived at Board {self.current_goal_board_id}. Starting Analysis...')
-            self.is_analyzing = True
-            self.status_pub.publish(String(data="SCANNING"))
-            
-            # Start a timer to mock "waiting for analysis"
-            # In a real scenario, we might wait for a /patrol/status update or similar
-            self.analysis_timer = self.create_timer(10.0, self.on_analysis_complete)
-            
-        else:
-            self.get_logger().warn(f'⚠️ Goal Failed (Status: {status})')
-
-    def on_analysis_complete(self):
-        self.get_logger().info("✅ Analysis period ended. Resume patrol.")
-        self.is_analyzing = False
-        if hasattr(self, 'analysis_timer'):
-            self.analysis_timer.cancel()
-            self.analysis_timer.destroy()
+        # Reset state to wait for patrol node to react
+        # (Though we rely on status callback to switch robot_state from IDLE to TRAVELING)
             
 def main(args=None):
     rclpy.init(args=args)

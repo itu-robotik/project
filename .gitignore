@@ -1,7 +1,6 @@
 # ROS 2 Build & Install
 build/
 install/
-log/
 .colcon/
 
 # Python

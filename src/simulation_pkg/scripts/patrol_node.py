@@ -3,17 +3,12 @@ import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
 from geometry_msgs.msg import Twist, PoseStamped
+from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Float32MultiArray, String
 from std_srvs.srv import Trigger
 from nav2_msgs.action import NavigateToPose
 import math
 import time
-
-# Euler transformation
-def euler_from_quaternion(x, y, z, w):
-    t3 = +2.0 * (w * z + x * y)
-    t4 = +1.0 - 2.0 * (y * y + z * z)
-    return math.atan2(t3, t4)
 
 class PatrolNode(Node):
     def __init__(self):
@@ -21,6 +16,7 @@ class PatrolNode(Node):
         
         # Subscribers / Publishers
         self.vision_sub = self.create_subscription(Float32MultiArray, '/perception/board_status', self.vision_callback, 10)
+        self.scan_sub = self.create_subscription(LaserScan, '/scan', self.scan_callback, 10)
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
         self.status_pub = self.create_publisher(String, '/patrol/status', 10)
         self.goal_sub = self.create_subscription(PoseStamped, '/planner/goal', self.goal_callback, 10)
@@ -35,6 +31,7 @@ class PatrolNode(Node):
         self.board_found = False
         self.target_locked = False
         self.latest_visual_dist = 99.0
+        self.min_front_dist = 99.0 # Lidar safety
         
         self.visual_cx_offset = 0.0
         self.visual_poster_width = 0.0
@@ -49,6 +46,36 @@ class PatrolNode(Node):
         
         self.get_logger().info("🤖 Patrol Node (Nav2 Integrated) Ready!")
 
+    # ... (rest of methods until scan_callback)
+    
+    def scan_callback(self, msg):
+        # Find minimum distance in front sector (-20 to +20 degrees)
+        # LaserScan usually starts from angle_min (often -pi) to angle_max (+pi)
+        # We need indices corresponding to front.
+        # Assuming typical 360 Lidar where index 0 is front? Or index 0 is -pi?
+        # Standard convention: 0 is front (if angle_min approx -pi, then center index is front)
+        # Wait, for standard 2D simplified Lidar:
+        # Check angle_min. 
+        # For simplicity, let's take the CENTER of the array (if ranges size ~ 360, center is 180).
+        # OR: usually index 0 is front for some, and index len/2 is front for others.
+        # SAFE APPROACH: check msg.angle_min.
+        # If min is -3.14, then FRONT is at index len(ranges)/2.
+        
+        ranges = msg.ranges
+        num_readings = len(ranges)
+        mid_index = num_readings // 2
+        window = num_readings // 10 # +/- 18 degrees approx
+        
+        # Extract front sector
+        front_ranges = ranges[mid_index - window : mid_index + window]
+        # Filter valid readings
+        valid_ranges = [r for r in front_ranges if msg.range_min < r < msg.range_max]
+        
+        if valid_ranges:
+            self.min_front_dist = min(valid_ranges)
+        else:
+            self.min_front_dist = 99.0
+
     def publish_status(self):
         self.get_logger().info(f"📤 Publishing Status: {self.state}") # Debug
         self.status_pub.publish(String(data=self.state))
@@ -57,9 +84,6 @@ class PatrolNode(Node):
         self.get_logger().info("✅ Analysis Complete. Resetting to IDLE.")
         self.state = "IDLE"
         self.target_locked = False
-        # Prevent immediate re-docking
-        # We assume nav2 updates odom internally, but for re-dock logic we might need simple distance check
-        # For now, let's rely on Planner sending us away.
 
     def goal_callback(self, msg):
         self.get_logger().info(f"📨 Received Goal: [{msg.pose.position.x:.2f}, {msg.pose.position.y:.2f}]")
@@ -98,24 +122,34 @@ class PatrolNode(Node):
         status = future.result().status
         
         if status == 4: # SUCCEEDED
-            self.get_logger().info("🏁 Nav2 Reached Goal! Switching to SCANNING.")
-            self.state = "SCANNING"
-            self.scan_start_time = time.time()
+            self.get_logger().info("🏁 Nav2 Reached Goal!")
+            
+            # Check if we already see the board?
+            if self.board_found and self.latest_visual_dist < 4.0:
+                 self.get_logger().info("📍 Board already in view! Skipping SCANNING.")
+                 self.state = "NAVIGATE_TO_DOCK"
+                 self.target_locked = True
+            else:
+                 self.get_logger().info("🔍 Switching to SCANNING.")
+                 self.state = "SCANNING"
+                 self.scan_start_time = time.time()
         else:
              self.get_logger().warn(f"⚠️ Nav2 Goal Failed/Canceled status: {status}")
-             self.state = "IDLE"
+             self.state = "FAILED"
+             self._fail_timer = self.create_timer(3.0, self.reset_to_idle)
+             
+    def reset_to_idle(self):
+        self.state = "IDLE"
+        if hasattr(self, '_fail_timer'):
+            self._fail_timer.cancel()
+            self._fail_timer.destroy()
 
     def stop_robot(self):
         twist = Twist()
         self.cmd_pub.publish(twist)
 
     def vision_callback(self, msg):
-        # Only process vision in SCANNING or NAVIGATE_TO_DOCK
-        # If Nav2 is driving (TRAVELING), we ignore vision to avoid conflict, 
-        # unless we want 'interrupt' logic (too complex for now).
-        if self.state not in ["SCANNING", "NAVIGATE_TO_DOCK"]:
-            return
-
+        # Update vision state continuously (Passive tracking)
         if len(msg.data) >= 7:
             found = (msg.data[0] > 0.5)
             if found:
@@ -124,14 +158,13 @@ class PatrolNode(Node):
                 self.visual_cx_offset = msg.data[5]
                 self.visual_poster_width = msg.data[6]
                 
-                # Check cooling off distance? (Skipping for simplicity, Planner manages next targets)
-                
-                # TRANSITION: SCANNING -> DOCKING
+                # Active Logic: TRANSITION SCANNING -> DOCKING
                 if self.state == "SCANNING" and self.latest_visual_dist < 4.0:
                     self.get_logger().info("📍 Visual Target Acquired! Locking on...")
                     self.target_locked = True
                     self.state = "NAVIGATE_TO_DOCK"
-
+            else:
+                self.board_found = False
     def control_loop(self):
         # 1. TRAVELING is handled by Nav2 Action Server (Background)
         # 2. SCANNING Loop
@@ -153,7 +186,16 @@ class PatrolNode(Node):
 
         # 3. DOCKING Loop (Visual Servoing)
         elif self.state == "NAVIGATE_TO_DOCK":
-            # Just like before: Visual Servoing Logic
+            # Safety Check first!
+            if self.min_front_dist < 0.70: # 70cm safety stop
+                self.get_logger().warn(f"🛑 Too close to obstacle ({self.min_front_dist:.2f}m)! Stopping.")
+                self.stop_robot()
+                self.state = "ANALYZING" # Assume we are close enough to read
+                time.sleep(1.0)
+                self.client_analysis.call_async(Trigger.Request())
+                return
+
+            # Visual Servoing Logic
             twist = Twist()
             
             # Angular P-Controller
@@ -163,16 +205,20 @@ class PatrolNode(Node):
             if abs(err_ang) < 0.05: ang_z = 0.0
             
             # Linear P-Controller (Based on Width)
-            target_width = 450.0
+            # Reduce target width to stop further away (e.g., 300 instead of 380)
+            target_width = 300.0
             current_width = self.visual_poster_width
             
             if current_width > 10:
                 err_width = target_width - current_width
                 lin_x = 0.0015 * err_width
-                if current_width > 550: lin_x = -0.1
+                
+                # If very large/close, back up
+                if current_width > 380: 
+                    lin_x = -0.1
             else:
-                # Fallback distance
-                lin_x = 0.2 * (self.latest_visual_dist - 1.2)
+                # Fallback distance if width not reliable
+                lin_x = 0.2 * (self.latest_visual_dist - 1.5)
                 
             lin_x = max(min(lin_x, 0.2), -0.1)
             
@@ -180,8 +226,8 @@ class PatrolNode(Node):
             twist.angular.z = float(ang_z)
             self.cmd_pub.publish(twist)
             
-            # Success Condition
-            is_aligned_visual = (current_width > 400 and abs(lin_x) < 0.02 and abs(err_ang) < 0.05)
+            # Success Condition: Width ~300 +/- tolerance
+            is_aligned_visual = (current_width > 280 and abs(lin_x) < 0.02 and abs(err_ang) < 0.05)
             
             if is_aligned_visual:
                 self.get_logger().info("🎯 Visual Docking Successful. Starting Analysis...")
