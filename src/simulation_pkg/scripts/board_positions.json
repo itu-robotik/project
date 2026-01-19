@@ -3,36 +3,36 @@
         "x": -5.0,
         "y": -3.0,
         "theta": -1.57,
-        "description": "Start of corridor"
+        "description": "Board 1 (Left Wall)"
     },
     "2": {
         "x": -3.5,
         "y": -3.0,
         "theta": -1.57,
-        "description": "Corridor point 2"
+        "description": "Board 2 (Left Wall)"
     },
     "3": {
         "x": -0.5,
         "y": -3.0,
         "theta": -1.57,
-        "description": "Corridor point 3"
+        "description": "Board 3 (Left Wall)"
     },
     "4": {
         "x": 1.0,
         "y": -3.0,
         "theta": -1.57,
-        "description": "Corridor point 4"
+        "description": "Board 4 (Left Wall)"
     },
     "5": {
         "x": 4.5,
         "y": -3.0,
         "theta": -1.57,
-        "description": "Corridor point 5"
+        "description": "Board 5 (Left Wall)"
     },
     "6": {
         "x": 6.0,
         "y": -3.0,
         "theta": -1.57,
-        "description": "End of corridor"
+        "description": "Board 6 (Left Wall)"
     }
 }

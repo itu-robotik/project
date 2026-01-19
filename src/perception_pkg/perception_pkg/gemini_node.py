@@ -130,7 +130,16 @@ class PerceptionNode(Node):
             gray = cv2.cvtColor(cv_img, cv2.COLOR_BGR2GRAY)
             corners, ids, rejected = self.detector.detectMarkers(gray)
 
-            # --- CONTOUR DETECTION (Poster Board) ---
+            # --- ARUCO FIRST APPROACH ---
+            aruco_center = None
+            if ids is not None and len(ids) > 0:
+                # Use the first detected marker (index 0)
+                corners_params = corners[0]
+                aruco_cx = float(np.mean(corners_params[0][:, 0]))
+                aruco_cy = float(np.mean(corners_params[0][:, 1]))
+                aruco_center = (aruco_cx, aruco_cy)
+
+            # --- CONTOUR SELECTION (Poster Board) ---
             canvas_h, canvas_w = cv_img.shape[:2]
             blurred = cv2.GaussianBlur(gray, (5, 5), 0)
             edges = cv2.Canny(blurred, 50, 150)
@@ -138,6 +147,7 @@ class PerceptionNode(Node):
             
             poster_rect = None
             max_area = 0
+            min_dist = 99999.0
             poster_cx_offset = 0.0
             poster_width_px = 0.0
             
@@ -148,15 +158,29 @@ class PerceptionNode(Node):
             needs_forward = 0.0
             
             for cnt in contours:
-                area = cv2.contourArea(cnt)
-                if area > 200: # Reduced threshold even more for distant objects
+                area_cnt = cv2.contourArea(cnt)
+                if area_cnt > 200: # Reduced threshold for distant objects
                     epsilon = 0.04 * cv2.arcLength(cnt, True)
                     approx = cv2.approxPolyDP(cnt, epsilon, True)
                     
                     if len(approx) == 4:
-                        if area > max_area:
-                            max_area = area
-                            poster_rect = approx
+                        if aruco_center:
+                            # Select contour closest to ArUco
+                            M = cv2.moments(cnt)
+                            if M["m00"] != 0:
+                                cX = int(M["m10"] / M["m00"])
+                                cY = int(M["m01"] / M["m00"])
+                                dist = np.sqrt((cX - aruco_center[0])**2 + (cY - aruco_center[1])**2)
+                                
+                                # Distance threshold implies 'belonging'
+                                if dist < min_dist and dist < 300: 
+                                    min_dist = dist
+                                    poster_rect = approx
+                        else:
+                            # Fallback: Largest contour if no ArUco
+                            if area_cnt > max_area:
+                                max_area = area_cnt
+                                poster_rect = approx
                             
             if poster_rect is not None:
                 x, y, w, h = cv2.boundingRect(poster_rect)
@@ -225,6 +249,11 @@ class PerceptionNode(Node):
                     area = self.last_distance
                     alignment_error = self.last_yaw_err
                     needs_forward = self.last_marker_yaw
+                    
+                    # CRITICAL FIX: In Memory Mode, use the LAST KNOWN offset!
+                    # Otherwise, we might be sending the offset of a random 'Largest Contour' found above.
+                    poster_cx_offset = (self.last_cx - (canvas_w / 2.0)) / (canvas_w / 2.0)
+                    
                     cv2.putText(debug_img, "MEMORY MODE", (320, 240), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 165, 255), 2)
                 else:
                     self.locked = False
