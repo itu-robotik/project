@@ -49,6 +49,10 @@ class PerceptionNode(Node):
         self.locked = False
         self.frames_without_target = 0
         
+        # System Message (Poster Completion)
+        self.system_message = ""
+        self.message_sub = self.create_subscription(String, '/patrol/system_message', self.system_message_callback, 10, callback_group=self.cb_group)
+        
         # Seçilen Model İsmi
         self.selected_model_name = None
         self.is_analyzing = False
@@ -188,10 +192,10 @@ class PerceptionNode(Node):
                 rect_center_x = x + w / 2.0
                 poster_cx_offset = (rect_center_x - (canvas_w / 2.0)) / (canvas_w / 2.0)
                 
-                # Draw contour
-                cv2.drawContours(debug_img, [poster_rect], -1, (255, 0, 0), 2)
-                cv2.rectangle(debug_img, (x, y), (x+w, y+h), (0, 255, 255), 2)
-                cv2.circle(debug_img, (int(rect_center_x), int(y + h/2)), 5, (0, 0, 255), -1)
+                # Draw contour - DISABLED by request
+                # cv2.drawContours(debug_img, [poster_rect], -1, (255, 0, 0), 2)
+                # cv2.rectangle(debug_img, (x, y), (x+w, y+h), (0, 255, 255), 2)
+                # cv2.circle(debug_img, (int(rect_center_x), int(y + h/2)), 5, (0, 0, 255), -1)
 
             if ids is not None and len(ids) > 0:
                 # ArUco Logic
@@ -203,7 +207,7 @@ class PerceptionNode(Node):
                 aruco_cx = float(np.mean(corners_params[0][:, 0]))
                 if poster_rect is None:
                      poster_cx_offset = (aruco_cx - (canvas_w / 2.0)) / (canvas_w / 2.0)
-                     cv2.putText(debug_img, "FALLBACK: ARUCO CX", (10, 140), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
+                     # cv2.putText(debug_img, "FALLBACK: ARUCO CX", (10, 140), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
                 
                 camera_matrix = np.array([[554.25, 0, 320.0], [0, 554.25, 240.0], [0, 0, 1.0]], dtype=np.float32)
                 dist_coeffs = np.zeros((4,1))
@@ -254,29 +258,47 @@ class PerceptionNode(Node):
                     # Otherwise, we might be sending the offset of a random 'Largest Contour' found above.
                     poster_cx_offset = (self.last_cx - (canvas_w / 2.0)) / (canvas_w / 2.0)
                     
-                    cv2.putText(debug_img, "MEMORY MODE", (320, 240), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 165, 255), 2)
+                    # cv2.putText(debug_img, "MEMORY MODE", (320, 240), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 165, 255), 2)
                 else:
                     self.locked = False
             
-            # Visual Info on Screen
-            cv2.putText(debug_img, f"Offset: {poster_cx_offset:.2f}", (10, 110), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 0), 2)
+            # Visual Info on Screen - DISABLED by request
+            # cv2.putText(debug_img, f"Offset: {poster_cx_offset:.2f}", (10, 110), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 0), 2)
 
-            if self.is_analyzing:
-                cv2.putText(debug_img, "YAPAY ZEKA DUSUNUYOR...", (50, 240), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+            # if self.is_analyzing:
+            #     cv2.putText(debug_img, "YAPAY ZEKA DUSUNUYOR...", (50, 240), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
 
-            cv2.putText(debug_img, f"Lock:{self.locked} Err:{alignment_error:.2f}", (10, 470), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+            # cv2.putText(debug_img, f"Lock:{self.locked} Err:{alignment_error:.2f}", (10, 470), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+            
+            # --- OVERLAY SYSTEM MESSAGE (e.g. MISSION COMPLETE) ---
+            if self.system_message:
+                # Reduced font scale to 0.7 to fit screen
+                font_scale = 0.7
+                thickness = 2
+                ols_w, ols_h = cv2.getTextSize(self.system_message, cv2.FONT_HERSHEY_SIMPLEX, font_scale, thickness)[0]
+                ols_x = int((canvas_w - ols_w) / 2)
+                # Position at TOP (e.g. 40px from top)
+                ols_y = 40 
+                # Black Background
+                cv2.rectangle(debug_img, (0, 0), (canvas_w, 60), (0, 0, 0), -1)
+                cv2.putText(debug_img, self.system_message, (ols_x, ols_y + 10), cv2.FONT_HERSHEY_SIMPLEX, font_scale, (0, 255, 0), thickness)
             
             with self.lock:
                 self.visual_img = debug_img.copy()
 
-            # DATA PROTOCOL: [found, cx, distance, yaw_err, marker_yaw, poster_cx_offset, poster_width_px]
-            self.detect_pub.publish(Float32MultiArray(data=[found, cx, area, alignment_error, needs_forward, poster_cx_offset, poster_width_px]))
+            # DATA PROTOCOL: [found, cx, distance, yaw_err, marker_yaw, poster_cx_offset, poster_width_px, detected_board_id]
+            BoardID_to_Pub = float(self.latest_board_id) if (ids is not None and len(ids) > 0) else -1.0
+            self.detect_pub.publish(Float32MultiArray(data=[found, cx, area, alignment_error, needs_forward, poster_cx_offset, poster_width_px, BoardID_to_Pub]))
             try:
                 self.debug_pub.publish(self.bridge.cv2_to_imgmsg(debug_img, "bgr8"))
             except: pass
             
         except Exception as e:
             self.get_logger().error(f"ImgCB Hatasi: {e}")
+
+    def system_message_callback(self, msg):
+        self.system_message = msg.data
+
 
     def analyze_poster_callback(self, request, response):
         self.get_logger().info("📸 Poster Analizi İsteği Alındı!")

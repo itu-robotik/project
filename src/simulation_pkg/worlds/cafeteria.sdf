@@ -103,74 +103,8 @@
 
     </model>
 
-    <!-- === MASALAR (Simple Shapes) === -->
-    
-    <!-- Table Definition (Reusable logic not ideal in basic SDF, so we copy paste boxes) -->
-    <!-- Table: Cylinder leg + Box top -->
-    
-    <model name="table_1">
-      <static>true</static>
-      <pose>5 -2 0.4 0 0 0</pose>
-      <link name="link">
-        <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
-        <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
-        <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
-        <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
-      </link>
-    </model>
-    
-    <model name="chair_1_a">
-        <static>true</static>
-        <pose>5 -2.8 0.25 0 0 0</pose>
-        <link name="link">
-            <collision name="collision"><geometry><box><size>0.4 0.4 0.5</size></box></geometry></collision>
-            <visual name="visual"><geometry><box><size>0.4 0.4 0.5</size></box></geometry><material><ambient>0.8 0.1 0.1 1</ambient></material></visual>
-        </link>
-    </model>
+    <!-- === MASALAR REMOVED === -->
 
-    <model name="table_2">
-      <static>true</static>
-      <pose>5 2 0.4 0 0 0</pose>
-      <link name="link">
-        <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
-        <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
-        <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
-        <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
-      </link>
-    </model>
-
-    <model name="table_3">
-      <static>true</static>
-      <pose>10 -1 0.4 0 0 0</pose>
-      <link name="link">
-         <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
-         <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
-         <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
-         <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
-      </link>
-    </model>
-
-    <model name="table_4">
-      <static>true</static>
-      <pose>-5 3 0.4 0 0 0</pose>
-      <link name="link">
-         <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
-         <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
-         <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
-         <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
-      </link>
-    </model>
-
-     <model name="table_5">
-      <static>true</static>
-      <pose>-5 -3 0.4 0 0 0</pose>
-      <link name="link">
-         <visual name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
-         <collision name="top"><geometry><cylinder><radius>0.5</radius><length>0.05</length></cylinder></geometry></collision>
-         <visual name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
-         <collision name="leg"><pose>0 0 -0.2 0 0 0</pose><geometry><cylinder><radius>0.1</radius><length>0.4</length></cylinder></geometry></collision>
-      </link>
-    </model>
     
     <!-- === POSTERS (Integrated) === -->
     <include>

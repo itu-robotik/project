@@ -2,7 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
-from std_msgs.msg import String
+from std_msgs.msg import String, Int32
 import json
 import os
 import math
@@ -27,9 +27,13 @@ class SimplePlanner(Node):
         self.last_command_time = 0.0
         self.waiting_for_result = False
         self.ack_received = False
+        self.completed_boards = set()
+        self.mission_complete = False
         
         # ROS
         self.goal_pub = self.create_publisher(PoseStamped, '/planner/goal', 10)
+        self.target_id_pub = self.create_publisher(Int32, '/patrol/target_id', 10) # NEW: Target ID Publisher
+        self.sys_msg_pub = self.create_publisher(String, '/patrol/system_message', 10)
         self.status_sub = self.create_subscription(String, '/patrol/status', self.status_callback, 10)
         self.timer = self.create_timer(1.0, self.planning_loop)
         
@@ -69,15 +73,15 @@ class SimplePlanner(Node):
             self.get_logger().info(f"🤖 Robot State Changed: {previous_state} -> {self.robot_state}")
 
         if self.waiting_for_result:
-            # PHASE 1: Wait for ACK (Transition to TRAVELING)
+            # PHASE 1: Wait for ACK (Transition to TRAVELING/DOCKING)
             if not self.ack_received:
-                if self.robot_state == "TRAVELING":
+                # If robot enters any "active" state, we consider the command accepted.
+                # It might skip 'TRAVELING' if it sees the board immediately.
+                if self.robot_state in ["TRAVELING", "DOCKING", "ANALYZING"]:
                     self.ack_received = True
-                    self.get_logger().info("✅ Command Acknowledged (Robot is TRAVELING)")
+                    self.get_logger().info(f"✅ Command Acknowledged (Robot is {self.robot_state})")
                 elif self.robot_state == "FAILED" and previous_state == "IDLE": 
-                    # Special Case: Immediate Failure transition (skipped TRAVELING?)
-                    # Or if it fails instantly. But we just sent it.
-                    # Best to wait for TRAVELING, but if it goes IDLE->FAILED, we should accept that.
+                    # Special Case: Immediate Failure
                     self.ack_received = True 
                 else:
                     # Still IDLE or FAILED from *before*? Ignore.
@@ -89,8 +93,31 @@ class SimplePlanner(Node):
                     self.waiting_for_result = False
                     self.ack_received = False
                     self.get_logger().info(f"Task finished with result: {self.robot_state}")
+                    
+                    # Mark as complete if successful (IDLE usually means done)
+                    # If FAILED, we might want to retry or skip. Let's assume we skip for now to avoid infinite loop.
+                    # Or better: Only mark complete if IDLE. If FAILED, it will remain in queue and be retried next cycle.
+                    if self.robot_state == "IDLE":
+                        current_board = self.board_ids[self.current_idx]
+                        self.completed_boards.add(current_board)
+                        self.get_logger().info(f"✅ Board {current_board} Analysis COMPLETED. Progress: {len(self.completed_boards)}/{len(self.board_ids)}")
+                        
+                        # Move to next board only after completion/attempt
+                        self.current_idx = (self.current_idx + 1) % len(self.board_ids)
 
     def planning_loop(self):
+        # Prevent loop if mission is already complete
+        if self.mission_complete:
+            self.sys_msg_pub.publish(String(data="TÜM POSTERLER OKUNDU (MISSION COMPLETE)"))
+            return
+
+        # Check if all boards are visited
+        if len(self.completed_boards) >= len(self.board_ids):
+            self.get_logger().info("🎉 ALL BOARDS ANALYZED! STOPPING.")
+            self.mission_complete = True
+            self.sys_msg_pub.publish(String(data="TÜM POSTERLER OKUNDU (MISSION COMPLETE)"))
+            return
+
         # If robot is busy or we are waiting for result, do nothing
         if self.robot_state not in ["IDLE", "FAILED"] and not self.waiting_for_result:
              # Just wait if it is doing something else (e.g. manual control)
@@ -103,15 +130,19 @@ class SimplePlanner(Node):
         if (time.time() - self.last_command_time) < 5.0:
             return
 
-        # Pick target
+        # Pick target - Skip if already completed
         bid = self.board_ids[self.current_idx]
-        self.send_goal(bid)
         
-        # Advance index (Round Robin)
-        self.current_idx = (self.current_idx + 1) % len(self.board_ids)
+        if bid in self.completed_boards:
+            # Skip this board, find next
+            self.current_idx = (self.current_idx + 1) % len(self.board_ids)
+            return
+
+        self.send_goal(bid)
+        # NOTE: Do NOT increment index here. Wait for success in callback.
         
         self.waiting_for_result = True
-        self.ack_received = False # New command, reset ACK
+        self.ack_received = False 
         self.last_command_time = time.time()
 
     def send_goal(self, board_id):
@@ -136,6 +167,7 @@ class SimplePlanner(Node):
         
         self.get_logger().info(f"🚀 Sending Robot to Board {board_id} at ({pos['x']:.2f}, {pos['y']:.2f})")
         self.goal_pub.publish(msg)
+        self.target_id_pub.publish(Int32(data=int(board_id))) # NEW: Publish ID simultaneously
 
 def main():
     rclpy.init()

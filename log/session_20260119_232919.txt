@@ -1,0 +1,153 @@
+[INFO] [launch]: All log files can be found below /home/metin/.ros/log/2026-01-19-23-29-22-306017-metin-MSI-110601
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo-1]: process started with pid [110606]
+[INFO] [parameter_bridge-2]: process started with pid [110609]
+[INFO] [static_transform_publisher-3]: process started with pid [110611]
+[INFO] [static_transform_publisher-4]: process started with pid [110613]
+[INFO] [create-5]: process started with pid [110615]
+[INFO] [gemini_node-6]: process started with pid [110617]
+[static_transform_publisher-3] [WARN] [1768854562.624405617] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-4] [WARN] [1768854562.624423190] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-4] [INFO] [1768854562.639017664] [static_transform_publisher_eQB4Nb4R5w2dSwXp]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.100000', '0.000000', '0.250000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_link' to 'itu_bot/chassis/lidar'
+[static_transform_publisher-3] [INFO] [1768854562.640593319] [static_transform_publisher_fHEMdagnTF8er7ey]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'base_footprint' to 'base_link'
+[create-5] [INFO] [1768854562.659829496] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-2] [INFO] [1768854562.687308607] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera (gz.msgs.Image) -> /camera (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768854562.689746934] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768854562.690473279] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768854562.692021766] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768854562.693658192] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1768854562.694137128] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[ign gazebo-1] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ""
+[gemini_node-6] /home/metin/.local/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.12) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+[gemini_node-6]   warnings.warn(message, FutureWarning)
+[create-5] [INFO] [1768854563.533190007] [ros_gz_sim]: Requested creation of entity.
+[create-5] [INFO] [1768854563.533291879] [ros_gz_sim]: OK creation of entity.
+[gemini_node-6] [INFO] [1768854563.536771137] [perception_node]: 🔑 API Key Yüklendi: AIzaS...Q4Q
+[gemini_node-6] [INFO] [1768854563.537314360] [perception_node]: 🔍 Uygun Modeller Listeleniyor...
+[INFO] [create-5]: process has finished cleanly [pid 110615]
+[gemini_node-6] [INFO] [1768854563.926517884] [perception_node]: 📋 Bulunan Modeller: ['models/gemini-2.5-flash', 'models/gemini-2.5-pro', 'models/gemini-2.0-flash-exp', 'models/gemini-2.0-flash', 'models/gemini-2.0-flash-001', 'models/gemini-2.0-flash-exp-image-generation', 'models/gemini-2.0-flash-lite-001', 'models/gemini-2.0-flash-lite', 'models/gemini-2.0-flash-lite-preview-02-05', 'models/gemini-2.0-flash-lite-preview', 'models/gemini-exp-1206', 'models/gemini-2.5-flash-preview-tts', 'models/gemini-2.5-pro-preview-tts', 'models/gemma-3-1b-it', 'models/gemma-3-4b-it', 'models/gemma-3-12b-it', 'models/gemma-3-27b-it', 'models/gemma-3n-e4b-it', 'models/gemma-3n-e2b-it', 'models/gemini-flash-latest', 'models/gemini-flash-lite-latest', 'models/gemini-pro-latest', 'models/gemini-2.5-flash-lite', 'models/gemini-2.5-flash-image', 'models/gemini-2.5-flash-preview-09-2025', 'models/gemini-2.5-flash-lite-preview-09-2025', 'models/gemini-3-pro-preview', 'models/gemini-3-flash-preview', 'models/gemini-3-pro-image-preview', 'models/nano-banana-pro-preview', 'models/gemini-robotics-er-1.5-preview', 'models/gemini-2.5-computer-use-preview-10-2025', 'models/deep-research-pro-preview-12-2025']
+[gemini_node-6] [INFO] [1768854563.926840902] [perception_node]: ✅ OTOMATIK SEÇİLEN MODEL: models/gemini-2.5-flash
+[gemini_node-6] [WARN] [1768854564.255029861] [perception_node]: ⚠️ Bağlantı testi başarısız, ancak devam ediliyor.
+[INFO] [component_container_isolated-7]: process started with pid [110853]
+[gemini_node-6] qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in "/home/metin/.local/lib/python3.10/site-packages/cv2/qt/plugins"
+[INFO] [initial_pose_pub.py-8]: process started with pid [111131]
+[initial_pose_pub.py-8] [INFO] [1768854583.183531960] [initial_pose_publisher]: 📍 Initial pose published to AMCL!
+[INFO] [patrol_node.py-9]: process started with pid [111196]
+[initial_pose_pub.py-8] [INFO] [1768854584.687197520] [initial_pose_publisher]: ✅ Initial pose setup complete. Node shutting down.
+[INFO] [initial_pose_pub.py-8]: process has finished cleanly [pid 111131]
+[patrol_node.py-9] [INFO] [1768854585.168880571] [patrol_node]: 🤖 Simple Patrol Node Ready! (Smart Approach & ID Verification Active)
+[INFO] [sequential_planner.py-10]: process started with pid [111261]
+[sequential_planner.py-10] [INFO] [1768854590.173394118] [sequential_planner_action]: 🧠 Simple Planner Ready! Boards: [1, 2, 3, 4, 5, 6]
+[sequential_planner.py-10] [INFO] [1768854590.718992207] [sequential_planner_action]: 🤖 Robot State Changed: UNKNOWN -> IDLE
+[sequential_planner.py-10] [INFO] [1768854591.935909841] [sequential_planner_action]: 🚀 Sending Robot to Board 1 at (-5.00, -3.00)
+[patrol_node.py-9] [INFO] [1768854591.937034960] [patrol_node]: 📨 Received Goal: [-5.00, -3.00]
+[patrol_node.py-9] [ERROR] [1768854593.940793917] [patrol_node]: ❌ Nav2 unreachable
+[patrol_node.py-9] [INFO] [1768854593.941424421] [patrol_node]: 🎯 New Target ID set to: 1
+[sequential_planner.py-10] [INFO] [1768854593.944182464] [sequential_planner_action]: 🤖 Robot State Changed: IDLE -> FAILED
+[sequential_planner.py-10] [INFO] [1768854594.200613331] [sequential_planner_action]: Task finished with result: FAILED
+[sequential_planner.py-10] [INFO] [1768854597.505101213] [sequential_planner_action]: 🚀 Sending Robot to Board 1 at (-5.00, -3.00)
+[patrol_node.py-9] [INFO] [1768854597.507620917] [patrol_node]: 📨 Received Goal: [-5.00, -3.00]
+[patrol_node.py-9] [ERROR] [1768854599.511174024] [patrol_node]: ❌ Nav2 unreachable
+[patrol_node.py-9] [INFO] [1768854599.511906979] [patrol_node]: 🎯 New Target ID set to: 1
+[component_container_isolated-7] [INFO] [1768854631.159780569] [rclcpp]: signal_handler(signum=2)
+[static_transform_publisher-4] [INFO] [1768854631.159879618] [rclcpp]: signal_handler(signum=2)
+[static_transform_publisher-3] [INFO] [1768854631.160006050] [rclcpp]: signal_handler(signum=2)
+[parameter_bridge-2] [INFO] [1768854631.160081984] [rclcpp]: signal_handler(signum=2)
+[gemini_node-6] Exception in thread Thread-6 (spin):
+[gemini_node-6] Traceback (most recent call last):
+[gemini_node-6]   File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+[gemini_node-6]     self.run()
+[gemini_node-6]   File "/usr/lib/python3.10/threading.py", line 953, in run
+[gemini_node-6]     self._target(*self._args, **self._kwargs)
+[gemini_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 294, in spin
+[gemini_node-6]     self.spin_once()
+[gemini_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 806, in spin_once
+[gemini_node-6]     self._spin_once_impl(timeout_sec)
+[gemini_node-6] 🖥️  GUI Ana Thread'de başlatıldı...
+[gemini_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 787, in _spin_once_impl
+[gemini_node-6]     handler, entity, node = self.wait_for_ready_callbacks(
+[gemini_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[gemini_node-6]     return next(self._cb_iter)
+[gemini_node-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 596, in _wait_for_ready_callbacks
+[gemini_node-6]     wait_set = _rclpy.WaitSet(
+[gemini_node-6] rclpy._rclpy_pybind11.RCLError: failed to initialize wait set: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/wait.c:130
+[gemini_node-6] [ERROR] [1768854631.178945605] [perception_node]: ImgCB Hatasi: cannot use Destroyable because destruction was requested
+[sequential_planner.py-10] Traceback (most recent call last):
+[sequential_planner.py-10]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/sequential_planner.py", line 180, in <module>
+[sequential_planner.py-10]     main()
+[sequential_planner.py-10]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/sequential_planner.py", line 175, in main
+[sequential_planner.py-10]     rclpy.spin(node)
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[sequential_planner.py-10]     executor.spin_once()
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[sequential_planner.py-10]     self._spin_once_impl(timeout_sec)
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[sequential_planner.py-10]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[sequential_planner.py-10]     return next(self._cb_iter)
+[sequential_planner.py-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 624, in _wait_for_ready_callbacks
+[sequential_planner.py-10]     raise ExternalShutdownException()
+[sequential_planner.py-10] rclpy.executors.ExternalShutdownException
+[gemini_node-6] The following exception was never retrieved: cannot use Destroyable because destruction was requested
+[patrol_node.py-9] Traceback (most recent call last):
+[patrol_node.py-9]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/patrol_node.py", line 277, in <module>
+[patrol_node.py-9]     main()
+[patrol_node.py-9]   File "/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/patrol_node.py", line 272, in main
+[patrol_node.py-9]     rclpy.spin(node)
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[patrol_node.py-9]     executor.spin_once()
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[patrol_node.py-9]     self._spin_once_impl(timeout_sec)
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 740, in _spin_once_impl
+[patrol_node.py-9]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 723, in wait_for_ready_callbacks
+[patrol_node.py-9]     return next(self._cb_iter)
+[patrol_node.py-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 596, in _wait_for_ready_callbacks
+[patrol_node.py-9]     wait_set = _rclpy.WaitSet(
+[patrol_node.py-9] rclpy._rclpy_pybind11.RCLError: failed to initialize wait set: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/wait.c:130
+[INFO] [component_container_isolated-7]: process has finished cleanly [pid 110853]
+[INFO] [parameter_bridge-2]: process has finished cleanly [pid 110609]
+[INFO] [static_transform_publisher-4]: process has finished cleanly [pid 110613]
+[INFO] [static_transform_publisher-3]: process has finished cleanly [pid 110611]
+[ERROR] [sequential_planner.py-10]: process has died [pid 111261, exit code 1, cmd '/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/sequential_planner.py --ros-args --params-file /tmp/launch_params_nq5hxiyy'].
+[ERROR] [patrol_node.py-9]: process has died [pid 111196, exit code 1, cmd '/home/metin/itu_robotics_ws/itu_robotics_combined_ws/install/simulation_pkg/lib/simulation_pkg/patrol_node.py --ros-args --params-file /tmp/launch_params_sb303xk5'].
+[INFO] [ign gazebo-1]: process has finished cleanly [pid 110606]
+[INFO] [launch]: process[ign gazebo-1] was required: shutting down launched system
+[INFO] [gemini_node-6]: sending signal 'SIGINT' to process[gemini_node-6]
+[WARNING] [launch_ros.actions.load_composable_nodes]: Abandoning wait for the '/nav2_container/_container/load_node' service response, due to shutdown.
+Future exception was never retrieved
+future: <Future finished exception=InvalidHandle('cannot use Destroyable because destruction was requested')>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_ros/actions/load_composable_nodes.py", line 197, in _load_in_sequence
+    self._load_node(next_load_node_request, context)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_ros/actions/load_composable_nodes.py", line 119, in _load_node
+    while not self.__rclpy_load_node_client.wait_for_service(timeout_sec=1.0):
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/client.py", line 180, in wait_for_service
+    return self.service_is_ready()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/client.py", line 159, in service_is_ready
+    with self.handle:
+rclpy._rclpy_pybind11.InvalidHandle: cannot use Destroyable because destruction was requested
+[WARNING] [launch_ros.actions.load_composable_nodes]: Abandoning wait for the '/nav2_container/_container/load_node' service response, due to shutdown.
+Future exception was never retrieved
+future: <Future finished exception=InvalidHandle('cannot use Destroyable because destruction was requested')>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_ros/actions/load_composable_nodes.py", line 197, in _load_in_sequence
+    self._load_node(next_load_node_request, context)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_ros/actions/load_composable_nodes.py", line 119, in _load_node
+    while not self.__rclpy_load_node_client.wait_for_service(timeout_sec=1.0):
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/client.py", line 180, in wait_for_service
+    return self.service_is_ready()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/client.py", line 159, in service_is_ready
+    with self.handle:
+rclpy._rclpy_pybind11.InvalidHandle: cannot use Destroyable because destruction was requested
+[INFO] [gemini_node-6]: process has finished cleanly [pid 110617]
