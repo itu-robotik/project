@@ -60,6 +60,17 @@ class PatrolNode(Node):
         self.current_target_id = msg.data
         self.get_logger().info(f"🎯 New Target ID set to: {self.current_target_id}")
 
+    def analysis_service_response_callback(self, future):
+        try:
+            response = future.result()
+            if not response.success:
+                self.get_logger().error(f"❌ Analysis Service Failed: {response.message}")
+                # If service failed, we must manually reset state because no 'poster_analysis' msg will come.
+                self.state = "IDLE"
+        except Exception as e:
+            self.get_logger().error(f"❌ Service Call Failed: {e}")
+            self.state = "IDLE"
+
     def get_yaw_from_quaternion(self, q):
         """
         Convert quaternion (x, y, z, w) to yaw (z-axis rotation)
@@ -160,7 +171,8 @@ class PatrolNode(Node):
             else:
                 self.get_logger().warn("⚠️ Board NOT visible at goal. Attempting ANALYSIS anyway (User Request).")
                 self.state = "ANALYZING"
-                self.client_analysis.call_async(Trigger.Request())
+                future = self.client_analysis.call_async(Trigger.Request())
+                future.add_done_callback(self.analysis_service_response_callback)
         else:
             self.get_logger().warn(f"⚠️ Nav2 Failed: {status}")
             self.state = "FAILED"
@@ -222,7 +234,8 @@ class PatrolNode(Node):
                     self.stop_robot()
                     self.get_logger().warn("❌ Visual Recovery failed. Using last known position for ANALYSIS.")
                     self.state = "ANALYZING"
-                    self.client_analysis.call_async(Trigger.Request())
+                    future = self.client_analysis.call_async(Trigger.Request())
+                    future.add_done_callback(self.analysis_service_response_callback)
                     return
             else:
                 # Board Sees! Reset recovery timer
@@ -255,7 +268,8 @@ class PatrolNode(Node):
                 self.get_logger().info("🎯 Docking Complete. Analyzing...")
                 self.stop_robot()
                 self.state = "ANALYZING"
-                self.client_analysis.call_async(Trigger.Request())
+                future = self.client_analysis.call_async(Trigger.Request())
+                future.add_done_callback(self.analysis_service_response_callback)
                 return
             
             twist = Twist()

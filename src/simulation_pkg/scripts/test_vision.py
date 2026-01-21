@@ -27,7 +27,7 @@ class VisionTester(Node):
         self.latest_visual_data = None
         self.get_logger().info("👀 Vision Tester Started. Waiting for data...")
 
-    def scan_callback(self, msg):
+    def scan_callback(self, msg):   
         # Extract front sector (similar to patrol_node)
         num_ranges = len(msg.ranges)
         center_idx = num_ranges // 2

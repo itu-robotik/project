@@ -1,0 +1,752 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-01-21-10-05-14-171435-d2f3ff096426-118
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-01-21-10-05-16-071364-d2f3ff096426-120
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo-1]: process started with pid [122]
+[INFO] [create-2]: process started with pid [124]
+[INFO] [parameter_bridge-3]: process started with pid [127]
+[INFO] [static_transform_publisher-4]: process started with pid [129]
+[INFO] [static_transform_publisher-5]: process started with pid [131]
+[INFO] [async_slam_toolbox_node-6]: process started with pid [133]
+[INFO] [controller_server-7]: process started with pid [135]
+[INFO] [smoother_server-8]: process started with pid [137]
+[INFO] [planner_server-9]: process started with pid [139]
+[INFO] [behavior_server-10]: process started with pid [141]
+[INFO] [bt_navigator-11]: process started with pid [143]
+[INFO] [waypoint_follower-12]: process started with pid [145]
+[INFO] [velocity_smoother-13]: process started with pid [147]
+[INFO] [lifecycle_manager-14]: process started with pid [149]
+[INFO] [rviz2-15]: process started with pid [151]
+[INFO] [gemini_node-16]: process started with pid [153]
+[INFO] [poster_logger.py-17]: process started with pid [155]
+[ERROR] [poster_logger.py-17]: process has died [pid 155, exit code 127, cmd '/root/ros2_ws/install/simulation_pkg/lib/simulation_pkg/poster_logger.py --ros-args --params-file /tmp/launch_params_ik1fj3em'].
+[INFO] [simple_explorer.py-18]: process started with pid [157]
+[ERROR] [simple_explorer.py-18]: process has died [pid 157, exit code 127, cmd '/root/ros2_ws/install/simulation_pkg/lib/simulation_pkg/simple_explorer.py --ros-args -r __node:=auto_explorer --params-file /tmp/launch_params_d5sk817f'].
+[poster_logger.py-17] /usr/bin/env: ‘python3\r’: No such file or directory
+[simple_explorer.py-18] /usr/bin/env: ‘python3\r’: No such file or directory
+[static_transform_publisher-5] [WARN] [1768989918.690152519] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-4] [WARN] [1768989918.690219622] []: Old-style arguments are deprecated; see --help for new-style arguments
+[async_slam_toolbox_node-6] [INFO] [1768989918.765873013] [slam_toolbox]: Node using stack size 40000000
+[create-2] [INFO] [1768989918.767067160] [ros_gz_sim]: Requesting list of world names.
+[controller_server-7] [INFO] [1768989918.777664079] [controller_server]: 
+[controller_server-7] 	controller_server lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[velocity_smoother-13] [INFO] [1768989918.779793063] [velocity_smoother]: 
+[velocity_smoother-13] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-13] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-10] [INFO] [1768989918.779854865] [behavior_server]: 
+[behavior_server-10] 	behavior_server lifecycle node launched. 
+[behavior_server-10] 	Waiting on external lifecycle transitions to activate
+[behavior_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[static_transform_publisher-5] [INFO] [1768989918.781826243] [static_transform_publisher_VQRmKWfFnSR4eb34]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.100000', '0.000000', '0.250000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'base_link' to 'itu_bot/chassis/lidar'
+[bt_navigator-11] [INFO] [1768989918.782684577] [bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1768989918.783417506] [bt_navigator]: Creating
+[lifecycle_manager-14] [INFO] [1768989918.783607514] [lifecycle_manager_navigation]: Creating
+[planner_server-9] [INFO] [1768989918.783947327] [planner_server]: 
+[planner_server-9] 	planner_server lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-8] [INFO] [1768989918.785561091] [smoother_server]: 
+[smoother_server-8] 	smoother_server lifecycle node launched. 
+[smoother_server-8] 	Waiting on external lifecycle transitions to activate
+[smoother_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[static_transform_publisher-4] [INFO] [1768989918.786554530] [static_transform_publisher_MoA4PwCjCIMW9L46]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_footprint' to 'base_link'
+[waypoint_follower-12] [INFO] [1768989918.791565928] [waypoint_follower]: 
+[waypoint_follower-12] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-12] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-14] [INFO] [1768989918.797552365] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-14] [INFO] [1768989918.817385149] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-14] [INFO] [1768989918.817535855] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[waypoint_follower-12] [INFO] [1768989918.834613530] [waypoint_follower]: Creating
+[parameter_bridge-3] [INFO] [1768989918.842639143] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera (gz.msgs.Image) -> /camera (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.856111563] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/camera (sensor_msgs/msg/Image) -> /camera (gz.msgs.Image)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.860996451] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.862614514] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/scan (sensor_msgs/msg/LaserScan) -> /scan (gz.msgs.LaserScan)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.864524087] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/cmd_vel (gz.msgs.Twist) -> /cmd_vel (geometry_msgs/msg/Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.869504679] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.872269686] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.875794622] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/odom (nav_msgs/msg/Odometry) -> /odom (gz.msgs.Odometry)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.879865479] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.886160422] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/clock (rosgraph_msgs/msg/Clock) -> /clock (gz.msgs.Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.888677419] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989918.893468104] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/tf (tf2_msgs/msg/TFMessage) -> /tf (gz.msgs.Pose_V)] (Lazy 0)
+[async_slam_toolbox_node-6] [INFO] [1768989918.921602689] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-6] [INFO] [1768989918.922611328] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[rviz2-15] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[planner_server-9] [INFO] [1768989918.959131136] [planner_server]: Creating
+[smoother_server-8] [INFO] [1768989918.959161038] [smoother_server]: Creating smoother server
+[planner_server-9] [INFO] [1768989918.982848851] [global_costmap.global_costmap]: 
+[planner_server-9] 	global_costmap lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1768989919.019029647] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-7] [INFO] [1768989919.195661760] [controller_server]: Creating controller server
+[controller_server-7] [INFO] [1768989919.222797907] [local_costmap.local_costmap]: 
+[controller_server-7] 	local_costmap lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[ign gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[controller_server-7] [INFO] [1768989919.255499568] [local_costmap.local_costmap]: Creating Costmap
+[controller_server-7] [INFO] [1768989919.259237012] [controller_server]: Configuring controller interface
+[controller_server-7] [INFO] [1768989919.259555824] [controller_server]: getting goal checker plugins..
+[controller_server-7] [INFO] [1768989919.259758732] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-7] [INFO] [1768989919.259814734] [local_costmap.local_costmap]: Configuring
+[controller_server-7] [INFO] [1768989919.265812466] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-7] [INFO] [1768989919.293169621] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-7] [INFO] [1768989919.307826086] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-7] [INFO] [1768989919.307928790] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-7] [INFO] [1768989919.309922367] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-7] [INFO] [1768989919.341884000] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-7] [INFO] [1768989919.355116710] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-7] [INFO] [1768989919.355710633] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-7] [INFO] [1768989919.449428048] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-7] [INFO] [1768989919.453133191] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-7] [INFO] [1768989919.503081218] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-7] [INFO] [1768989919.504922089] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989919.505430708] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-7] [INFO] [1768989919.506691157] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989919.507070572] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-7] [INFO] [1768989919.507546690] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989919.507949005] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-7] [INFO] [1768989919.519383047] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989919.520077673] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-7] [INFO] [1768989919.521764538] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989919.522069150] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-7] [INFO] [1768989919.522601971] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989919.522844680] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-7] [INFO] [1768989919.523301398] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989919.523330699] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-14] [INFO] [1768989919.552961142] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-8] [INFO] [1768989919.553645568] [smoother_server]: Configuring smoother server
+[smoother_server-8] [INFO] [1768989919.591423725] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-8] [INFO] [1768989919.591972446] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-14] [INFO] [1768989919.599991556] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-9] [INFO] [1768989919.600545277] [planner_server]: Configuring
+[planner_server-9] [INFO] [1768989919.600642381] [global_costmap.global_costmap]: Configuring
+[planner_server-9] [INFO] [1768989919.607943262] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-9] [INFO] [1768989919.624070685] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-9] [INFO] [1768989919.625742049] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-9] [INFO] [1768989919.625804151] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-9] [INFO] [1768989919.626663285] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-9] [INFO] [1768989919.631429668] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-9] [INFO] [1768989919.631494971] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-9] [INFO] [1768989919.632685917] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-9] [INFO] [1768989919.663569608] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-9] [INFO] [1768989919.663744415] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768989919.664944161] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-14] [INFO] [1768989919.684778026] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-10] [INFO] [1768989919.685597758] [behavior_server]: Configuring
+[behavior_server-10] [INFO] [1768989919.696766589] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[rviz2-15] [INFO] [1768989919.709786591] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-15] [INFO] [1768989919.710065202] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[behavior_server-10] [INFO] [1768989919.712856209] [behavior_server]: Configuring spin
+[behavior_server-10] [INFO] [1768989919.722550783] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-10] [INFO] [1768989919.739144923] [behavior_server]: Configuring backup
+[behavior_server-10] [INFO] [1768989919.746971425] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-10] [INFO] [1768989919.761640091] [behavior_server]: Configuring assisted_teleop
+[behavior_server-10] [INFO] [1768989919.774232177] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-10] [INFO] [1768989919.787464987] [behavior_server]: Configuring wait
+[lifecycle_manager-14] [INFO] [1768989919.795810409] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1768989919.796180023] [bt_navigator]: Configuring
+[rviz2-15] [INFO] [1768989919.883033473] [rviz2]: Stereo is NOT SUPPORTED
+[lifecycle_manager-14] [INFO] [1768989919.963820189] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1768989919.964125701] [waypoint_follower]: Configuring
+[waypoint_follower-12] [INFO] [1768989919.992896311] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-14] [INFO] [1768989919.994074056] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-13] [INFO] [1768989919.994402169] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-14] [INFO] [1768989919.999362160] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-7] [INFO] [1768989919.999694473] [controller_server]: Activating
+[controller_server-7] [INFO] [1768989919.999770676] [local_costmap.local_costmap]: Activating
+[controller_server-7] [INFO] [1768989919.999786377] [local_costmap.local_costmap]: Checking transform
+[controller_server-7] [INFO] [1768989919.999810578] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[create-2] [INFO] [1768989920.308934201] [ros_gz_sim]: Requested creation of entity.
+[create-2] [INFO] [1768989920.309014504] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-2]: process has finished cleanly [pid 124]
+[gemini_node-16] Traceback (most recent call last):
+[gemini_node-16]   File "/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node", line 33, in <module>
+[gemini_node-16]     sys.exit(load_entry_point('perception-pkg', 'console_scripts', 'gemini_node')())
+[gemini_node-16]   File "/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node", line 25, in importlib_load_entry_point
+[gemini_node-16]     return next(matches).load()
+[gemini_node-16]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+[gemini_node-16]     module = import_module(match.group('module'))
+[gemini_node-16]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[gemini_node-16]     return _bootstrap._gcd_import(name[level:], package, level)
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[gemini_node-16]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[gemini_node-16]   File "/root/ros2_ws/build/perception_pkg/perception_pkg/gemini_node.py", line 12, in <module>
+[gemini_node-16]     import google.generativeai as genai
+[gemini_node-16] ModuleNotFoundError: No module named 'google'
+[controller_server-7] [INFO] [1768989920.499928468] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[ERROR] [gemini_node-16]: process has died [pid 153, exit code 1, cmd '/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node --ros-args --params-file /tmp/launch_params_zh4zqz31'].
+[controller_server-7] [INFO] [1768989920.999907154] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [ign gazebo-1]: process started with pid [475]
+[INFO] [create-2]: process started with pid [477]
+[INFO] [parameter_bridge-3]: process started with pid [480]
+[INFO] [static_transform_publisher-4]: process started with pid [482]
+[INFO] [static_transform_publisher-5]: process started with pid [484]
+[INFO] [async_slam_toolbox_node-6]: process started with pid [486]
+[INFO] [controller_server-7]: process started with pid [488]
+[INFO] [smoother_server-8]: process started with pid [490]
+[INFO] [planner_server-9]: process started with pid [492]
+[INFO] [behavior_server-10]: process started with pid [494]
+[INFO] [bt_navigator-11]: process started with pid [496]
+[INFO] [waypoint_follower-12]: process started with pid [498]
+[INFO] [velocity_smoother-13]: process started with pid [500]
+[INFO] [lifecycle_manager-14]: process started with pid [502]
+[INFO] [rviz2-15]: process started with pid [504]
+[INFO] [gemini_node-16]: process started with pid [510]
+[INFO] [poster_logger.py-17]: process started with pid [558]
+[ERROR] [poster_logger.py-17]: process has died [pid 558, exit code 127, cmd '/root/ros2_ws/install/simulation_pkg/lib/simulation_pkg/poster_logger.py --ros-args --params-file /tmp/launch_params_45vhu7ht'].
+[INFO] [simple_explorer.py-18]: process started with pid [606]
+[ERROR] [simple_explorer.py-18]: process has died [pid 606, exit code 127, cmd '/root/ros2_ws/install/simulation_pkg/lib/simulation_pkg/simple_explorer.py --ros-args -r __node:=auto_explorer --params-file /tmp/launch_params_apj6orub'].
+[static_transform_publisher-4] [WARN] [1768989921.017900048] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-5] [WARN] [1768989921.018640676] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-5] [INFO] [1768989921.077414443] [static_transform_publisher_QN7Swpd9DXloMq0r]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.100000', '0.000000', '0.250000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'base_link' to 'itu_bot/chassis/lidar'
+[poster_logger.py-17] /usr/bin/env: ‘python3\r’: No such file or directory
+[simple_explorer.py-18] /usr/bin/env: ‘python3\r’: No such file or directory
+[rviz2-15] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[ign gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[smoother_server-8] [INFO] [1768989921.436035676] [smoother_server]: 
+[smoother_server-8] 	smoother_server lifecycle node launched. 
+[smoother_server-8] 	Waiting on external lifecycle transitions to activate
+[smoother_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1768989921.466908836] [planner_server]: 
+[planner_server-9] 	planner_server lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1768989921.486606695] [waypoint_follower]: 
+[waypoint_follower-12] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-12] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-7] [INFO] [1768989921.495580742] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[bt_navigator-11] [INFO] [1768989921.512282586] [bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1768989921.512492494] [bt_navigator]: Creating
+[create-2] [INFO] [1768989921.539088920] [ros_gz_sim]: Requesting list of world names.
+[rviz2-15] [INFO] [1768989921.551480698] [rviz2]: Stereo is NOT SUPPORTED
+[parameter_bridge-3] [INFO] [1768989921.542570054] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera (gz.msgs.Image) -> /camera (sensor_msgs/msg/Image)] (Lazy 0)
+[controller_server-7] [INFO] [1768989921.543575993] [controller_server]: 
+[controller_server-7] 	controller_server lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[parameter_bridge-3] [INFO] [1768989921.550567663] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/camera (sensor_msgs/msg/Image) -> /camera (gz.msgs.Image)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989921.551824011] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989921.552745547] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/scan (sensor_msgs/msg/LaserScan) -> /scan (gz.msgs.LaserScan)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989921.555139739] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/cmd_vel (gz.msgs.Twist) -> /cmd_vel (geometry_msgs/msg/Twist)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989921.558287960] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[waypoint_follower-12] [INFO] [1768989921.560001826] [waypoint_follower]: Creating
+[lifecycle_manager-14] [INFO] [1768989921.565808150] [lifecycle_manager_navigation]: Creating
+[async_slam_toolbox_node-6] [INFO] [1768989921.568059437] [slam_toolbox]: Node using stack size 40000000
+[velocity_smoother-13] [INFO] [1768989921.568661060] [velocity_smoother]: 
+[velocity_smoother-13] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-13] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[static_transform_publisher-4] [INFO] [1768989921.581024737] [static_transform_publisher_ufVUvIIQZQMmXHrG]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_footprint' to 'base_link'
+[parameter_bridge-3] [INFO] [1768989921.585724819] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[lifecycle_manager-14] [INFO] [1768989921.587085271] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[parameter_bridge-3] [INFO] [1768989921.601211416] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/odom (nav_msgs/msg/Odometry) -> /odom (gz.msgs.Odometry)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989921.608214286] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989921.614041811] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/clock (rosgraph_msgs/msg/Clock) -> /clock (gz.msgs.Clock)] (Lazy 0)
+[parameter_bridge-3] [INFO] [1768989921.635188127] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[behavior_server-10] [INFO] [1768989921.666767145] [behavior_server]: 
+[behavior_server-10] 	behavior_server lifecycle node launched. 
+[behavior_server-10] 	Waiting on external lifecycle transitions to activate
+[behavior_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[parameter_bridge-3] [INFO] [1768989921.687704952] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/tf (tf2_msgs/msg/TFMessage) -> /tf (gz.msgs.Pose_V)] (Lazy 0)
+[create-2] [INFO] [1768989921.750530876] [ros_gz_sim]: Requested creation of entity.
+[create-2] [INFO] [1768989921.750593278] [ros_gz_sim]: OK creation of entity.
+[smoother_server-8] [INFO] [1768989921.952494766] [smoother_server]: Creating smoother server
+[planner_server-9] [INFO] [1768989921.970671367] [planner_server]: Creating
+[controller_server-7] [INFO] [1768989921.995795436] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [create-2]: process has finished cleanly [pid 477]
+[async_slam_toolbox_node-6] [INFO] [1768989922.108183271] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-6] [INFO] [1768989922.110395556] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[planner_server-9] [INFO] [1768989922.172695159] [global_costmap.global_costmap]: 
+[planner_server-9] 	global_costmap lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1768989922.257911046] [global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-14] [INFO] [1768989922.377086743] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-14] [INFO] [1768989922.377173546] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-7] [INFO] [1768989922.495986029] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-15] [INFO] [1768989922.621332764] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-15] [INFO] [1768989922.621616375] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[controller_server-7] [INFO] [1768989922.692898625] [controller_server]: Creating controller server
+[controller_server-7] [INFO] [1768989922.766108849] [local_costmap.local_costmap]: 
+[controller_server-7] 	local_costmap lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[rviz2-15] [INFO] [1768989922.767931419] [rviz2]: Stereo is NOT SUPPORTED
+[controller_server-7] [INFO] [1768989922.807587948] [local_costmap.local_costmap]: Creating Costmap
+[controller_server-7] [INFO] [1768989922.821000266] [controller_server]: Configuring controller interface
+[controller_server-7] [INFO] [1768989922.821669092] [controller_server]: getting goal checker plugins..
+[controller_server-7] [INFO] [1768989922.822344218] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-7] [INFO] [1768989922.822516624] [local_costmap.local_costmap]: Configuring
+[controller_server-7] [INFO] [1768989922.839279871] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-7] [INFO] [1768989922.862508867] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-7] [INFO] [1768989922.896620583] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-7] [INFO] [1768989922.896757688] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-7] [INFO] [1768989922.898038637] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-7] [INFO] [1768989922.948047966] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-7] [INFO] [1768989922.960779857] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-7] [INFO] [1768989922.962307316] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-7] [INFO] [1768989922.996220324] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768989923.072709575] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-7] [INFO] [1768989923.074516845] [controller_server]: Setting transform_tolerance to 0.200000
+[gemini_node-16] Traceback (most recent call last):
+[gemini_node-16]   File "/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node", line 33, in <module>
+[gemini_node-16]     sys.exit(load_entry_point('perception-pkg', 'console_scripts', 'gemini_node')())
+[gemini_node-16]   File "/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node", line 25, in importlib_load_entry_point
+[gemini_node-16]     return next(matches).load()
+[gemini_node-16]   File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+[gemini_node-16]     module = import_module(match.group('module'))
+[gemini_node-16]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[gemini_node-16]     return _bootstrap._gcd_import(name[level:], package, level)
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[controller_server-7] [INFO] [1768989923.125413908] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-7] [INFO] [1768989923.127164175] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989923.127616793] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-7] [INFO] [1768989923.128807039] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989923.129055948] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-7] [INFO] [1768989923.129552767] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989923.129772476] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-7] [INFO] [1768989923.130700612] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989923.131786454] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-7] [INFO] [1768989923.132786692] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989923.133161507] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-7] [INFO] [1768989923.134115743] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989923.134684165] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-7] [INFO] [1768989923.135119482] [controller_server]: Critic plugin initialized
+[controller_server-7] [INFO] [1768989923.135160684] [controller_server]: Controller Server has FollowPath  controllers available.
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[lifecycle_manager-14] [INFO] [1768989923.153205380] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-8] [WARN] [1768989923.153752901] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[smoother_server-8] [WARN] [1768989923.153786802] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[smoother_server-8] [ERROR] [1768989923.153796002] [smoother_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[smoother_server-8] [INFO] [1768989923.153794002] [smoother_server]: Configuring smoother server
+[planner_server-9] [WARN] [1768989923.154922646] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[planner_server-9] [WARN] [1768989923.154955947] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[planner_server-9] [ERROR] [1768989923.154965948] [planner_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[lifecycle_manager-14] [INFO] [1768989923.154437527] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[behavior_server-10] [WARN] [1768989923.159940940] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[behavior_server-10] [WARN] [1768989923.159974141] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[behavior_server-10] [ERROR] [1768989923.159986741] [behavior_server]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[planner_server-9] [INFO] [1768989923.154955247] [planner_server]: Configuring
+[planner_server-9] [INFO] [1768989923.155017350] [global_costmap.global_costmap]: Configuring
+[lifecycle_manager-14] [INFO] [1768989923.157581949] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-10] [INFO] [1768989923.159546124] [behavior_server]: Configuring
+[lifecycle_manager-14] [INFO] [1768989923.167444929] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1768989923.168494469] [bt_navigator]: Configuring
+[bt_navigator-11] [WARN] [1768989923.168309062] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[bt_navigator-11] [WARN] [1768989923.168355364] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[bt_navigator-11] [ERROR] [1768989923.168372065] [bt_navigator]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[lifecycle_manager-14] [INFO] [1768989923.171622690] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1768989923.173419959] [waypoint_follower]: Configuring
+[waypoint_follower-12] [WARN] [1768989923.173361557] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[waypoint_follower-12] [WARN] [1768989923.173428660] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[waypoint_follower-12] [ERROR] [1768989923.173441660] [waypoint_follower]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[gemini_node-16]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[lifecycle_manager-14] [INFO] [1768989923.183155235] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-13] [WARN] [1768989923.184500487] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[velocity_smoother-13] [WARN] [1768989923.184588790] [rcl_lifecycle]: No transition matching 1 found for current state inactive
+[velocity_smoother-13] [ERROR] [1768989923.184609491] [velocity_smoother]: Unable to start transition 1 from current state inactive: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[velocity_smoother-13] [INFO] [1768989923.188803853] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-14] [INFO] [1768989923.193720642] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-7] [INFO] [1768989923.198514827] [controller_server]: Activating
+[controller_server-7] [INFO] [1768989923.198630032] [local_costmap.local_costmap]: Activating
+[controller_server-7] [INFO] [1768989923.198649633] [local_costmap.local_costmap]: Checking transform
+[controller_server-7] [INFO] [1768989923.199835478] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1768989923.200245794] [global_costmap.global_costmap]: Using plugin "static_layer"
+[gemini_node-16]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[gemini_node-16]   File "/root/ros2_ws/build/perception_pkg/perception_pkg/gemini_node.py", line 12, in <module>
+[behavior_server-10] [INFO] [1768989923.228601788] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[planner_server-9] [INFO] [1768989923.239448006] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[gemini_node-16]     import google.generativeai as genai
+[gemini_node-16] ModuleNotFoundError: No module named 'google'
+[planner_server-9] [INFO] [1768989923.244848715] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-9] [INFO] [1768989923.244959019] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-9] [INFO] [1768989923.247796328] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[behavior_server-10] [INFO] [1768989923.271187631] [behavior_server]: Configuring spin
+[smoother_server-8] [INFO] [1768989923.280837203] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-8] [INFO] [1768989923.281394424] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[planner_server-9] [INFO] [1768989923.283054988] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-9] [INFO] [1768989923.283127691] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-9] [INFO] [1768989923.284177632] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[behavior_server-10] [INFO] [1768989923.331787868] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[waypoint_follower-12] [INFO] [1768989923.347939691] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[behavior_server-10] [INFO] [1768989923.370464860] [behavior_server]: Configuring backup
+[planner_server-9] [INFO] [1768989923.389322387] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-9] [INFO] [1768989923.389444292] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768989923.394380282] [planner_server]: Planner Server has GridBased  planners available.
+[behavior_server-10] [INFO] [1768989923.404183060] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-10] [INFO] [1768989923.433597495] [behavior_server]: Configuring assisted_teleop
+[ERROR] [gemini_node-16]: process has died [pid 510, exit code 1, cmd '/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node --ros-args --params-file /tmp/launch_params_5z6yow39'].
+[behavior_server-10] [INFO] [1768989923.459186982] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-10] [INFO] [1768989923.474552975] [behavior_server]: Configuring wait
+[controller_server-7] [INFO] [1768989923.496473920] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768989923.698787224] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768989923.996924724] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768989924.198789010] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768989924.497121617] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768989924.698770695] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[parameter_bridge-3] [INFO] [1768989924.739987485] [ros_gz_bridge]: Passing message from ROS sensor_msgs/msg/Image to Gazebo gz.msgs.Image (showing msg only once per type)
+[parameter_bridge-3] [INFO] [1768989924.740949822] [ros_gz_bridge]: Passing message from ROS sensor_msgs/msg/Image to Gazebo gz.msgs.Image (showing msg only once per type)
+[controller_server-7] [INFO] [1768989924.997366913] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[parameter_bridge-3] [INFO] [1768989925.073509550] [ros_gz_bridge]: Passing message from ROS sensor_msgs/msg/LaserScan to Gazebo gz.msgs.LaserScan (showing msg only once per type)
+[parameter_bridge-3] [INFO] [1768989925.074947405] [ros_gz_bridge]: Passing message from ROS sensor_msgs/msg/LaserScan to Gazebo gz.msgs.LaserScan (showing msg only once per type)
+[parameter_bridge-3] [INFO] [1768989925.098457912] [ros_gz_bridge]: Passing message from ROS nav_msgs/msg/Odometry to Gazebo gz.msgs.Odometry (showing msg only once per type)
+[parameter_bridge-3] [INFO] [1768989925.098908230] [ros_gz_bridge]: Passing message from ROS tf2_msgs/msg/TFMessage to Gazebo gz.msgs.Pose_V (showing msg only once per type)
+[parameter_bridge-3] [INFO] [1768989925.101893145] [ros_gz_bridge]: Passing message from ROS nav_msgs/msg/Odometry to Gazebo gz.msgs.Odometry (showing msg only once per type)
+[parameter_bridge-3] [INFO] [1768989925.102271759] [ros_gz_bridge]: Passing message from ROS tf2_msgs/msg/TFMessage to Gazebo gz.msgs.Pose_V (showing msg only once per type)
+[controller_server-7] [INFO] [1768989925.199192398] [local_costmap.local_costmap]: start
+[rviz2-15] [INFO] [1768989925.361925275] [rviz2]: Stereo is NOT SUPPORTED
+[controller_server-7] [INFO] [1768989925.421807985] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[controller_server-7] [INFO] [1768989925.502322990] [local_costmap.local_costmap]: start
+[lifecycle_manager-14] [INFO] [1768989925.544338211] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768989925.544859831] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-8] [INFO] [1768989925.548825784] [smoother_server]: Activating
+[smoother_server-8] [INFO] [1768989925.548953189] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[smoother_server-8] [INFO] [1768989925.550299241] [smoother_server]: Activating
+[smoother_server-8] [INFO] [1768989925.550382544] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768989925.661758840] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768989925.661981949] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-9] [INFO] [1768989925.663809319] [planner_server]: Activating
+[planner_server-9] [INFO] [1768989925.663943524] [global_costmap.global_costmap]: Activating
+[planner_server-9] [INFO] [1768989925.663987726] [global_costmap.global_costmap]: Checking transform
+[planner_server-9] [INFO] [1768989925.664078629] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1768989925.665725193] [planner_server]: Activating
+[planner_server-9] [INFO] [1768989925.666008804] [global_costmap.global_costmap]: Activating
+[planner_server-9] [INFO] [1768989925.666045305] [global_costmap.global_costmap]: Checking transform
+[planner_server-9] [INFO] [1768989925.666118708] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[controller_server-7] [INFO] [1768989925.717852304] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[controller_server-7] [WARN] [1768989925.741771326] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-7] [WARN] [1768989925.741904431] [rcl_lifecycle]: No transition matching 1 found for current state active
+[controller_server-7] [ERROR] [1768989925.741924132] [controller_server]: Unable to start transition 1 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[controller_server-7] [WARN] [1768989925.742155941] [rcl_lifecycle]: No transition matching 3 found for current state active
+[controller_server-7] [WARN] [1768989925.742165041] [rcl_lifecycle]: No transition matching 3 found for current state active
+[controller_server-7] [ERROR] [1768989925.742168942] [controller_server]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[lifecycle_manager-14] [INFO] [1768989925.768025839] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768989925.768244947] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-8] [WARN] [1768989925.770556437] [rcl_lifecycle]: No transition matching 3 found for current state active
+[smoother_server-8] [WARN] [1768989925.770604338] [rcl_lifecycle]: No transition matching 3 found for current state active
+[smoother_server-8] [ERROR] [1768989925.770616939] [smoother_server]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[smoother_server-8] [WARN] [1768989925.771004954] [rcl_lifecycle]: No transition matching 3 found for current state active
+[smoother_server-8] [WARN] [1768989925.772107896] [rcl_lifecycle]: No transition matching 3 found for current state active
+[smoother_server-8] [ERROR] [1768989925.772182799] [smoother_server]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[lifecycle_manager-14] [INFO] [1768989925.862314676] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768989925.863856735] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-9] [INFO] [1768989926.164146718] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1768989926.166233199] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1768989926.666458493] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1768989926.665452855] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[async_slam_toolbox_node-6] [WARN] [1768989926.697860505] [slam_toolbox]: minimum laser range setting (0.0 m) exceeds the capabilities of the used Lidar (0.1 m)
+[async_slam_toolbox_node-6] [WARN] [1768989926.700156493] [slam_toolbox]: minimum laser range setting (0.0 m) exceeds the capabilities of the used Lidar (0.1 m)
+[async_slam_toolbox_node-6] Info: clipped range threshold to be within minimum and maximum range!
+[async_slam_toolbox_node-6] Registering sensor: [Custom Described Lidar]
+[async_slam_toolbox_node-6] [WARN] [1768989926.698602233] [slam_toolbox]: maximum laser range setting (20.0 m) exceeds the capabilities of the used Lidar (10.0 m)
+[async_slam_toolbox_node-6] Info: clipped range threshold to be within minimum and maximum range!
+[async_slam_toolbox_node-6] [WARN] [1768989926.714034929] [slam_toolbox]: maximum laser range setting (20.0 m) exceeds the capabilities of the used Lidar (10.0 m)
+[async_slam_toolbox_node-6] Registering sensor: [Custom Described Lidar]
+[planner_server-9] [INFO] [1768989926.949992265] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 278 X 195 at 0.050000 m/pix
+[planner_server-9] [INFO] [1768989926.954387337] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 278 X 195 at 0.050000 m/pix
+[rviz2-15] [INFO] [1768989927.036956853] [rviz2]: Trying to create a map of size 278 x 195 using 1 swatches
+[rviz2-15] [ERROR] [1768989927.085826157] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-15] active samplers with a different type refer to the same texture image unit
+[rviz2-15] [INFO] [1768989927.089574703] [rviz2]: Trying to create a map of size 278 x 195 using 1 swatches
+[rviz2-15] [ERROR] [1768989927.114648280] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-15] active samplers with a different type refer to the same texture image unit
+[planner_server-9] [INFO] [1768989927.164215311] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.260000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989927.170019337] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.260000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989927.666220869] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.400000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989927.668536059] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.400000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989928.164161768] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.540000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989928.167214187] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.540000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989928.664191049] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.700000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989928.666634444] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.700000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989929.169646741] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.880000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989929.166659025] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.860000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989929.664171308] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1.000000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989929.666857612] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1.000000 but the earliest data is at time 1.100000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1768989930.165169426] [global_costmap.global_costmap]: start
+[planner_server-9] [INFO] [1768989930.168521957] [global_costmap.global_costmap]: start
+[planner_server-9] [INFO] [1768989931.176999846] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768989931.187967173] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[planner_server-9] [INFO] [1768989931.193706297] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-9] [WARN] [1768989931.207467333] [rcl_lifecycle]: No transition matching 3 found for current state active
+[planner_server-9] [WARN] [1768989931.207524235] [rcl_lifecycle]: No transition matching 3 found for current state active
+[planner_server-9] [ERROR] [1768989931.207531736] [planner_server]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[planner_server-9] [INFO] [1768989931.200075745] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[planner_server-9] [WARN] [1768989931.231793781] [rcl_lifecycle]: No transition matching 3 found for current state active
+[planner_server-9] [WARN] [1768989931.231876184] [rcl_lifecycle]: No transition matching 3 found for current state active
+[planner_server-9] [ERROR] [1768989931.231892685] [planner_server]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[lifecycle_manager-14] [INFO] [1768989931.311780097] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768989931.311966604] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-10] [INFO] [1768989931.313591068] [behavior_server]: Activating
+[behavior_server-10] [INFO] [1768989931.313715072] [behavior_server]: Activating spin
+[behavior_server-10] [INFO] [1768989931.313755574] [behavior_server]: Activating backup
+[behavior_server-10] [INFO] [1768989931.313785375] [behavior_server]: Activating assisted_teleop
+[behavior_server-10] [INFO] [1768989931.313826077] [behavior_server]: Activating wait
+[behavior_server-10] [INFO] [1768989931.313881179] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[behavior_server-10] [INFO] [1768989931.316034163] [behavior_server]: Activating
+[behavior_server-10] [INFO] [1768989931.316173168] [behavior_server]: Activating spin
+[behavior_server-10] [INFO] [1768989931.316211470] [behavior_server]: Activating backup
+[behavior_server-10] [INFO] [1768989931.316237271] [behavior_server]: Activating assisted_teleop
+[behavior_server-10] [INFO] [1768989931.316276772] [behavior_server]: Activating wait
+[behavior_server-10] [INFO] [1768989931.316319774] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768989931.318515659] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768989931.318615963] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-10] [WARN] [1768989931.350962524] [rcl_lifecycle]: No transition matching 3 found for current state active
+[behavior_server-10] [WARN] [1768989931.351037026] [rcl_lifecycle]: No transition matching 3 found for current state active
+[behavior_server-10] [ERROR] [1768989931.351047327] [behavior_server]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[behavior_server-10] [WARN] [1768989931.362811985] [rcl_lifecycle]: No transition matching 3 found for current state active
+[behavior_server-10] [WARN] [1768989931.362883688] [rcl_lifecycle]: No transition matching 3 found for current state active
+[behavior_server-10] [ERROR] [1768989931.362901989] [behavior_server]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[lifecycle_manager-14] [INFO] [1768989931.459540454] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768989931.460002472] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[lifecycle_manager-14] [INFO] [1768989931.463795219] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-14] [INFO] [1768989931.463883023] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-11] [INFO] [1768989931.474054519] [bt_navigator]: Activating
+[bt_navigator-11] [INFO] [1768989931.470442878] [bt_navigator]: Activating
+[bt_navigator-11] [INFO] [1768989932.132832485] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[bt_navigator-11] [WARN] [1768989932.141186110] [rcl_lifecycle]: No transition matching 3 found for current state active
+[bt_navigator-11] [WARN] [1768989932.141549824] [rcl_lifecycle]: No transition matching 3 found for current state active
+[bt_navigator-11] [ERROR] [1768989932.141561125] [bt_navigator]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[bt_navigator-11] [INFO] [1768989932.160027044] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[bt_navigator-11] [WARN] [1768989932.183182946] [rcl_lifecycle]: No transition matching 3 found for current state active
+[bt_navigator-11] [WARN] [1768989932.183265049] [rcl_lifecycle]: No transition matching 3 found for current state active
+[bt_navigator-11] [ERROR] [1768989932.183285750] [bt_navigator]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[lifecycle_manager-14] [INFO] [1768989932.245403870] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-14] [INFO] [1768989932.245584877] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-12] [INFO] [1768989932.246808925] [waypoint_follower]: Activating
+[waypoint_follower-12] [INFO] [1768989932.246950030] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-12] [INFO] [1768989932.247014233] [waypoint_follower]: Activating
+[waypoint_follower-12] [INFO] [1768989932.247076735] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768989932.250203157] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-14] [INFO] [1768989932.250315162] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-12] [WARN] [1768989932.279859913] [rcl_lifecycle]: No transition matching 3 found for current state active
+[waypoint_follower-12] [WARN] [1768989932.279897814] [rcl_lifecycle]: No transition matching 3 found for current state active
+[waypoint_follower-12] [ERROR] [1768989932.279904714] [waypoint_follower]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[waypoint_follower-12] [WARN] [1768989932.297177787] [rcl_lifecycle]: No transition matching 3 found for current state active
+[waypoint_follower-12] [WARN] [1768989932.297251990] [rcl_lifecycle]: No transition matching 3 found for current state active
+[waypoint_follower-12] [ERROR] [1768989932.297271091] [waypoint_follower]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[lifecycle_manager-14] [INFO] [1768989932.392064384] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-14] [INFO] [1768989932.392244991] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-13] [INFO] [1768989932.401213740] [velocity_smoother]: Activating
+[velocity_smoother-13] [INFO] [1768989932.401361146] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[velocity_smoother-13] [INFO] [1768989932.403260820] [velocity_smoother]: Activating
+[velocity_smoother-13] [INFO] [1768989932.403475729] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-14] [INFO] [1768989932.407904701] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-14] [INFO] [1768989932.408005505] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-13] [WARN] [1768989932.476539675] [rcl_lifecycle]: No transition matching 3 found for current state active
+[velocity_smoother-13] [WARN] [1768989932.476608278] [rcl_lifecycle]: No transition matching 3 found for current state active
+[velocity_smoother-13] [ERROR] [1768989932.476622078] [velocity_smoother]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[velocity_smoother-13] [WARN] [1768989932.491098942] [rcl_lifecycle]: No transition matching 3 found for current state active
+[velocity_smoother-13] [WARN] [1768989932.491186646] [rcl_lifecycle]: No transition matching 3 found for current state active
+[velocity_smoother-13] [ERROR] [1768989932.491202246] [velocity_smoother]: Unable to start transition 3 from current state active: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[lifecycle_manager-14] [INFO] [1768989932.577216597] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-14] [INFO] [1768989932.578485647] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-14] [INFO] [1768989932.578554849] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[lifecycle_manager-14] [INFO] [1768989932.582500803] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-14] [INFO] [1768989932.582600707] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-14] [INFO] [1768989932.582645509] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[smoother_server-8] [INFO] [1768990037.508514073] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[smoother_server-8] [INFO] [1768990037.508750590] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-8] [INFO] [1768990037.508881200] [smoother_server]: Deactivating
+[smoother_server-8] [INFO] [1768990037.508911402] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[waypoint_follower-12] [INFO] [1768990037.509171520] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-12] [INFO] [1768990037.509442540] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-12] [INFO] [1768990037.509639654] [waypoint_follower]: Deactivating
+[waypoint_follower-12] [INFO] [1768990037.509693958] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[bt_navigator-11] [INFO] [1768990037.508529475] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-11] [INFO] [1768990037.508823596] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[controller_server-7] [INFO] [1768990037.509899972] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-11] [INFO] [1768990037.508922703] [bt_navigator]: Deactivating
+[bt_navigator-11] [INFO] [1768990037.508954105] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[controller_server-7] [INFO] [1768990037.510039982] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[lifecycle_manager-14] [INFO] [1768990037.508378164] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-14] [INFO] [1768990037.509080514] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-14] [INFO] [1768990037.509147319] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[controller_server-7] [INFO] [1768990037.510193193] [controller_server]: Deactivating
+[controller_server-7] [INFO] [1768990037.510367206] [local_costmap.local_costmap]: Deactivating
+[planner_server-9] [INFO] [1768990037.509735561] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-9] [INFO] [1768990037.510745233] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[lifecycle_manager-14] [INFO] [1768990037.510949747] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-14] [INFO] [1768990037.511046754] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-14] [INFO] [1768990037.511099458] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[planner_server-9] [INFO] [1768990037.511025153] [planner_server]: Deactivating
+[planner_server-9] [INFO] [1768990037.511165563] [global_costmap.global_costmap]: Deactivating
+[static_transform_publisher-4] [INFO] [1768990037.511097958] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[static_transform_publisher-5] [INFO] [1768990037.512284243] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[velocity_smoother-13] [INFO] [1768990037.513343318] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[smoother_server-8] [INFO] [1768990037.508440568] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[smoother_server-8] [INFO] [1768990037.509121317] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-8] [INFO] [1768990037.509228724] [smoother_server]: Deactivating
+[smoother_server-8] [INFO] [1768990037.509263727] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[static_transform_publisher-5] [INFO] [1768990037.509441140] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-10] [INFO] [1768990037.509630353] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-10] [INFO] [1768990037.510126789] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-10] [INFO] [1768990037.511223967] [behavior_server]: Deactivating
+[planner_server-9] [INFO] [1768990037.510749833] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-9] [INFO] [1768990037.510980549] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-9] [INFO] [1768990037.511116159] [planner_server]: Deactivating
+[planner_server-9] [INFO] [1768990037.511173763] [global_costmap.global_costmap]: Deactivating
+[velocity_smoother-13] [INFO] [1768990037.514275685] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-13] [INFO] [1768990037.514625610] [velocity_smoother]: Deactivating
+[velocity_smoother-13] [INFO] [1768990037.514900829] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[bt_navigator-11] [INFO] [1768990037.515179149] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-11] [INFO] [1768990037.515513173] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-11] [INFO] [1768990037.515695286] [bt_navigator]: Deactivating
+[bt_navigator-11] [INFO] [1768990037.515747890] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[static_transform_publisher-4] [INFO] [1768990037.511371377] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-3] [INFO] [1768990037.515919802] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-10] [INFO] [1768990037.516745861] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-10] [INFO] [1768990037.524195693] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-10] [INFO] [1768990037.524424109] [behavior_server]: Deactivating
+[behavior_server-10] [INFO] [1768990037.524853740] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[rviz2-15] [INFO] [1768990037.519007722] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[velocity_smoother-13] [INFO] [1768990037.509590950] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-12] [INFO] [1768990037.512592765] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-12] [INFO] [1768990037.512771977] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-12] [INFO] [1768990037.512909287] [waypoint_follower]: Deactivating
+[waypoint_follower-12] [INFO] [1768990037.512948990] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[rviz2-15] [INFO] [1768990037.513417323] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-3] [INFO] [1768990037.514184578] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[velocity_smoother-13] [INFO] [1768990037.518232767] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-13] [INFO] [1768990037.518557390] [velocity_smoother]: Deactivating
+[velocity_smoother-13] [INFO] [1768990037.518617895] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[controller_server-7] [INFO] [1768990037.519170634] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-7] [INFO] [1768990037.521233181] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-7] [INFO] [1768990037.521551004] [controller_server]: Deactivating
+[controller_server-7] [INFO] [1768990037.521994236] [local_costmap.local_costmap]: Deactivating
+[behavior_server-10] [INFO] [1768990037.521369791] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[async_slam_toolbox_node-6] [INFO] [1768990037.521559605] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-12] [INFO] [1768990037.533817779] [waypoint_follower]: Cleaning up
+[async_slam_toolbox_node-6] [INFO] [1768990037.525770405] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-10] [INFO] [1768990037.534485627] [behavior_server]: Cleaning up
+[waypoint_follower-12] [INFO] [1768990037.534628437] [waypoint_follower]: Cleaning up
+[waypoint_follower-12] [INFO] [1768990037.546678297] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-12] [INFO] [1768990037.553383176] [waypoint_follower]: Destroying
+[behavior_server-10] [INFO] [1768990037.567006448] [behavior_server]: Cleaning up
+[bt_navigator-11] [INFO] [1768990037.569626735] [bt_navigator]: Cleaning up
+[smoother_server-8] [INFO] [1768990037.569740143] [smoother_server]: Cleaning up
+[bt_navigator-11] [INFO] [1768990037.571156745] [bt_navigator]: Cleaning up
+[velocity_smoother-13] [INFO] [1768990037.577614805] [velocity_smoother]: Cleaning up
+[velocity_smoother-13] [INFO] [1768990037.577709512] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[smoother_server-8] [INFO] [1768990037.592688981] [smoother_server]: Cleaning up
+[controller_server-7] [INFO] [1768990037.599881495] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[waypoint_follower-12] [INFO] [1768990037.630198359] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[controller_server-7] [INFO] [1768990037.630475178] [controller_server]: Cleaning up
+[controller_server-7] [INFO] [1768990037.631796173] [local_costmap.local_costmap]: Cleaning up
+[velocity_smoother-13] [INFO] [1768990037.666851675] [velocity_smoother]: Cleaning up
+[velocity_smoother-13] [INFO] [1768990037.666950082] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[behavior_server-10] [INFO] [1768990037.701705162] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[velocity_smoother-13] [INFO] [1768990037.680334937] [velocity_smoother]: Destroying
+[velocity_smoother-13] [INFO] [1768990037.712261516] [velocity_smoother]: Destroying
+[smoother_server-8] [INFO] [1768990037.699903134] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[controller_server-7] [INFO] [1768990037.712793154] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-7] [INFO] [1768990037.723667830] [controller_server]: Cleaning up
+[controller_server-7] [INFO] [1768990037.724344078] [local_costmap.local_costmap]: Cleaning up
+[behavior_server-10] [INFO] [1768990037.726029398] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[smoother_server-8] [INFO] [1768990037.754895159] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[smoother_server-8] [INFO] [1768990037.762428496] [smoother_server]: Destroying
+[waypoint_follower-12] [INFO] [1768990037.809822179] [waypoint_follower]: Destroying
+[smoother_server-8] [INFO] [1768990037.789962962] [smoother_server]: Destroying
+[INFO] [waypoint_follower-12]: process has finished cleanly [pid 145]
+[INFO] [static_transform_publisher-4]: process has finished cleanly [pid 129]
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 480]
+[INFO] [async_slam_toolbox_node-6]: process has finished cleanly [pid 486]
+[controller_server-7] [INFO] [1768990037.881174272] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [static_transform_publisher-5]: process has finished cleanly [pid 131]
+[behavior_server-10] [INFO] [1768990037.908518724] [behavior_server]: Destroying
+[INFO] [velocity_smoother-13]: process has finished cleanly [pid 500]
+[INFO] [parameter_bridge-3]: process has finished cleanly [pid 127]
+[controller_server-7] [INFO] [1768990037.926953039] [local_costmap.local_costmap]: Destroying
+[INFO] [static_transform_publisher-5]: process has finished cleanly [pid 484]
+[controller_server-7] [INFO] [1768990037.926988242] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[behavior_server-10] [INFO] [1768990037.937701206] [behavior_server]: Destroying
+[INFO] [velocity_smoother-13]: process has finished cleanly [pid 147]
+[INFO] [async_slam_toolbox_node-6]: process has finished cleanly [pid 133]
+[controller_server-7] [INFO] [1768990037.948009142] [local_costmap.local_costmap]: Destroying
+[INFO] [static_transform_publisher-4]: process has finished cleanly [pid 482]
+[controller_server-7] [INFO] [1768990037.966332950] [controller_server]: Destroying
+[lifecycle_manager-14] [INFO] [1768990037.974899762] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[controller_server-7] [INFO] [1768990037.978949051] [controller_server]: Destroying
+[INFO] [waypoint_follower-12]: process has finished cleanly [pid 498]
+[INFO] [smoother_server-8]: process has finished cleanly [pid 137]
+[bt_navigator-11] [INFO] [1768990038.060615879] [bt_navigator]: Completed Cleaning up
+[bt_navigator-11] [INFO] [1768990038.060735788] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-11] [INFO] [1768990038.065635138] [bt_navigator]: Completed Cleaning up
+[bt_navigator-11] [INFO] [1768990038.065859554] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [smoother_server-8]: process has finished cleanly [pid 490]
+[bt_navigator-11] [INFO] [1768990038.080044366] [bt_navigator]: Destroying
+[bt_navigator-11] [INFO] [1768990038.080166575] [bt_navigator]: Destroying
+[INFO] [behavior_server-10]: process has finished cleanly [pid 494]
+[INFO] [behavior_server-10]: process has finished cleanly [pid 141]
+[lifecycle_manager-14] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[lifecycle_manager-14]   what():  failed to publish message: cannot publish data, at ./src/rmw_publish.cpp:62, at ./src/rcl/publisher.c:250
+[INFO] [lifecycle_manager-14]: process has finished cleanly [pid 149]
+[INFO] [controller_server-7]: process has finished cleanly [pid 488]
+[INFO] [controller_server-7]: process has finished cleanly [pid 135]
+[planner_server-9] [INFO] [1768990038.163654134] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768990038.163838847] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-9] [INFO] [1768990038.167439804] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768990038.167541611] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-9] [INFO] [1768990038.177957855] [planner_server]: Cleaning up
+[planner_server-9] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[planner_server-9] [INFO] [1768990038.193881391] [global_costmap.global_costmap]: Cleaning up
+[planner_server-9]   what():  failed to publish message: cannot publish data, at ./src/rmw_publish.cpp:62, at ./src/rcl/publisher.c:250
+[planner_server-9] [INFO] [1768990038.195891735] [planner_server]: Cleaning up
+[planner_server-9] [INFO] [1768990038.197291635] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768990038.197596756] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768990038.209939537] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-9] [INFO] [1768990038.207305849] [global_costmap.global_costmap]: Cleaning up
+[planner_server-9] [INFO] [1768990038.224994912] [global_costmap.global_costmap]: Destroying
+[planner_server-9] [INFO] [1768990038.231178753] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1768990038.231671488] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[INFO] [bt_navigator-11]: process has finished cleanly [pid 143]
+[INFO] [bt_navigator-11]: process has finished cleanly [pid 496]
+[planner_server-9] [INFO] [1768990038.248112762] [planner_server]: Destroying
+[INFO] [planner_server-9]: process has finished cleanly [pid 139]
+[INFO] [ign gazebo-1]: process has finished cleanly [pid 475]
+[INFO] [launch]: process[ign gazebo-1] was required: shutting down launched system
+[INFO] [rviz2-15]: sending signal 'SIGINT' to process[rviz2-15]
+[INFO] [lifecycle_manager-14]: sending signal 'SIGINT' to process[lifecycle_manager-14]
+[INFO] [planner_server-9]: sending signal 'SIGINT' to process[planner_server-9]
+[INFO] [ign gazebo-1]: process has finished cleanly [pid 122]
+[INFO] [launch]: process[ign gazebo-1] was required: shutting down launched system
+[INFO] [rviz2-15]: sending signal 'SIGINT' to process[rviz2-15]
+[ERROR] [rviz2-15]: process[rviz2-15] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [lifecycle_manager-14]: process[lifecycle_manager-14] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [planner_server-9]: process[planner_server-9] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [rviz2-15]: sending signal 'SIGTERM' to process[rviz2-15]
+[INFO] [lifecycle_manager-14]: sending signal 'SIGTERM' to process[lifecycle_manager-14]
+[INFO] [planner_server-9]: sending signal 'SIGTERM' to process[planner_server-9]
+[ERROR] [rviz2-15]: process[rviz2-15] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [rviz2-15]: sending signal 'SIGTERM' to process[rviz2-15]
+[ERROR] [rviz2-15]: process has died [pid 151, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /root/ros2_ws/install/simulation_pkg/share/simulation_pkg/rviz/sim_config.rviz --ros-args -r __node:=rviz2 --params-file /tmp/launch_params_1x9k98_v'].

@@ -13,8 +13,13 @@ class InitialPosePublisher(Node):
             10
         )
         
-        # Wait for AMCL to be ready
-        time.sleep(3.0)
+        # Wait for AMCL to be ready (Subscriber Check)
+        while self.publisher.get_subscription_count() == 0:
+            self.get_logger().info('⏳ Waiting for AMCL (subscriber) on /initialpose...')
+            time.sleep(1.0)
+            
+        # Short stabilization delay
+        time.sleep(1.0)
         
         # Publish initial pose
         self.publish_initial_pose()

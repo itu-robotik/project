@@ -14,7 +14,7 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 # Workspace Directories
-WS_DIR="/home/metin/itu_robotics_ws/itu_robotics_combined_ws"
+WS_DIR="/root/ros2_ws"
 INSTALL_SETUP="$WS_DIR/install/setup.bash"
 MAP_DIR="$WS_DIR/maps"
 mkdir -p "$MAP_DIR"

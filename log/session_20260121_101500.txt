@@ -1,0 +1,1 @@
+./baslat.sh: line 102: ros2: command not found
