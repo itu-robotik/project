@@ -28,7 +28,7 @@ if(BUILD_TESTING)
 endif()
 
 # Install directories
-install(DIRECTORY launch worlds models rviz config
+install(DIRECTORY launch worlds models rviz config materials
   DESTINATION share/${PROJECT_NAME}
 )
 

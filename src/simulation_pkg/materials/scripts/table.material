@@ -1,0 +1,18 @@
+material TableWood
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.8 0.8 0.8 1.0
+      diffuse 0.8 0.8 0.8 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture wood_table_1024.png
+        scale 0.5 0.5
+      }
+    }
+  }
+}

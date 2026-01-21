@@ -27,7 +27,7 @@ def generate_launch_description():
     # Set Gazebo resource path
     gz_resource_path = SetEnvironmentVariable(
         name='GZ_SIM_RESOURCE_PATH',
-        value=os.path.join(pkg_share, 'models') + ':' + os.environ.get('GZ_SIM_RESOURCE_PATH', '')
+        value=os.path.join(pkg_share, 'models') + ':' + pkg_share + ':' + os.path.join(pkg_share, 'materials') + ':' + os.environ.get('GZ_SIM_RESOURCE_PATH', '')
     )
 
     # 1. Gazebo
