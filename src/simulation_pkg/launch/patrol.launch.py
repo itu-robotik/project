@@ -84,7 +84,8 @@ def generate_launch_description():
         launch_arguments={
             'use_sim_time': use_sim_time,
             'map': map_yaml_file,
-            'params_file': nav2_params_file
+            'params_file': nav2_params_file,
+            'log_level': 'error'
         }.items()
     )
 
@@ -92,7 +93,7 @@ def generate_launch_description():
     perception = Node(
         package='perception_pkg',
         executable='gemini_node',
-        output='screen',
+        output='log',
         parameters=[{'use_sim_time': use_sim_time}]
     )
 
@@ -100,7 +101,7 @@ def generate_launch_description():
     patrol_node = Node(
         package='simulation_pkg',
         executable='patrol_node.py',
-        output='screen',
+        output='log',
         parameters=[{'use_sim_time': use_sim_time}]
     )
 
@@ -116,7 +117,7 @@ def generate_launch_description():
     planner_node = Node(
         package='simulation_pkg',
         executable='sequential_planner.py',
-        output='screen',
+        output='log',
         parameters=[{'use_sim_time': use_sim_time}]
     )
 

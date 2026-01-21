@@ -1,0 +1,80 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-01-21-14-18-53-467301-de9378045e72-52
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo-1]: process started with pid [54]
+[INFO] [parameter_bridge-2]: process started with pid [56]
+[INFO] [static_transform_publisher-3]: process started with pid [59]
+[INFO] [static_transform_publisher-4]: process started with pid [61]
+[INFO] [create-5]: process started with pid [63]
+[INFO] [gemini_node-6]: process started with pid [65]
+[static_transform_publisher-3] [WARN] [1769005138.816262324] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-4] [WARN] [1769005138.816273125] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-3] [INFO] [1769005138.832117434] [static_transform_publisher_BPN9PNuHNX3MhRZ6]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'base_footprint' to 'base_link'
+[static_transform_publisher-4] [INFO] [1769005138.835917820] [static_transform_publisher_sBVXUfQzEZY5C07j]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.100000', '0.000000', '0.250000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_link' to 'itu_bot/chassis/lidar'
+[create-5] [INFO] [1769005138.852937448] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-2] [INFO] [1769005138.864687742] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera (gz.msgs.Image) -> /camera (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005138.866347610] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005138.867005477] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005138.867967475] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005138.869360716] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005138.869855066] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[ign gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[gemini_node-6] /usr/local/lib/python3.10/dist-packages/google/api_core/_python_version_support.py:275: FutureWarning: You are using a Python version (3.10.12) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+[gemini_node-6]   warnings.warn(message, FutureWarning)
+[create-5] [INFO] [1769005139.818888948] [ros_gz_sim]: Requested creation of entity.
+[create-5] [INFO] [1769005139.818958255] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-5]: process has finished cleanly [pid 63]
+[gemini_node-6] /root/ros2_ws/build/perception_pkg/perception_pkg/gemini_node.py:12: FutureWarning: 
+[gemini_node-6] 
+[gemini_node-6] All support for the `google.generativeai` package has ended. It will no longer be receiving 
+[gemini_node-6] updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+[gemini_node-6] See README for more details:
+[gemini_node-6] 
+[gemini_node-6] https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+[gemini_node-6] 
+[gemini_node-6]   import google.generativeai as genai
+[gemini_node-6] Traceback (most recent call last):
+[gemini_node-6]   File "/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node", line 33, in <module>
+[gemini_node-6]     sys.exit(load_entry_point('perception-pkg', 'console_scripts', 'gemini_node')())
+[gemini_node-6]   File "/root/ros2_ws/build/perception_pkg/perception_pkg/gemini_node.py", line 439, in main
+[gemini_node-6]     node = PerceptionNode()
+[gemini_node-6]   File "/root/ros2_ws/build/perception_pkg/perception_pkg/gemini_node.py", line 62, in __init__
+[gemini_node-6]     self.aruco_params = cv2.aruco.DetectorParameters()
+[gemini_node-6] AttributeError: module 'cv2.aruco' has no attribute 'DetectorParameters'. Did you mean: 'DetectorParameters_create'?
+[INFO] [component_container_isolated-7]: process started with pid [274]
+[ERROR] [gemini_node-6]: process has died [pid 65, exit code 1, cmd '/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node --ros-args --params-file /tmp/launch_params_hh6be5y0'].
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[INFO] [initial_pose_pub.py-8]: process started with pid [448]
+[initial_pose_pub.py-8] [INFO] [1769005159.488144471] [initial_pose_publisher]: 📍 Initial pose published to AMCL!
+[INFO] [patrol_node.py-9]: process started with pid [459]
+[initial_pose_pub.py-8] [INFO] [1769005161.123382280] [initial_pose_publisher]: ✅ Initial pose setup complete. Node shutting down.
+[INFO] [initial_pose_pub.py-8]: process has finished cleanly [pid 448]
+[patrol_node.py-9] [INFO] [1769005164.371764316] [patrol_node]: 🤖 Simple Patrol Node Ready! (Smart Approach & ID Verification Active)
+[INFO] [sequential_planner.py-10]: process started with pid [471]
+[sequential_planner.py-10] [INFO] [1769005168.166702710] [sequential_planner_action]: 🧠 Simple Planner Ready! Boards: [1, 2, 3, 4, 5, 6]
+[sequential_planner.py-10] [INFO] [1769005168.955510086] [sequential_planner_action]: 🤖 Robot State Changed: UNKNOWN -> IDLE
+[sequential_planner.py-10] [INFO] [1769005170.885196371] [sequential_planner_action]: 🚀 Sending Robot to Board 1 at (-5.00, -3.00)
+[patrol_node.py-9] [INFO] [1769005170.985047747] [patrol_node]: 📨 Received Goal: [-5.00, -3.00]
+[patrol_node.py-9] [INFO] [1769005171.116866612] [patrol_node]: 🎯 New Target ID set to: 1
+[patrol_node.py-9] [INFO] [1769005171.234132280] [patrol_node]: ✅ Goal accepted
+[sequential_planner.py-10] [INFO] [1769005172.641146776] [sequential_planner_action]: 🤖 Robot State Changed: IDLE -> TRAVELING
+[sequential_planner.py-10] [INFO] [1769005172.776823039] [sequential_planner_action]: ✅ Command Acknowledged (Robot is TRAVELING)
+[parameter_bridge-2] [INFO] [1769005173.723681762] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[static_transform_publisher-3] [INFO] [1769005187.863312719] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[sequential_planner.py-10] Traceback (most recent call last):
+[sequential_planner.py-10]   File "/root/ros2_ws/install/simulation_pkg/lib/simulation_pkg/sequential_planner.py", line 180, in <module>

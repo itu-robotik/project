@@ -1,0 +1,499 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-01-21-14-20-32-715687-9014e375f5a2-120
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo-1]: process started with pid [122]
+[INFO] [parameter_bridge-2]: process started with pid [124]
+[INFO] [static_transform_publisher-3]: process started with pid [127]
+[INFO] [static_transform_publisher-4]: process started with pid [129]
+[INFO] [create-5]: process started with pid [131]
+[INFO] [gemini_node-6]: process started with pid [133]
+[static_transform_publisher-3] [WARN] [1769005238.228455555] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-4] [WARN] [1769005238.233916084] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-3] [INFO] [1769005238.244542815] [static_transform_publisher_MPcbPYEm2Y9ujvdT]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'base_footprint' to 'base_link'
+[static_transform_publisher-4] [INFO] [1769005238.254971126] [static_transform_publisher_3bVoAWkkesGe7MBH]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.100000', '0.000000', '0.250000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'base_link' to 'itu_bot/chassis/lidar'
+[create-5] [INFO] [1769005238.262453052] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-2] [INFO] [1769005238.279486804] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera (gz.msgs.Image) -> /camera (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005238.281577607] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005238.282195367] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005238.283466790] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005238.284480588] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1769005238.284946034] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[ign gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[gemini_node-6] /usr/local/lib/python3.10/dist-packages/google/api_core/_python_version_support.py:275: FutureWarning: You are using a Python version (3.10.12) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+[gemini_node-6]   warnings.warn(message, FutureWarning)
+[create-5] [INFO] [1769005239.191572917] [ros_gz_sim]: Requested creation of entity.
+[create-5] [INFO] [1769005239.191633323] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-5]: process has finished cleanly [pid 131]
+[gemini_node-6] /root/ros2_ws/build/perception_pkg/perception_pkg/gemini_node.py:12: FutureWarning: 
+[gemini_node-6] 
+[gemini_node-6] All support for the `google.generativeai` package has ended. It will no longer be receiving 
+[gemini_node-6] updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+[gemini_node-6] See README for more details:
+[gemini_node-6] 
+[gemini_node-6] https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+[gemini_node-6] 
+[gemini_node-6]   import google.generativeai as genai
+[gemini_node-6] Traceback (most recent call last):
+[gemini_node-6]   File "/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node", line 33, in <module>
+[gemini_node-6]     sys.exit(load_entry_point('perception-pkg', 'console_scripts', 'gemini_node')())
+[gemini_node-6]   File "/root/ros2_ws/build/perception_pkg/perception_pkg/gemini_node.py", line 439, in main
+[gemini_node-6]     node = PerceptionNode()
+[gemini_node-6]   File "/root/ros2_ws/build/perception_pkg/perception_pkg/gemini_node.py", line 62, in __init__
+[gemini_node-6]     self.aruco_params = cv2.aruco.DetectorParameters()
+[gemini_node-6] AttributeError: module 'cv2.aruco' has no attribute 'DetectorParameters'. Did you mean: 'DetectorParameters_create'?
+[INFO] [component_container_isolated-7]: process started with pid [308]
+[ERROR] [gemini_node-6]: process has died [pid 133, exit code 1, cmd '/root/ros2_ws/install/perception_pkg/lib/perception_pkg/gemini_node --ros-args --params-file /tmp/launch_params_smiop2f9'].
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[INFO] [initial_pose_pub.py-8]: process started with pid [516]
+[initial_pose_pub.py-8] [INFO] [1769005258.589705814] [initial_pose_publisher]: 📍 Initial pose published to AMCL!
+[INFO] [patrol_node.py-9]: process started with pid [527]
+[initial_pose_pub.py-8] [INFO] [1769005260.197341319] [initial_pose_publisher]: ✅ Initial pose setup complete. Node shutting down.
+[INFO] [initial_pose_pub.py-8]: process has finished cleanly [pid 516]
+[patrol_node.py-9] [INFO] [1769005262.523242333] [patrol_node]: 🤖 Simple Patrol Node Ready! (Smart Approach & ID Verification Active)
+[INFO] [sequential_planner.py-10]: process started with pid [539]
+[sequential_planner.py-10] [INFO] [1769005267.135594791] [sequential_planner_action]: 🧠 Simple Planner Ready! Boards: [1, 2, 3, 4, 5, 6]
+[sequential_planner.py-10] [INFO] [1769005270.052979352] [sequential_planner_action]: 🤖 Robot State Changed: UNKNOWN -> IDLE
+[sequential_planner.py-10] [INFO] [1769005271.748912675] [sequential_planner_action]: 🚀 Sending Robot to Board 1 at (-5.00, -3.00)
+[patrol_node.py-9] [INFO] [1769005271.847238683] [patrol_node]: 📨 Received Goal: [-5.00, -3.00]
+[patrol_node.py-9] [INFO] [1769005271.942115257] [patrol_node]: 🎯 New Target ID set to: 1
+[patrol_node.py-9] [INFO] [1769005272.034492690] [patrol_node]: ✅ Goal accepted
+[sequential_planner.py-10] [INFO] [1769005273.438158319] [sequential_planner_action]: 🤖 Robot State Changed: IDLE -> TRAVELING
+[sequential_planner.py-10] [INFO] [1769005273.567283905] [sequential_planner_action]: ✅ Command Acknowledged (Robot is TRAVELING)
+[parameter_bridge-2] [INFO] [1769005274.611549382] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[component_container_isolated-7] [ERROR] [1769005307.617825815] [bt_navigator]: Goal failed
+[patrol_node.py-9] [WARN] [1769005307.706061723] [patrol_node]: ⚠️ Nav2 Failed: 6
+[sequential_planner.py-10] [INFO] [1769005308.240399486] [sequential_planner_action]: 🤖 Robot State Changed: TRAVELING -> FAILED
+[sequential_planner.py-10] [INFO] [1769005308.363615570] [sequential_planner_action]: Task finished with result: FAILED
+[sequential_planner.py-10] [INFO] [1769005309.931581079] [sequential_planner_action]: 🚀 Sending Robot to Board 1 at (-5.00, -3.00)
+[patrol_node.py-9] [INFO] [1769005310.042498417] [patrol_node]: 📨 Received Goal: [-5.00, -3.00]
+[patrol_node.py-9] [INFO] [1769005310.158809513] [patrol_node]: 🎯 New Target ID set to: 1
+[patrol_node.py-9] [INFO] [1769005310.237966848] [patrol_node]: ✅ Goal accepted
+[sequential_planner.py-10] [INFO] [1769005311.635313909] [sequential_planner_action]: 🤖 Robot State Changed: FAILED -> TRAVELING
+[sequential_planner.py-10] [INFO] [1769005311.732650773] [sequential_planner_action]: ✅ Command Acknowledged (Robot is TRAVELING)
+[component_container_isolated-7] [ERROR] [1769005418.606350818] [bt_navigator]: Goal failed
+[patrol_node.py-9] [WARN] [1769005418.728069245] [patrol_node]: ⚠️ Nav2 Failed: 6
+[sequential_planner.py-10] [INFO] [1769005419.342287172] [sequential_planner_action]: 🤖 Robot State Changed: TRAVELING -> FAILED
+[sequential_planner.py-10] [INFO] [1769005419.456385634] [sequential_planner_action]: Task finished with result: FAILED
+[sequential_planner.py-10] [INFO] [1769005421.185231178] [sequential_planner_action]: 🚀 Sending Robot to Board 1 at (-5.00, -3.00)
+[patrol_node.py-9] [INFO] [1769005421.292210218] [patrol_node]: 📨 Received Goal: [-5.00, -3.00]
+[patrol_node.py-9] [INFO] [1769005421.495064329] [patrol_node]: 🎯 New Target ID set to: 1
+[patrol_node.py-9] [INFO] [1769005421.600930672] [patrol_node]: ✅ Goal accepted
+[sequential_planner.py-10] [INFO] [1769005423.008326051] [sequential_planner_action]: 🤖 Robot State Changed: FAILED -> TRAVELING
+[sequential_planner.py-10] [INFO] [1769005423.108208872] [sequential_planner_action]: ✅ Command Acknowledged (Robot is TRAVELING)
+[component_container_isolated-7] [ERROR] [1769005444.253256894] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.253410307] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.253452711] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.253491314] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.256990219] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.257082027] [DWBLocalPlanner]: 0.30: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.257094128] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.257098328] [DWBLocalPlanner]: 0.22:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.303016227] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.303081733] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.303100235] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.303112036] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.308397796] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.308456501] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.308464602] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.308468202] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.353087088] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.353171595] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.353197197] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.353210399] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.357214447] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.357265052] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.357271552] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.357274452] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.403097443] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.403155648] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.403173450] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.403186651] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.407790552] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.407863958] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.407879460] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.407885760] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.453316917] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.453529035] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.453572139] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.453585040] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.459936993] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.460099807] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.460116409] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.460120409] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.503261066] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.503337773] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.503374276] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.503387777] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.507142904] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.507198609] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.507211810] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.507215310] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.552812781] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.552866586] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.552879287] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.552886488] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.556615013] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.556692119] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.556702120] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.556706120] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.603042856] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.603131864] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.603151465] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.603162066] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.606539660] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.606584664] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.606592265] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.606594665] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.652949702] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.653012008] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.653035210] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.653046511] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.657615608] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.657662613] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.657671713] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.657674514] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.703047065] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.703263384] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.703285186] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.703295187] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.707350240] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.707556658] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.707577059] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.707581360] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.753136927] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.753185031] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.753196732] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.753204533] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.756074783] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.756117687] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.756128388] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.756132488] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.803192686] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.803260492] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.803273693] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.803282094] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.806176846] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.806212349] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.806218850] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.806221050] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.854204429] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.854269935] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.854288936] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.854299237] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.859514591] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.859567296] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.859584497] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.859588198] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.903296404] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.903358010] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.903371711] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.903381412] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.906489382] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.906525785] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.906559188] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.906561689] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005444.952955829] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.953038236] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.953063338] [PathDistCritic]: None of the 94 first of 94 (94) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005444.953075639] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005444.956654051] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005444.956715956] [DWBLocalPlanner]: 0.31: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005444.956726157] [DWBLocalPlanner]: 0.48: Oscillation/Trajectory is oscillating.
+[component_container_isolated-7] [ERROR] [1769005444.956729858] [DWBLocalPlanner]: 0.21:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.004706836] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.004805244] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.004828346] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.004841548] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.011038087] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.011092692] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.011103693] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.053285466] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.053538788] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.053601494] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.053620196] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.063265236] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.063356243] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.063374245] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.103350826] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.103426633] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.103457436] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.103473137] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.110529452] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.110619559] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.110726569] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.153105660] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.153186967] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.153208268] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.153224770] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.158059391] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.158137998] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.158145198] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.203382638] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.203469146] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.203484947] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.203494348] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.212718251] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.212818560] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.212835161] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.259281706] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.259392516] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.259418718] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.259439920] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.264783485] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.264912096] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.264929598] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.307356393] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.307459502] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.307477103] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.307487504] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.312071403] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.312259720] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.312291323] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.352990267] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.353057573] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.353074474] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.353090376] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.356506673] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.356587280] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.356598681] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.403134634] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.403209640] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.403230642] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.403249744] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.406263806] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.406311311] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.406321811] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.453605129] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.453740441] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.453766243] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.453777544] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.458586163] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.459155513] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.459982885] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.503150844] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.503233351] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.503254653] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.503268054] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.509440392] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.509506498] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.509516899] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.553635841] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.553973770] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.554056277] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.554072379] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.559073714] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.559109917] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.559115318] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.604520572] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.604691687] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.604756693] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.604953610] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.610295875] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.610368281] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.610386483] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.653287319] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.653411030] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.653426531] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.653437632] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.657940424] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.658015331] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.658034733] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.704210654] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.704349666] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.704365767] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.704374868] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.708150997] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.708211902] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.708224003] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.756622618] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.756696225] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.756715026] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.756730228] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.761922380] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.762014788] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.762029389] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.802849944] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.803003558] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.803097366] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.803119468] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.808802563] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.808880169] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.808896871] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.853203029] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.853289337] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.853309939] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.853323040] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.856727036] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.856760639] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.856772240] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.903818437] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.904060858] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.904132865] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.904201771] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.907732178] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.907790583] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.907803384] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005445.952882010] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.952937115] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.953033723] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005445.953046524] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005445.957167883] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005445.957213387] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005445.957223588] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.002976373] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.003043379] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.003062180] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.003073581] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.010340814] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.010416521] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.010431422] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.054623971] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.054667074] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.054725179] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.054753882] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.059527798] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.059619206] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.059635707] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.105283782] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.105350788] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.105365590] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.105376791] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.109380739] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.109422843] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.109432544] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.153055443] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.153123849] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.153139550] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.153155451] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.157014888] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.157064092] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.157072893] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.203209811] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.203316620] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.203340822] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.203471733] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.207525686] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.207576191] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.207589092] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.253636002] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.253760613] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.253777314] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.253786315] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.257633250] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.257666353] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.257671454] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.257752761] [controller_server]: Controller patience exceeded
+[component_container_isolated-7] [ERROR] [1769005446.357568553] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.357695064] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.357728067] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.357752169] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.361173967] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.361195869] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.361201970] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.361599804] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.361621606] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.361630207] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.361639408] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.364552362] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.364581364] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.364590365] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.375384805] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.375460611] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.375474613] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.375480313] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.379011021] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.379061625] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.379071026] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.425670184] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.425727289] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.425743491] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.425805296] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.428804057] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.428844761] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.428852761] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.476401302] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.476456607] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.476470008] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.476478509] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.485595803] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.485684911] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.485698612] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.525549882] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.525605487] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.525620289] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.525629489] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.530901048] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.530987456] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.531005158] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.575664447] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.575746254] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.575762555] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.575774156] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.581179827] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.581271435] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.581293537] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.625663201] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.625724106] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.625737508] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.625748008] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.628861380] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.628898183] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.628906984] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.678078366] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.678248081] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.678276183] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.678324887] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.685042372] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.685247290] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.685286994] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.725693212] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.725741817] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.725753218] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.725760718] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.731305801] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.731372907] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.731382908] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.775712969] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.775781975] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.775801476] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.775814477] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.780031045] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.780116752] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.780126253] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.825858636] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.825936042] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.825949744] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.825958444] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.829602862] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.829702770] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.829723372] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.875537262] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.875597267] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.875609568] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.875618569] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.879092472] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.879135575] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.879144776] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[component_container_isolated-7] [ERROR] [1769005446.925719432] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.925782438] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.925801239] [PathDistCritic]: None of the 96 first of 96 (96) points of the global plan were in the local costmap and free
+[component_container_isolated-7] [ERROR] [1769005446.925812840] [GoalDistCritic]: None of the points of the global plan were in the local costmap.
+[component_container_isolated-7] [ERROR] [1769005446.928933312] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[component_container_isolated-7] [ERROR] [1769005446.928978716] [DWBLocalPlanner]: 0.58: BaseObstacle/Trajectory Hits Obstacle.
+[component_container_isolated-7] [ERROR] [1769005446.929017819] [DWBLocalPlanner]: 0.42:   PathDist/Trajectory Hits Unreachable Area.
+[static_transform_publisher-3] [INFO] [1769005446.972338492] [rclcpp]: signal_handler(SIGINT/SIGTERM)

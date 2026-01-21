@@ -57,10 +57,9 @@ class PerceptionNode(Node):
         self.selected_model_name = None
         self.is_analyzing = False
         
-        # ArUco Setup
-        self.aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
-        self.aruco_params = cv2.aruco.DetectorParameters()
-        self.detector = cv2.aruco.ArucoDetector(self.aruco_dict, self.aruco_params)
+        # ArUco Setup (Legacy API for older OpenCV versions)
+        self.aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_50)
+        self.aruco_params = cv2.aruco.DetectorParameters_create()
         
         # Gemini Setup ve OTOMATİK MODEL SEÇİMİ
         api_key = os.environ.get("GOOGLE_API_KEY")
@@ -132,7 +131,7 @@ class PerceptionNode(Node):
             
             # --- PRE-PROCESSING ---
             gray = cv2.cvtColor(cv_img, cv2.COLOR_BGR2GRAY)
-            corners, ids, rejected = self.detector.detectMarkers(gray)
+            corners, ids, rejected = cv2.aruco.detectMarkers(gray, self.aruco_dict, parameters=self.aruco_params)
 
             # --- ARUCO FIRST APPROACH ---
             aruco_center = None
